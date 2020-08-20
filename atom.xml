@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-20T05:53:54.178Z</updated>
+  <updated>2020-08-20T16:04:25.128Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python编码规范</title>
+    <link href="http://yoursite.com/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://yoursite.com/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</id>
+    <published>2020-08-20T16:02:18.000Z</published>
+    <updated>2020-08-20T16:04:25.128Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;PE8基本规范：&lt;/p&gt;
+&lt;p&gt;建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符&lt;/p&gt;
+&lt;h1 id=&quot;一、python编码规范：&quot;&gt;&lt;a href=&quot;#一、python编码规范：&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+    <category term="编码规范" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
