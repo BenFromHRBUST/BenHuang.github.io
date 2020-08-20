@@ -1,12 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Python-pip</title>
+    <url>/2020/08/21/Python-pip/</url>
+    <content><![CDATA[<h1 id="pip"><a href="#pip" class="headerlink" title="pip"></a><strong>pip</strong></h1><p>pip 是 Python 包管理工具，该工具提供了对Python 包的查找、下载、安装、卸载的功能。</p>
+<p>目前如果你在 <a href="https://www.python.org/">python.org</a> 下载最新版本的安装包，则是已经自带了该工具。</p>
+<p>Python 2.7.9 +  或 Python 3.4+  以上版本都自带 pip 工具。</p>
+<p>pip 官网：<a href="https://pypi.org/project/pip/">https://pypi.org/project/pip/</a></p>
+<a id="more"></a>
+
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="显示版本和路径"><a href="#显示版本和路径" class="headerlink" title="显示版本和路径"></a><strong>显示版本和路径</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取帮助"><a href="#获取帮助" class="headerlink" title="获取帮助"></a><strong>获取帮助</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip --help</span><br></pre></td></tr></table></figure>
+
+<h3 id="升级-pip"><a href="#升级-pip" class="headerlink" title="升级 pip"></a><strong>升级 pip</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install -U pip</span><br></pre></td></tr></table></figure>
+
+<p>若出现问题也可以按照下述升级包的方式升级pip。</p>
+<h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a><strong>安装包</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install SomePackage              # 最新版本</span><br><span class="line">pip install SomePackage&#x3D;&#x3D;1.0.4       # 指定版本</span><br><span class="line">pip install &#39;SomePackage&gt;&#x3D;1.0.4&#39;     # 最小版本</span><br></pre></td></tr></table></figure>
+
+<h3 id="升级包"><a href="#升级包" class="headerlink" title="升级包"></a><strong>升级包</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install --upgrade SomePackage</span><br></pre></td></tr></table></figure>
+
+<p>升级指定的包，通过使用==, &gt;=, &lt;=, &gt;, &lt; 来指定一个版本号。</p>
+<h3 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a><strong>卸载包</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip uninstall SomePackage</span><br></pre></td></tr></table></figure>
+
+<h3 id="搜索包"><a href="#搜索包" class="headerlink" title="搜索包"></a><strong>搜索包</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip search SomePackage</span><br></pre></td></tr></table></figure>
+
+<h3 id="显示安装包信息"><a href="#显示安装包信息" class="headerlink" title="显示安装包信息"></a><strong>显示安装包信息</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip show </span><br></pre></td></tr></table></figure>
+
+<h3 id="查看指定包的详细信息"><a href="#查看指定包的详细信息" class="headerlink" title="查看指定包的详细信息"></a><strong>查看指定包的详细信息</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip show -f SomePackage</span><br></pre></td></tr></table></figure>
+
+<h3 id="列出已安装包"><a href="#列出已安装包" class="headerlink" title="列出已安装包"></a><strong>列出已安装包</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip list</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看可升级包"><a href="#查看可升级包" class="headerlink" title="查看可升级包"></a><strong>查看可升级包</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip list -o</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python包与模块</title>
+    <url>/2020/08/21/Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/</url>
+    <content><![CDATA[<h1 id="自定义包与模块"><a href="#自定义包与模块" class="headerlink" title="自定义包与模块"></a><strong>自定义包与模块</strong></h1><p>实际开发中，一个大型的项目往往需要使用成百上千的 <a href="http://c.biancheng.net/python/">Python</a> 模块，如果将这些模块都堆放在一起，势必不好管理。而且，使用模块可以有效避免变量名或函数名重名引发的冲突，但是如果模块名重复怎么办呢？因此，Python提出了包（Package）的概念。</p>
+<a id="more"></a>
+
+
+
+<p>什么是包呢？简单理解，包就是文件夹，只不过在该文件夹下必须存在一个名为“__init__.py” 的文件。</p>
+<p>[^注]: 这是 Python 2.x 的规定，而在 Python 3.x 中，__init__.py 对包来说，并不是必须的。</p>
+<p>每个包的目录下都必须建立一个 <strong>init</strong>.py 的模块，可以是一个空模块，可以写一些初始化代码，其作用就是告诉 Python 要将该目录当成包来处理。</p>
+<p>[^注]: __init__.py 不同于其他模块文件，此模块的模块名不是 __init__，而是它所在的包名。例如，在 settings 包中的 __init__.py 文件，其模块名就是 settings。</p>
+<p>包是一个包含多个模块的文件夹，它的本质依然是模块，因此包中也可以包含包。</p>
+<h2 id="创建自定义包"><a href="#创建自定义包" class="headerlink" title="创建自定义包"></a><strong>创建自定义包</strong></h2><ol>
+<li>新建一个文件夹，文件夹的名称就是新建包的包名；</li>
+<li>在该文件夹中，创建一个 __init__.py 文件（前后各有 2 个下划线‘_’），该文件中可以不编写任何代码。当然，也可以编写一些 Python初始化代码，则当有其它程序文件导入包时，会自动执行该文件中的代码。</li>
+</ol>
+<p>例如，现在我们创建一个非常简单的包，该包的名称为 my_package，可以仿照以上 2 步进行：</p>
+<ol>
+<li><p>创建一个文件夹，其名称设置为 my_package；</p>
+</li>
+<li><p>在该文件夹中添加一个 __init__.py 文件，此文件中可以不编写任何代码。不过，这里向该文件编写如下代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">http://c.biancheng.net/</span></span><br><span class="line"><span class="string">创建第一个 Python 包</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">print(<span class="string">&#x27;http://c.biancheng.net/python/&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，__init__.py 文件中，包含了 2 部分信息，分别是此包的说明信息和一条 print 输出语句。</p>
+</li>
+</ol>
+<p>由此，我们就成功创建好了一个 Python 包。</p>
+<p>创建好包之后，我们就可以向包中添加模块（也可以添加包）。这里给 my_package 包添加 2 个模块，分别是 module1.py、module2.py，各自包含的代码分别如下所示：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#module1.py模块文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">display</span>(<span class="params">arc</span>):</span></span><br><span class="line">    print(arc)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#module2.py 模块文件</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CLanguage</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">display</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;http://c.biancheng.net/python/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>现在，我们就创建好了一个具有如下文件结构的包：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">my_package</span><br><span class="line">     ┠── __init__.py</span><br><span class="line">     ┠── module1.py</span><br><span class="line">     ┗━━ module2.py</span><br></pre></td></tr></table></figure>
+
+<p>当然，包中还有容纳其它的包，这里不再演示。</p>
+<h2 id="Python包的导入"><a href="#Python包的导入" class="headerlink" title="Python包的导入"></a><strong>Python包的导入</strong></h2><p>通过前面的学习我们知道，包其实本质上还是模块，因此导入模块的语法同样也适用于导入包。无论导入我们自定义的包，还是导入从他处下载的第三方包，导入方法可归结为以下 3 种：</p>
+<ol>
+<li><code>import 包名[.模块名 [as 别名]]</code></li>
+<li><code>from 包名 import 模块名 [as 别名]</code></li>
+<li><code>from 包名.模块名 import 成员名 [as 别名]</code></li>
+</ol>
+<p>用 [ ] 括起来的部分，是可选部分，即可以使用，也可以直接忽略。</p>
+<p>[^注]: 导入包的同时，会在包目录下生成一个含有 __init__.cpython-36.pyc 文件的 __pycache__ 文件夹。</p>
+<h4 id="import-包名-模块名-as-别名"><a href="#import-包名-模块名-as-别名" class="headerlink" title="import 包名[.模块名 [as 别名]]"></a><strong>import 包名[.模块名 [as 别名]]</strong></h4><p>以前面创建好的 my_package 包为例，导入 module1 模块并使用该模块中成员可以使用如下代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> my_package.module1</span><br><span class="line">my_package.module1.display(<span class="string">&quot;http://c.biancheng.net/java/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;c.biancheng.net&#x2F;java&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，<u><strong>通过此语法格式导入包中的指定模块后，在使用该模块中的成员（变量、函数、类）时，需添加“包名.模块名”为前缀</strong></u>。</p>
+<p>当然，如果使用 as 给包名.模块名”起一个别名的话，就使用直接使用这个别名作为前缀使用该模块中的方法了，例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> my_package.module1 <span class="keyword">as</span> module</span><br><span class="line">module.display(<span class="string">&quot;http://c.biancheng.net/python/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>程序执行结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;c.biancheng.net&#x2F;python&#x2F;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>另外，当直接导入指定包时，程序会自动执行该包所对应文件夹下的 __init__.py 文件中的代码。例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> my_package</span><br><span class="line">my_package.module1.display(<span class="string">&quot;http://c.biancheng.net/linux_tutorial/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>直接导入包名，并不会将包中所有模块全部导入到程序中，它的作用仅仅是导入并执行包下的 <strong>init</strong>.py 文件，因此，运行该程序，在执行 __init__.py 文件中代码的同时，还会抛出 AttributeError 异常（访问的对象不存在）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">http://c.biancheng.net/python/</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;C:\Users\mengma\Desktop\demo.py&quot;</span>, line <span class="number">2</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    my_package.module1.display(<span class="string">&quot;http://c.biancheng.net/linux_tutorial/&quot;</span>)</span><br><span class="line">AttributeError: module <span class="string">&#x27;my_package&#x27;</span> has no attribute <span class="string">&#x27;module1&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>我们知道，包的本质就是模块，导入模块时，当前程序中会包含一个和模块名同名且类型为 module 的变量，导入包也是如此：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> my_package</span><br><span class="line">print(my_package)</span><br><span class="line">print(my_package.__doc__)</span><br><span class="line">print(type(my_package))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果为：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">http://c.biancheng.net/python/</span><br><span class="line">&lt;module <span class="string">&#x27;my_package&#x27;</span> <span class="keyword">from</span> <span class="string">&#x27;C:\\Users\\mengma\\Desktop\\my_package\\__init__.py&#x27;</span>&gt;</span><br><span class="line"></span><br><span class="line">http://c.biancheng.net/</span><br><span class="line">创建第一个 Python 包</span><br><span class="line"></span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">module</span>&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>所以，我们需要在my_package包中的__init__.py中进行包提升（在包中提升导入权限），my_package包中的__init__.py文件内容如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> my_package.module1 <span class="keyword">import</span> display</span><br></pre></td></tr></table></figure>
+
+<p>或者直接在__init__.py中导入整个module1模块，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> my_package.module1</span><br></pre></td></tr></table></figure>
+
+<p>此时，我们就可以通过包名导入module1内的display方法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> my_package</span><br><span class="line">my_package.module1.display(<span class="string">&quot;http://c.biancheng.net/linux_tutorial/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="from-包名-import-模块名-as-别名"><a href="#from-包名-import-模块名-as-别名" class="headerlink" title="from 包名 import 模块名 [as 别名]"></a><strong>from 包名 import 模块名 [as 别名]</strong></h4><p>仍以导入 my_package 包中的 module1 模块为例，使用此语法格式的实现代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> my_package <span class="keyword">import</span> module1</span><br><span class="line">module1.display(<span class="string">&quot;http://c.biancheng.net/golang/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;c.biancheng.net&#x2F;python&#x2F;</span><br><span class="line">http:&#x2F;&#x2F;c.biancheng.net&#x2F;golang&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，使用此语法格式导入包中模块后，**<u>在使用其成员时不需要带包名前缀，但需要带模块名前缀</u>**。</p>
+<p>当然，我们也可以使用 as 为导入的指定模块定义别名，例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> my_package <span class="keyword">import</span> module1 <span class="keyword">as</span> module</span><br><span class="line">module.display(<span class="string">&quot;http://c.biancheng.net/golang/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>此程序的输出结果和上面程序完全相同。</p>
+<p> 同样，既然包也是模块，那么这种语法格式自然也支持 <code>from 包名 import *</code> 这种写法，它和 import 包名 的作用一样，都只是将该包的 __init__.py 文件导入并执行。</p>
+<h4 id="from-包名-模块名-import-成员名-as-别名"><a href="#from-包名-模块名-import-成员名-as-别名" class="headerlink" title="from 包名.模块名 import 成员名 [as 别名]"></a><strong>from 包名.模块名 import 成员名 [as 别名]</strong></h4><p>此语法格式用于向程序中导入“包.模块”中的指定成员（变量、函数或类）。**<u>通过该方式导入的变量（函数、类），在使用时可以直接使用变量名（函数名、类名）调用</u>**，例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> my_package.module1 <span class="keyword">import</span> display</span><br><span class="line">display(<span class="string">&quot;http://c.biancheng.net/shell/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;c.biancheng.net&#x2F;python&#x2F;</span><br><span class="line">http:&#x2F;&#x2F;c.biancheng.net&#x2F;shell&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>当然，也可以使用 as 为导入的成员起一个别名，例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> my_package.module1 <span class="keyword">import</span> display <span class="keyword">as</span> dis</span><br><span class="line">dis(<span class="string">&quot;http://c.biancheng.net/shell/&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>该程序的运行结果和上面相同。</p>
+<p> 另外，在使用此种语法格式加载指定包的指定模块时，可以使用 * 代替成员名，表示加载该模块下的所有成员。例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> my_package.module1 <span class="keyword">import</span> *</span><br><span class="line">display(<span class="string">&quot;http://c.biancheng.net/python&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>项目开发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python更换镜像源</title>
+    <url>/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<h1 id="国内常见镜像源"><a href="#国内常见镜像源" class="headerlink" title="国内常见镜像源"></a>国内常见镜像源</h1><p>豆瓣：<a href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a><br>阿里：<a href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>华中理工大学：<a href="http://pypi.hustunique.com/simple/">http://pypi.hustunique.com/simple/</a><br>山东理工大学：<a href="http://pypi.sdutlinux.org/simple/">http://pypi.sdutlinux.org/simple/</a><br>中国科学技术大学：<a href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a></p>
+<a id="more"></a>
+
+<h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>1.在windows文件管理器中输入“ %APPDATA% ”</p>
+<p><img src="https://img-blog.csdnimg.cn/20190711115440834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>2.则会定位到一个新的目录下(“C:\Users\Administrator\AppData\Roaming\pip\pip.ini”)，Administrator为自己的用户名，在该目录下新建pip文件夹，然后到匹配文件夹中新建一个 pip.ini 文件</p>
+<p><img src="https://img-blog.csdnimg.cn/2019071111371594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>3.在新建的 pip.ini 文件中输入以下内容，然后保存。</p>
+<p>​    <em>注意:” index-url “ 的内容是镜像源的路径，可以更换</em></p>
+<p>​    </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line"></span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line"></span><br><span class="line">index-url = http://pypi.douban.com/simple </span><br><span class="line"></span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
+
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>1.需要修改~/ .pip/pip.conf (没有就创建一个)</p>
+<p>​    </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir -p .pip</span><br><span class="line">nano pip.conf # 或者 vi pip.con</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20190711133859947.png" alt="在这里插入图片描述"></p>
+<p>2.在pip.conf配置文件中，添加配置内容，就修改默认的软件源，配置内容如下：</p>
+<p>​    </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line">index-url = http://pypi.douban.com/simple</span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20190711134005394.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python编码规范</title>
     <url>/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<p>PE8基本规范：</p>
 <p>建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符</p>
 <h1 id="一、python编码规范："><a href="#一、python编码规范：" class="headerlink" title="一、python编码规范："></a>一、python编码规范：</h1><h2 id="一-、代码编码："><a href="#一-、代码编码：" class="headerlink" title="(一)、代码编码："></a><strong>(一)、代码编码：</strong></h2><p>1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -<em>- coding: utf-8 -</em>-。<br> 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀<br> 3、若出现 Python编 码问题，可按照以下操作尝试解决：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#39;utf-8&#39;)</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h2 id="二-、命名规范"><a href="#二-、命名规范" class="headerlink" title="(二)、命名规范:"></a><strong>(二)、命名规范:</strong></h2><h3 id="1、包名、模块名、局部变量名、函数名"><a href="#1、包名、模块名、局部变量名、函数名" class="headerlink" title="1、包名、模块名、局部变量名、函数名"></a>1、包名、模块名、局部变量名、函数名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全小写+下划线式驼峰 示例：this_is_var</span><br></pre></td></tr></table></figure>
 
@@ -88,9 +281,11 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
+    <title>Hexo&#39;s Hello World</title>
     <url>/2020/08/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
+
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -104,5 +299,11 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>

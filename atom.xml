@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-20T16:10:10.025Z</updated>
+  <updated>2020-08-20T16:55:51.396Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,79 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python包与模块</title>
+    <link href="http://yoursite.com/2020/08/21/Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/"/>
+    <id>http://yoursite.com/2020/08/21/Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/</id>
+    <published>2020-08-20T16:54:24.000Z</published>
+    <updated>2020-08-20T16:55:51.396Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;自定义包与模块&quot;&gt;&lt;a href=&quot;#自定义包与模块&quot; class=&quot;headerlink&quot; title=&quot;自定义包与模块&quot;&gt;&lt;/a&gt;&lt;strong&gt;自定义包与模块&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;实际开发中，一个大型的项目往往需要使用成百上千的 &lt;a href=&quot;http://c.biancheng.net/python/&quot;&gt;Python&lt;/a&gt; 模块，如果将这些模块都堆放在一起，势必不好管理。而且，使用模块可以有效避免变量名或函数名重名引发的冲突，但是如果模块名重复怎么办呢？因此，Python提出了包（Package）的概念。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+    <category term="项目开发" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python-pip</title>
+    <link href="http://yoursite.com/2020/08/21/Python-pip/"/>
+    <id>http://yoursite.com/2020/08/21/Python-pip/</id>
+    <published>2020-08-20T16:51:41.000Z</published>
+    <updated>2020-08-20T16:53:28.845Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;pip&quot;&gt;&lt;a href=&quot;#pip&quot; class=&quot;headerlink&quot; title=&quot;pip&quot;&gt;&lt;/a&gt;&lt;strong&gt;pip&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;pip 是 Python 包管理工具，该工具提供了对Python 包的查找、下载、安装、卸载的功能。&lt;/p&gt;
+&lt;p&gt;目前如果你在 &lt;a href=&quot;https://www.python.org/&quot;&gt;python.org&lt;/a&gt; 下载最新版本的安装包，则是已经自带了该工具。&lt;/p&gt;
+&lt;p&gt;Python 2.7.9 +  或 Python 3.4+  以上版本都自带 pip 工具。&lt;/p&gt;
+&lt;p&gt;pip 官网：&lt;a href=&quot;https://pypi.org/project/pip/&quot;&gt;https://pypi.org/project/pip/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python更换镜像源</title>
+    <link href="http://yoursite.com/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/"/>
+    <id>http://yoursite.com/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</id>
+    <published>2020-08-20T16:39:07.000Z</published>
+    <updated>2020-08-20T16:47:02.134Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;国内常见镜像源&quot;&gt;&lt;a href=&quot;#国内常见镜像源&quot; class=&quot;headerlink&quot; title=&quot;国内常见镜像源&quot;&gt;&lt;/a&gt;国内常见镜像源&lt;/h1&gt;&lt;p&gt;豆瓣：&lt;a href=&quot;http://pypi.douban.com/simple/&quot;&gt;http://pypi.douban.com/simple/&lt;/a&gt;&lt;br&gt;阿里：&lt;a href=&quot;http://mirrors.aliyun.com/pypi/simple/&quot;&gt;http://mirrors.aliyun.com/pypi/simple/&lt;/a&gt;&lt;br&gt;华中理工大学：&lt;a href=&quot;http://pypi.hustunique.com/simple/&quot;&gt;http://pypi.hustunique.com/simple/&lt;/a&gt;&lt;br&gt;山东理工大学：&lt;a href=&quot;http://pypi.sdutlinux.org/simple/&quot;&gt;http://pypi.sdutlinux.org/simple/&lt;/a&gt;&lt;br&gt;中国科学技术大学：&lt;a href=&quot;http://pypi.mirrors.ustc.edu.cn/simple/&quot;&gt;http://pypi.mirrors.ustc.edu.cn/simple/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python编码规范</title>
     <link href="http://yoursite.com/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     <id>http://yoursite.com/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</id>
     <published>2020-08-20T16:02:18.000Z</published>
-    <updated>2020-08-20T16:10:10.025Z</updated>
+    <updated>2020-08-20T16:32:28.322Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;PE8基本规范：&lt;/p&gt;
 &lt;p&gt;建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符&lt;/p&gt;
-&lt;h1 id=&quot;一、python编码规范：&quot;&gt;&lt;a href=&quot;#一、python编码规范：&quot;</summary>
-        
-      
+&lt;h1 id=&quot;一、python编码规范：&quot;&gt;&lt;a href=&quot;#一、python编码规范：&quot; class=&quot;headerlink&quot; title=&quot;一、python编码规范：&quot;&gt;&lt;/a&gt;一、python编码规范：&lt;/h1&gt;&lt;h2 id=&quot;一-、代码编码：&quot;&gt;&lt;a href=&quot;#一-、代码编码：&quot; class=&quot;headerlink&quot; title=&quot;(一)、代码编码：&quot;&gt;&lt;/a&gt;&lt;strong&gt;(一)、代码编码：&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-。&lt;br&gt; 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀&lt;br&gt; 3、若出现 Python编 码问题，可按照以下操作尝试解决：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;import sys&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reload(sys)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sys.setdefaultencoding(&amp;#39;utf-8&amp;#39;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -46,23 +103,21 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>Hexo&#39;s Hello World</title>
     <link href="http://yoursite.com/2020/08/20/hello-world/"/>
     <id>http://yoursite.com/2020/08/20/hello-world/</id>
     <published>2020-08-20T05:53:54.177Z</published>
-    <updated>2020-08-20T05:53:54.178Z</updated>
+    <updated>2020-08-20T16:50:01.829Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
     
     
     
+    <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
