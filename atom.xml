@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-20T16:55:51.396Z</updated>
+  <updated>2020-08-21T09:54:03.393Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo配置next主题</title>
+    <link href="http://yoursite.com/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</id>
+    <published>2020-08-21T09:51:30.000Z</published>
+    <updated>2020-08-21T09:54:03.393Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot; title=&quot;前言：&quot;&gt;&lt;/a&gt;前言：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。&lt;br&gt;为了描述方便，在以下说明中，将前者称为*&lt;strong&gt;站点配置文件*&lt;/strong&gt;， 后者称为*&lt;strong&gt;主题配置文件*&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;以下所有终端执行的命令都在你的Hexo根目录下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+    <category term="NexT主题" scheme="http://yoursite.com/tags/NexT%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在github上用Hexo搭建个人博客</title>
+    <link href="http://yoursite.com/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-08-21T09:51:13.000Z</published>
+    <updated>2020-08-21T09:55:46.162Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;内容目录（下面目录中第 3~5 步为最重要的步骤，其他内容可选择性跳过。）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;简介：GitHub Pages 和 Hexo &amp;amp; 原理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;准备：环境搭建&lt;br&gt;1.1. 注意事项&lt;br&gt;1.2. 环境搭建&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;连接 Github&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建 Github Pages 仓库&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+    
+  </entry>
   
   <entry>
     <title>Python包与模块</title>
