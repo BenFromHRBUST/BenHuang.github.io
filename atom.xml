@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-21T15:54:17.615Z</updated>
+  <updated>2020-08-22T07:29:35.086Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用GitHub进行团队开发</title>
+    <link href="http://yoursite.com/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/"/>
+    <id>http://yoursite.com/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</id>
+    <published>2020-08-22T07:27:18.000Z</published>
+    <updated>2020-08-22T07:29:35.086Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;第一步：注册GitHub账号&lt;/p&gt;
+&lt;p&gt;第二步：创建一个组织（团队）&lt;/p&gt;
+&lt;p&gt;第三步：创建仓库&lt;/p&gt;
+&lt;p&gt;第四步：下载安装git客户端&lt;/p&gt;
+&lt;p&gt;第五步：克隆仓库&lt;/p&gt;
+&lt;p&gt;第六步：创建项目&lt;/p&gt;
+&lt;p&gt;第七步：导入项目&lt;/p&gt;
+&lt;p&gt;第八步：上传/下拉代码，并解决冲突&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TeamDevelopment" scheme="http://yoursite.com/categories/TeamDevelopment/"/>
+    
+    
+    <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
+    
+    <category term="TeamDevelopment" scheme="http://yoursite.com/tags/TeamDevelopment/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo配置next主题</title>
     <link href="http://yoursite.com/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
     <id>http://yoursite.com/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</id>
     <published>2020-08-21T09:51:30.000Z</published>
-    <updated>2020-08-21T15:54:17.615Z</updated>
+    <updated>2020-08-22T07:25:45.957Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot; title=&quot;前言：&quot;&gt;&lt;/a&gt;前言：&lt;/h2&gt;&lt;blockquote&gt;
@@ -36,6 +64,8 @@
     <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
+    <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
+    
     <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
     <category term="NexT主题" scheme="http://yoursite.com/tags/NexT%E4%B8%BB%E9%A2%98/"/>
@@ -47,7 +77,7 @@
     <link href="http://yoursite.com/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-08-21T09:51:13.000Z</published>
-    <updated>2020-08-21T09:57:48.574Z</updated>
+    <updated>2020-08-22T07:25:58.491Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;内容目录（下面目录中第 3~5 步为最重要的步骤，其他内容可选择性跳过。）&lt;/strong&gt;&lt;/p&gt;
@@ -65,6 +95,8 @@
     
     <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
+    
+    <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
     
     <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     

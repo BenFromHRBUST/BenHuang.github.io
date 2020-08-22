@@ -118,6 +118,7 @@
         <category>Hexo</category>
       </categories>
       <tags>
+        <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>NexT主题</tag>
       </tags>
@@ -281,6 +282,115 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo&#39;s Hello World</title>
+    <url>/2020/08/20/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用GitHub进行团队开发</title>
+    <url>/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a><strong>目录</strong></h2><p>第一步：注册GitHub账号</p>
+<p>第二步：创建一个组织（团队）</p>
+<p>第三步：创建仓库</p>
+<p>第四步：下载安装git客户端</p>
+<p>第五步：克隆仓库</p>
+<p>第六步：创建项目</p>
+<p>第七步：导入项目</p>
+<p>第八步：上传/下拉代码，并解决冲突</p>
+<a id="more"></a>
+
+<h2 id="第一步：注册GitHub的账号"><a href="#第一步：注册GitHub的账号" class="headerlink" title="第一步：注册GitHub的账号"></a>第一步：注册GitHub的账号</h2><p>官网：<a href="https://github.com/">https://github.com/</a></p>
+<p>官网是全英文的，如果大家实在看不懂一些英文的话，可以利用谷歌浏览进行翻译。</p>
+<p><img src="https://img-blog.csdn.net/20180922150849285?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>我是利用邮箱进行注册的，如果大家利用邮箱进行注册的话，需要到邮箱进行验证与激活账号。</p>
+<p>填写相关信息进行注册：</p>
+<p><img src="https://img-blog.csdn.net/20180922151142615?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>版本选择：初学者的话建议先选择免费版，我这里选择的是免费版。</p>
+<p><img src="https://img-blog.csdn.net/20180922151310770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>接着，这里的内容，根据个人来填，可填可不填，我用谷歌浏览器进行了翻译，大家可以看得明白一些。</p>
+<p><img src="https://img-blog.csdn.net/20180922151435870?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>注册完成，我们就可以去登录了，记得去邮箱验证激活账号。</p>
+<p><img src="https://img-blog.csdn.net/20180922151602560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第二步：创建一个组织（团队）"><a href="#第二步：创建一个组织（团队）" class="headerlink" title="第二步：创建一个组织（团队）"></a>第二步：创建一个组织（团队）</h2><p>登录成功后，我们先创建一个组织（团队）。如下操作，大家看不懂英文的可以用谷歌浏览器翻译喔。</p>
+<p><img src="https://img-blog.csdn.net/20180922151719495?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>根据自己的情况，填写相关信息，下面的页面已经被我翻译为中文的了。</p>
+<p><img src="https://img-blog.csdn.net/20180922153016469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>邀请队员：邀请我们的队员，和我们一起使用该仓库，填写队员邮箱，点击Invite，向队员发送邮件，待队员同意就可以一起开发了。</p>
+<p><img src="https://img-blog.csdn.net/20180922153143728?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>下面的内容，我们根据自己的意愿来填写，也可以直接跳过。</p>
+<p><img src="https://img-blog.csdn.net/20180922153419675?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>这样，我们的（组织）团队也就创建好了。</p>
+<h2 id="第三步：创建仓库"><a href="#第三步：创建仓库" class="headerlink" title="第三步：创建仓库"></a>第三步：创建仓库</h2><p>团队创建完成后，我们还需要创建一个共有的仓库，用于存放我们团队代码。</p>
+<p><img src="https://img-blog.csdn.net/20180922153513124?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>根据下图，填写相关信息，记得勾选创建一个初始化配置文件（readme.md）。</p>
+<p><img src="https://img-blog.csdn.net/20180922155257380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>完成之后，我们点击创建仓库，看到下面的界面表示创建仓库成功。</p>
+<p><img src="https://img-blog.csdn.net/20180922155436224?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第四步：下载安装git客户端"><a href="#第四步：下载安装git客户端" class="headerlink" title="第四步：下载安装git客户端"></a>第四步：下载安装git客户端</h2><p>地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>下载好后，我们直接安装。</p>
+<h2 id="第五步：克隆仓库"><a href="#第五步：克隆仓库" class="headerlink" title="第五步：克隆仓库"></a>第五步：克隆仓库</h2><p>在我们想要克隆的路径下右击鼠标，选择如下的 <strong>Git GUI Here</strong> 我们先使用图形化界面进行操作，日后熟悉了可以用下面的命令窗口进行操作。</p>
+<p><img src="https://img-blog.csdn.net/20180922160705529?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>接下来，选择第二项，克隆仓库（GitHub上的仓库），将云端的仓库克隆到本地。</p>
+<p><img src="https://img-blog.csdn.net/20180922160858983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>下面，填写云端的仓库地址，和本地的仓库将要存放的路径。</p>
+<p>第一次使用，会要求输入你的GitHub账号和密码。</p>
+<p><img src="https://img-blog.csdn.net/20180922160951128?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>稍等片刻，如果在当前路径看到如下的文件（readme.md），表示克隆成功。</p>
+<p><img src="https://img-blog.csdn.net/20180922161753528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第六步：创建项目"><a href="#第六步：创建项目" class="headerlink" title="第六步：创建项目"></a>第六步：创建项目</h2><p>我们在eclipse中创建一个项目，这里我创建的是一个maven项目，项目的存放路径，改为我们刚刚克隆下来的仓库所在路径（readme.md）文件所在的路径，即：用克隆下来的仓库存放我们新建的项目。</p>
+<p><img src="https://img-blog.csdn.net/20180922162641928?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>如果项目创建成功，长下面的样子。</p>
+<p><img src="https://img-blog.csdn.net/20180922162857770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>如果我们的项目创建好并对项目结构进行初始化后，我们就可以上传一波代码了。具体操作请看下面：</p>
+<p><img src="https://img-blog.csdn.net/20180922165155149?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>第一次推送代码是不会被拒绝的，如果之前有人推送过代码，并且本地未更新代码，那么会被拒绝，要求先下拉代码。</p>
+<p>下拉代码，请看下面的操作：</p>
+<p><img src="https://img-blog.csdn.net/20180922165502406?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>也可以打开git staging 来提交代码，可以先提交到本地，再推送到云端，也可以同时推送。如下图：</p>
+<p><img src="https://img-blog.csdn.net/20180922165543983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第七步：导入工程"><a href="#第七步：导入工程" class="headerlink" title="第七步：导入工程"></a>第七步：导入工程</h2><p>如果，项目的搭建已经完成，并且上传到了GitHub，那么其他队员就可以直接克隆仓库，然后将克隆下来的仓库里的项目直接导入到eclipse就可以了。克隆仓库和之前的步骤一样，只是在导入项目的时候选择克隆下来的项目即可。</p>
+<p><img src="https://img-blog.csdn.net/20180922171111783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>我们修改代码后，在推送代码的时候可能会被拒绝，因为之前的代码和现在的代码发生了改变，需要程序员手动解决冲突。</p>
+<p><img src="https://img-blog.csdn.net/20180922171119490?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第八步：解决冲突"><a href="#第八步：解决冲突" class="headerlink" title="第八步：解决冲突"></a>第八步：解决冲突</h2><p>如果我们上传代码被拒接，我们需要先拉代码：下面就是被拉下来的代码</p>
+<p><img src="https://img-blog.csdn.net/20180922171330169?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>如果代码有冲突，我们要手动解决冲突，决定代码是保留还是删除。</p>
+<p><strong>&lt;&lt;&lt;&lt;&lt;&lt;HEAD</strong> 与 <strong>======</strong> 之间的代码是自己本地的代码</p>
+<p>======== 与 branch ‘master’ of <a href="https://github.com/">https://github.com</a>…………. 之间的代码是云端的代码</p>
+<p>这里需要手动删除或者保留代码。然后再上传代码即可。</p>
+<p><img src="https://img-blog.csdn.net/20180922180137599?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>到此，咱们便可以使用GitHub愉快的进行团队开发了。</p>
+]]></content>
+      <categories>
+        <category>TeamDevelopment</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>TeamDevelopment</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python更换镜像源</title>
     <url>/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</url>
     <content><![CDATA[<h1 id="国内常见镜像源"><a href="#国内常见镜像源" class="headerlink" title="国内常见镜像源"></a>国内常见镜像源</h1><p>豆瓣：<a href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a><br>阿里：<a href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>华中理工大学：<a href="http://pypi.hustunique.com/simple/">http://pypi.hustunique.com/simple/</a><br>山东理工大学：<a href="http://pypi.sdutlinux.org/simple/">http://pypi.sdutlinux.org/simple/</a><br>中国科学技术大学：<a href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a></p>
@@ -311,121 +421,6 @@
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python编码规范</title>
-    <url>/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<p>PE8基本规范：</p>
-<p>建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符</p>
-<h1 id="一、python编码规范："><a href="#一、python编码规范：" class="headerlink" title="一、python编码规范："></a>一、python编码规范：</h1><h2 id="一-、代码编码："><a href="#一-、代码编码：" class="headerlink" title="(一)、代码编码："></a><strong>(一)、代码编码：</strong></h2><p>1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -<em>- coding: utf-8 -</em>-。<br> 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀<br> 3、若出现 Python编 码问题，可按照以下操作尝试解决：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#39;utf-8&#39;)</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="二-、命名规范"><a href="#二-、命名规范" class="headerlink" title="(二)、命名规范:"></a><strong>(二)、命名规范:</strong></h2><h3 id="1、包名、模块名、局部变量名、函数名"><a href="#1、包名、模块名、局部变量名、函数名" class="headerlink" title="1、包名、模块名、局部变量名、函数名"></a>1、包名、模块名、局部变量名、函数名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全小写+下划线式驼峰 示例：this_is_var</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、全局变量"><a href="#2、全局变量" class="headerlink" title="2、全局变量"></a>2、全局变量</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全大写+下划线式驼峰 示例：GLOBAL_VAR</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、类名"><a href="#3、类名" class="headerlink" title="3、类名"></a>3、类名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">首字母大写式驼峰 示例：ClassName()</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、变量名命名"><a href="#4、变量名命名" class="headerlink" title="4、变量名命名"></a>4、变量名命名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">尽量体现变量的数据类型和具体意义</span><br></pre></td></tr></table></figure>
-
-<p>注：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量名、类名取名必须有意义，严禁用单字母</span><br><span class="line">变量名不要用系统关键字，如 dir type str等等</span><br></pre></td></tr></table></figure>
-
-<p>建议：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bool变量一般加上前缀 is_ 如：is_success</span><br></pre></td></tr></table></figure>
-
-<h2 id="三-、import-顺序"><a href="#三-、import-顺序" class="headerlink" title="(三)、import 顺序:"></a><strong>(三)、import 顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、标准库   2、第三方库  3、项目本身</span><br><span class="line">(之间用空行分隔)</span><br></pre></td></tr></table></figure>
-
-<h2 id="四-、models-内部定义顺序"><a href="#四-、models-内部定义顺序" class="headerlink" title="(四)、models 内部定义顺序:"></a><strong>(四)、models 内部定义顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">All database fields</span><br><span class="line">Custom manager attributes</span><br><span class="line">class Meta</span><br><span class="line">def (str)</span><br><span class="line">def save()</span><br><span class="line">def get_absolute_url()</span><br><span class="line">Any custom methods</span><br></pre></td></tr></table></figure>
-
-<h2 id="五-、异常捕获处理原则"><a href="#五-、异常捕获处理原则" class="headerlink" title="(五)、异常捕获处理原则:"></a><strong>(五)、异常捕获处理原则:</strong></h2><p>尽量只包含容易出错的位置，不要把整个函数 try catch<br> 对于不会出现问题的代码，就不要再用 try catch了<br> 只捕获有意义，能显示处理的异常<br> 能通过代码逻辑处理的部分，就不要用 try catch<br> 异常忽略，一般情况下异常需要被捕获并处理，但有些情况下异常可被忽略，只需要用 log 记录即可，可参考一下代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def ignored():</span><br><span class="line">    try:</span><br><span class="line">        yield</span><br><span class="line">    except Exceptions as e:</span><br><span class="line">        logger.warning(e)</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure>
-
-<h2 id="六-、return-early原则"><a href="#六-、return-early原则" class="headerlink" title="(六)、return early原则"></a><strong>(六)、return early原则</strong></h2><p>提前判断并 return，减少代码层级，增强代码可读性(简单逻辑往前放)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if not condition:</span><br><span class="line">    return</span><br><span class="line"># a lot if code</span><br></pre></td></tr></table></figure>
-
-<h2 id="七-、Fat-model，-thin-view"><a href="#七-、Fat-model，-thin-view" class="headerlink" title="(七)、Fat model， thin view"></a><strong>(七)、Fat model， thin view</strong></h2><p>逻辑代码和业务代码解耦分离，功能性函数以及对数据库的操作定义写在 models 里面，业务逻辑写在 view 里面。</p>
-<h2 id="八-、权限校验装饰器异常抛出问题"><a href="#八-、权限校验装饰器异常抛出问题" class="headerlink" title="(八)、权限校验装饰器异常抛出问题"></a><strong>(八)、权限校验装饰器异常抛出问题</strong></h2><p>建议权限不足时直接抛出异常，可以使用 django 自带的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from django.core.exceptions import PermissionDenied</span><br></pre></td></tr></table></figure>
-
-<p>权限不足时抛出异常 PermissionDenied，之后应该返回什么样的页面由 handler 或者中间件去处理</p>
-<h2 id="九-、分-method-获取-request-参数问题"><a href="#九-、分-method-获取-request-参数问题" class="headerlink" title="(九)、分 method 获取 request 参数问题"></a><strong>(九)、分 method 获取 request 参数问题</strong></h2><p>一般可以分method 获取request参数，这样能够使代码更可读，且之后修改 method 时不必每个参数都修改</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">args &#x3D; request.GET if request.method &#x3D;&#x3D; &quot;GET&quot; else request.POST</span><br><span class="line">business_name &#x3D; args.get(&#39;business_name&#39;, &#39;&#39;)</span><br><span class="line">template_name &#x3D; args.get(&#39;template_name&#39;, &#39;&#39;)</span><br></pre></td></tr></table></figure>
-
-<h2 id="十-、使用数字、常量表示状态"><a href="#十-、使用数字、常量表示状态" class="headerlink" title="(十)、使用数字、常量表示状态"></a><strong>(十)、使用数字、常量表示状态</strong></h2><p>两种的话改为 true/false，多种改为 enum 可读性更好</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def enum(**enums):</span><br><span class="line">    return type(&quot;Enum&quot;, (), enums)</span><br><span class="line"></span><br><span class="line">StatusEnum &#x3D; enum(</span><br><span class="line">    SUCCESS&#x3D;True,</span><br><span class="line">    FAIL&#x3D;False,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h2 id="十一-、其他注意问题"><a href="#十一-、其他注意问题" class="headerlink" title="(十一)、其他注意问题"></a><strong>(十一)、其他注意问题</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、【必须】去除代码中的 print，否则导致正式和测试环境 uwsgi 输出大量信息</span><br><span class="line">2、逻辑块空行分隔</span><br><span class="line">3、变量和其使用尽量放到一起</span><br><span class="line">4、【必须】 import过长，要放在多行的时候，使用 from xxx import（a, b, c）,不要用 \ 换行</span><br><span class="line">5、Django Model 定义的 choices 直接在定义在类里面</span><br></pre></td></tr></table></figure>
-
-<h1 id="二、前端编码规范："><a href="#二、前端编码规范：" class="headerlink" title="二、前端编码规范："></a>二、前端编码规范：</h1><h2 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a><strong>命名规则</strong></h2><p>1、类的基础命名方式：“项目英文简写-当前页-页面内容块”如 .ijobs-index-box。<br>2、Id 的基础命名方式：语义化，并使用下滑杠连接，如步骤名称可命名为 #step_name<br>3、Javascript 变量命名方式：按照变量类型的首个字母为前缀，使用驼峰命名法；<br> 例子：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var aName &#x3D; [&#39;zhangsan&#39;,&#39;lizi&#39;,&#39;zhaowu&#39;];  &#x2F;&#x2F;Array 数组</span><br><span class="line">var oBtn &#x3D; window.document.getElementById(&#39;btn&#39;);  &#x2F;&#x2F;Object 对象</span><br><span class="line">function fnName()&#123;&#125;;  &#x2F;&#x2F;Function 函数</span><br><span class="line">var nAge &#x3D; 25;  &#x2F;&#x2F;Integer(int) 整型</span><br><span class="line">var sWebURL&#x3D;&quot;www.wangyingran.com&quot;;  &#x2F;&#x2F;String 字符串</span><br></pre></td></tr></table></figure>
-
-<h1 id="三、日志规范："><a href="#三、日志规范：" class="headerlink" title="三、日志规范："></a><strong>三、日志规范：</strong></h1><h2 id="一-、日志输出级别"><a href="#一-、日志输出级别" class="headerlink" title="(一)、日志输出级别"></a>(一)、日志输出级别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、Error：系统异常，影响用户使用，必须通知到开发者及时修复。</span><br><span class="line">2、Warning：系统异常，不影响用户使用，但有异常需要跟进修复。</span><br><span class="line">3、Info：系统流水日志或日常记录,不做通知配置。</span><br></pre></td></tr></table></figure>
-
-<h2 id="二-、日志输出格式"><a href="#二-、日志输出格式" class="headerlink" title="(二)、日志输出格式"></a><strong>(二)、日志输出格式</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、日志需要包含当前函数名，方便查找和定位。</span><br><span class="line">2、重要操作流水直接记录数据库，可以保存较长时间。</span><br><span class="line">3、错误日志要方便定位问题，建议记录当前参数以及上下文变量。</span><br></pre></td></tr></table></figure>
-
-<h1 id="四、代码提交规范"><a href="#四、代码提交规范" class="headerlink" title="四、代码提交规范"></a>四、代码提交规范</h1><p>每次代码提交必须有备注说明，注明本次提交做了哪些修改<br> commit 分类：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bugfix: -------- 线上功能 bug</span><br><span class="line">sprintfix: ----- 未上线代码修改 （功能模块未上线部分bug）</span><br><span class="line">minor: --------- 不重要的修改（换行，拼写错误等）</span><br><span class="line">feature: ----- 新功能说明</span><br></pre></td></tr></table></figure>
-
-<h1 id="五、接口规范"><a href="#五、接口规范" class="headerlink" title="五、接口规范"></a>五、接口规范</h1><h2 id="Api-的-method"><a href="#Api-的-method" class="headerlink" title="Api 的 method"></a><strong>Api 的 method</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Api 的 method，要根据实际请求的类型，查询一定要用 get，不能随意指定 method。</span><br><span class="line">具体可以参考文档 《RESTful Web Services Cookbook-cn.pdf》 。</span><br></pre></td></tr></table></figure>
-
-<h2 id="接口返回内容"><a href="#接口返回内容" class="headerlink" title="接口返回内容"></a><strong>接口返回内容</strong></h2><p>接口返回内容开发建议直接参考蓝鲸 apigateway 规范，返回的内容中包含 result code data message request_id 这几个字段<br> <img src="https://img-blog.csdnimg.cn/20190814163629264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="接口返回Status-Code"><a href="#接口返回Status-Code" class="headerlink" title="接口返回Status Code"></a><strong>接口返回Status Code</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">**建议充分利用 HTTP Status Code 作为响应结果的基本状态码，基本状态码不能区分的 status，</span><br><span class="line">再用响应 body 中&quot;约定&quot;的 code 进行补充</span><br><span class="line"></span><br><span class="line">http状态码详细说明请参考： https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;HTTP%E7%8A%B6%E6%80%81%E7%A0%81**</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20191028195740787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="接口数据验证"><a href="#接口数据验证" class="headerlink" title="接口数据验证"></a><strong>接口数据验证</strong></h2><p>数据检验逻辑”应当”和业务逻辑分离，这样做的好处：</p>
-<p>代码逻辑更加清晰<br> 数据校验逻辑（可能）可以复用</p>
-<h2 id="分离方案"><a href="#分离方案" class="headerlink" title="分离方案"></a><strong>分离方案</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1）form-data&#x2F;url-params：Django-Form </span><br><span class="line">2）Json：Json-schema</span><br></pre></td></tr></table></figure>
-
-<h1 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h1><h2 id="Python-代码注释"><a href="#Python-代码注释" class="headerlink" title="Python 代码注释"></a><strong>Python 代码注释</strong></h2><p> 方法必须使用标注注释，如果是公有方法或对外提供的 API 相关方法，则最好给出使用样例。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163858601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> Module注释：在开头要加入对该模块的注释。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163935152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 普通代码注释应该以‘#’和单个空格开始。</p>
-<p>如果有需要调整或者需要优化的地方，可以使用 #TODO 这里是注释内容”进行注释，</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">格式：&#39;#&#39;+单个空格+&#39;TODO&#39;+单个空格+注释内容。</span><br></pre></td></tr></table></figure>
-
-<p>方法的返回，如果数据结构比较复杂，则必须要对返回结果的每个属性做解释。</p>
-<h2 id="前端代码注释"><a href="#前端代码注释" class="headerlink" title="前端代码注释"></a><strong>前端代码注释</strong></h2><h3 id="Html-注释"><a href="#Html-注释" class="headerlink" title="Html 注释"></a><strong>Html 注释</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 容器 --&gt;</span><br><span class="line">&lt;div class&#x3D;“container”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;!-- 用户名 --&gt;</span><br><span class="line">&lt;div id&#x3D;“user_name”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;用户名 --&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;容器 --&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="css-注释"><a href="#css-注释" class="headerlink" title="css 注释"></a><strong>css 注释</strong></h3><p> 内容比较少是可以只在顶部加注释，内容比较多时在尾部加结束标签/* 注释内容 end */</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 新建任务 start *&#x2F;</span><br><span class="line">.new-task&#123;&#125;</span><br><span class="line">&#x2F;* 新建任务名 *&#x2F;</span><br><span class="line">.task-name&#123;color:#333;&#125;</span><br><span class="line">&#x2F;* 新建任务时间 *&#x2F;</span><br><span class="line">.task-created-time&#123;background:url(img&#x2F;clock.png) no-repeat;&#125;</span><br><span class="line">&#x2F;* 新建任务 end *&#x2F;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Js-注释"><a href="#Js-注释" class="headerlink" title="Js 注释"></a><strong>Js 注释</strong></h3><p> Js注释同上，函数如果有参数，建议简单备注一下参数的内容和类型。</p>
-<h1 id="文件或包的引用"><a href="#文件或包的引用" class="headerlink" title="文件或包的引用"></a>文件或包的引用</h1><h2 id="Python-代码"><a href="#Python-代码" class="headerlink" title="Python 代码"></a><strong>Python 代码</strong></h2><p> 模块或包的引入最好使用完整路径，即使是同一个包下的相互引用，也建议使用完整路径。<br> 这样比较方便代码阅读，同时若后续需修改为相对路径也很简单。</p>
-<h2 id="前端页面"><a href="#前端页面" class="headerlink" title="前端页面"></a><strong>前端页面</strong></h2><p> 在页面中引用 css 和 js、或配置 url 路径时，必须使用“绝对路径”，而不要使用‘…/’，‘./’等相对路径的引用方式</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>编码规范</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo&#39;s Hello World</title>
-    <url>/2020/08/20/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<a id="more"></a>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -590,8 +585,98 @@
         <category>Hexo</category>
       </categories>
       <tags>
+        <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>NexT主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python编码规范</title>
+    <url>/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<p>PE8基本规范：</p>
+<p>建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符</p>
+<h1 id="一、python编码规范："><a href="#一、python编码规范：" class="headerlink" title="一、python编码规范："></a>一、python编码规范：</h1><h2 id="一-、代码编码："><a href="#一-、代码编码：" class="headerlink" title="(一)、代码编码："></a><strong>(一)、代码编码：</strong></h2><p>1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -<em>- coding: utf-8 -</em>-。<br> 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀<br> 3、若出现 Python编 码问题，可按照以下操作尝试解决：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#39;utf-8&#39;)</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="二-、命名规范"><a href="#二-、命名规范" class="headerlink" title="(二)、命名规范:"></a><strong>(二)、命名规范:</strong></h2><h3 id="1、包名、模块名、局部变量名、函数名"><a href="#1、包名、模块名、局部变量名、函数名" class="headerlink" title="1、包名、模块名、局部变量名、函数名"></a>1、包名、模块名、局部变量名、函数名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全小写+下划线式驼峰 示例：this_is_var</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、全局变量"><a href="#2、全局变量" class="headerlink" title="2、全局变量"></a>2、全局变量</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全大写+下划线式驼峰 示例：GLOBAL_VAR</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、类名"><a href="#3、类名" class="headerlink" title="3、类名"></a>3、类名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">首字母大写式驼峰 示例：ClassName()</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、变量名命名"><a href="#4、变量名命名" class="headerlink" title="4、变量名命名"></a>4、变量名命名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">尽量体现变量的数据类型和具体意义</span><br></pre></td></tr></table></figure>
+
+<p>注：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量名、类名取名必须有意义，严禁用单字母</span><br><span class="line">变量名不要用系统关键字，如 dir type str等等</span><br></pre></td></tr></table></figure>
+
+<p>建议：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bool变量一般加上前缀 is_ 如：is_success</span><br></pre></td></tr></table></figure>
+
+<h2 id="三-、import-顺序"><a href="#三-、import-顺序" class="headerlink" title="(三)、import 顺序:"></a><strong>(三)、import 顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、标准库   2、第三方库  3、项目本身</span><br><span class="line">(之间用空行分隔)</span><br></pre></td></tr></table></figure>
+
+<h2 id="四-、models-内部定义顺序"><a href="#四-、models-内部定义顺序" class="headerlink" title="(四)、models 内部定义顺序:"></a><strong>(四)、models 内部定义顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">All database fields</span><br><span class="line">Custom manager attributes</span><br><span class="line">class Meta</span><br><span class="line">def (str)</span><br><span class="line">def save()</span><br><span class="line">def get_absolute_url()</span><br><span class="line">Any custom methods</span><br></pre></td></tr></table></figure>
+
+<h2 id="五-、异常捕获处理原则"><a href="#五-、异常捕获处理原则" class="headerlink" title="(五)、异常捕获处理原则:"></a><strong>(五)、异常捕获处理原则:</strong></h2><p>尽量只包含容易出错的位置，不要把整个函数 try catch<br> 对于不会出现问题的代码，就不要再用 try catch了<br> 只捕获有意义，能显示处理的异常<br> 能通过代码逻辑处理的部分，就不要用 try catch<br> 异常忽略，一般情况下异常需要被捕获并处理，但有些情况下异常可被忽略，只需要用 log 记录即可，可参考一下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def ignored():</span><br><span class="line">    try:</span><br><span class="line">        yield</span><br><span class="line">    except Exceptions as e:</span><br><span class="line">        logger.warning(e)</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure>
+
+<h2 id="六-、return-early原则"><a href="#六-、return-early原则" class="headerlink" title="(六)、return early原则"></a><strong>(六)、return early原则</strong></h2><p>提前判断并 return，减少代码层级，增强代码可读性(简单逻辑往前放)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if not condition:</span><br><span class="line">    return</span><br><span class="line"># a lot if code</span><br></pre></td></tr></table></figure>
+
+<h2 id="七-、Fat-model，-thin-view"><a href="#七-、Fat-model，-thin-view" class="headerlink" title="(七)、Fat model， thin view"></a><strong>(七)、Fat model， thin view</strong></h2><p>逻辑代码和业务代码解耦分离，功能性函数以及对数据库的操作定义写在 models 里面，业务逻辑写在 view 里面。</p>
+<h2 id="八-、权限校验装饰器异常抛出问题"><a href="#八-、权限校验装饰器异常抛出问题" class="headerlink" title="(八)、权限校验装饰器异常抛出问题"></a><strong>(八)、权限校验装饰器异常抛出问题</strong></h2><p>建议权限不足时直接抛出异常，可以使用 django 自带的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from django.core.exceptions import PermissionDenied</span><br></pre></td></tr></table></figure>
+
+<p>权限不足时抛出异常 PermissionDenied，之后应该返回什么样的页面由 handler 或者中间件去处理</p>
+<h2 id="九-、分-method-获取-request-参数问题"><a href="#九-、分-method-获取-request-参数问题" class="headerlink" title="(九)、分 method 获取 request 参数问题"></a><strong>(九)、分 method 获取 request 参数问题</strong></h2><p>一般可以分method 获取request参数，这样能够使代码更可读，且之后修改 method 时不必每个参数都修改</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">args &#x3D; request.GET if request.method &#x3D;&#x3D; &quot;GET&quot; else request.POST</span><br><span class="line">business_name &#x3D; args.get(&#39;business_name&#39;, &#39;&#39;)</span><br><span class="line">template_name &#x3D; args.get(&#39;template_name&#39;, &#39;&#39;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="十-、使用数字、常量表示状态"><a href="#十-、使用数字、常量表示状态" class="headerlink" title="(十)、使用数字、常量表示状态"></a><strong>(十)、使用数字、常量表示状态</strong></h2><p>两种的话改为 true/false，多种改为 enum 可读性更好</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def enum(**enums):</span><br><span class="line">    return type(&quot;Enum&quot;, (), enums)</span><br><span class="line"></span><br><span class="line">StatusEnum &#x3D; enum(</span><br><span class="line">    SUCCESS&#x3D;True,</span><br><span class="line">    FAIL&#x3D;False,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="十一-、其他注意问题"><a href="#十一-、其他注意问题" class="headerlink" title="(十一)、其他注意问题"></a><strong>(十一)、其他注意问题</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、【必须】去除代码中的 print，否则导致正式和测试环境 uwsgi 输出大量信息</span><br><span class="line">2、逻辑块空行分隔</span><br><span class="line">3、变量和其使用尽量放到一起</span><br><span class="line">4、【必须】 import过长，要放在多行的时候，使用 from xxx import（a, b, c）,不要用 \ 换行</span><br><span class="line">5、Django Model 定义的 choices 直接在定义在类里面</span><br></pre></td></tr></table></figure>
+
+<h1 id="二、前端编码规范："><a href="#二、前端编码规范：" class="headerlink" title="二、前端编码规范："></a>二、前端编码规范：</h1><h2 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a><strong>命名规则</strong></h2><p>1、类的基础命名方式：“项目英文简写-当前页-页面内容块”如 .ijobs-index-box。<br>2、Id 的基础命名方式：语义化，并使用下滑杠连接，如步骤名称可命名为 #step_name<br>3、Javascript 变量命名方式：按照变量类型的首个字母为前缀，使用驼峰命名法；<br> 例子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var aName &#x3D; [&#39;zhangsan&#39;,&#39;lizi&#39;,&#39;zhaowu&#39;];  &#x2F;&#x2F;Array 数组</span><br><span class="line">var oBtn &#x3D; window.document.getElementById(&#39;btn&#39;);  &#x2F;&#x2F;Object 对象</span><br><span class="line">function fnName()&#123;&#125;;  &#x2F;&#x2F;Function 函数</span><br><span class="line">var nAge &#x3D; 25;  &#x2F;&#x2F;Integer(int) 整型</span><br><span class="line">var sWebURL&#x3D;&quot;www.wangyingran.com&quot;;  &#x2F;&#x2F;String 字符串</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、日志规范："><a href="#三、日志规范：" class="headerlink" title="三、日志规范："></a><strong>三、日志规范：</strong></h1><h2 id="一-、日志输出级别"><a href="#一-、日志输出级别" class="headerlink" title="(一)、日志输出级别"></a>(一)、日志输出级别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、Error：系统异常，影响用户使用，必须通知到开发者及时修复。</span><br><span class="line">2、Warning：系统异常，不影响用户使用，但有异常需要跟进修复。</span><br><span class="line">3、Info：系统流水日志或日常记录,不做通知配置。</span><br></pre></td></tr></table></figure>
+
+<h2 id="二-、日志输出格式"><a href="#二-、日志输出格式" class="headerlink" title="(二)、日志输出格式"></a><strong>(二)、日志输出格式</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、日志需要包含当前函数名，方便查找和定位。</span><br><span class="line">2、重要操作流水直接记录数据库，可以保存较长时间。</span><br><span class="line">3、错误日志要方便定位问题，建议记录当前参数以及上下文变量。</span><br></pre></td></tr></table></figure>
+
+<h1 id="四、代码提交规范"><a href="#四、代码提交规范" class="headerlink" title="四、代码提交规范"></a>四、代码提交规范</h1><p>每次代码提交必须有备注说明，注明本次提交做了哪些修改<br> commit 分类：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bugfix: -------- 线上功能 bug</span><br><span class="line">sprintfix: ----- 未上线代码修改 （功能模块未上线部分bug）</span><br><span class="line">minor: --------- 不重要的修改（换行，拼写错误等）</span><br><span class="line">feature: ----- 新功能说明</span><br></pre></td></tr></table></figure>
+
+<h1 id="五、接口规范"><a href="#五、接口规范" class="headerlink" title="五、接口规范"></a>五、接口规范</h1><h2 id="Api-的-method"><a href="#Api-的-method" class="headerlink" title="Api 的 method"></a><strong>Api 的 method</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Api 的 method，要根据实际请求的类型，查询一定要用 get，不能随意指定 method。</span><br><span class="line">具体可以参考文档 《RESTful Web Services Cookbook-cn.pdf》 。</span><br></pre></td></tr></table></figure>
+
+<h2 id="接口返回内容"><a href="#接口返回内容" class="headerlink" title="接口返回内容"></a><strong>接口返回内容</strong></h2><p>接口返回内容开发建议直接参考蓝鲸 apigateway 规范，返回的内容中包含 result code data message request_id 这几个字段<br> <img src="https://img-blog.csdnimg.cn/20190814163629264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="接口返回Status-Code"><a href="#接口返回Status-Code" class="headerlink" title="接口返回Status Code"></a><strong>接口返回Status Code</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">**建议充分利用 HTTP Status Code 作为响应结果的基本状态码，基本状态码不能区分的 status，</span><br><span class="line">再用响应 body 中&quot;约定&quot;的 code 进行补充</span><br><span class="line"></span><br><span class="line">http状态码详细说明请参考： https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;HTTP%E7%8A%B6%E6%80%81%E7%A0%81**</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191028195740787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="接口数据验证"><a href="#接口数据验证" class="headerlink" title="接口数据验证"></a><strong>接口数据验证</strong></h2><p>数据检验逻辑”应当”和业务逻辑分离，这样做的好处：</p>
+<p>代码逻辑更加清晰<br> 数据校验逻辑（可能）可以复用</p>
+<h2 id="分离方案"><a href="#分离方案" class="headerlink" title="分离方案"></a><strong>分离方案</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1）form-data&#x2F;url-params：Django-Form </span><br><span class="line">2）Json：Json-schema</span><br></pre></td></tr></table></figure>
+
+<h1 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h1><h2 id="Python-代码注释"><a href="#Python-代码注释" class="headerlink" title="Python 代码注释"></a><strong>Python 代码注释</strong></h2><p> 方法必须使用标注注释，如果是公有方法或对外提供的 API 相关方法，则最好给出使用样例。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163858601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> Module注释：在开头要加入对该模块的注释。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163935152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 普通代码注释应该以‘#’和单个空格开始。</p>
+<p>如果有需要调整或者需要优化的地方，可以使用 #TODO 这里是注释内容”进行注释，</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">格式：&#39;#&#39;+单个空格+&#39;TODO&#39;+单个空格+注释内容。</span><br></pre></td></tr></table></figure>
+
+<p>方法的返回，如果数据结构比较复杂，则必须要对返回结果的每个属性做解释。</p>
+<h2 id="前端代码注释"><a href="#前端代码注释" class="headerlink" title="前端代码注释"></a><strong>前端代码注释</strong></h2><h3 id="Html-注释"><a href="#Html-注释" class="headerlink" title="Html 注释"></a><strong>Html 注释</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 容器 --&gt;</span><br><span class="line">&lt;div class&#x3D;“container”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;!-- 用户名 --&gt;</span><br><span class="line">&lt;div id&#x3D;“user_name”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;用户名 --&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;容器 --&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="css-注释"><a href="#css-注释" class="headerlink" title="css 注释"></a><strong>css 注释</strong></h3><p> 内容比较少是可以只在顶部加注释，内容比较多时在尾部加结束标签/* 注释内容 end */</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 新建任务 start *&#x2F;</span><br><span class="line">.new-task&#123;&#125;</span><br><span class="line">&#x2F;* 新建任务名 *&#x2F;</span><br><span class="line">.task-name&#123;color:#333;&#125;</span><br><span class="line">&#x2F;* 新建任务时间 *&#x2F;</span><br><span class="line">.task-created-time&#123;background:url(img&#x2F;clock.png) no-repeat;&#125;</span><br><span class="line">&#x2F;* 新建任务 end *&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Js-注释"><a href="#Js-注释" class="headerlink" title="Js 注释"></a><strong>Js 注释</strong></h3><p> Js注释同上，函数如果有参数，建议简单备注一下参数的内容和类型。</p>
+<h1 id="文件或包的引用"><a href="#文件或包的引用" class="headerlink" title="文件或包的引用"></a>文件或包的引用</h1><h2 id="Python-代码"><a href="#Python-代码" class="headerlink" title="Python 代码"></a><strong>Python 代码</strong></h2><p> 模块或包的引入最好使用完整路径，即使是同一个包下的相互引用，也建议使用完整路径。<br> 这样比较方便代码阅读，同时若后续需修改为相对路径也很简单。</p>
+<h2 id="前端页面"><a href="#前端页面" class="headerlink" title="前端页面"></a><strong>前端页面</strong></h2><p> 在页面中引用 css 和 js、或配置 url 路径时，必须使用“绝对路径”，而不要使用‘…/’，‘./’等相对路径的引用方式</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>编码规范</tag>
       </tags>
   </entry>
 </search>
