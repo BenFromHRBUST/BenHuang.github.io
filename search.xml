@@ -1,6 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git开发环境构建</title>
+    <url>/2020/08/26/Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ol>
+<li>安装Git客户端和界面操作工具</li>
+<li>配置Eclipse Git插件</li>
+<li>使用Git插件导入GitHub中的Java项目</li>
+<li>使用Git插件构建Git仓库，并发布到GitHub</li>
+</ol>
+<a id="more"></a>
+
+<h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><p>Git是目前世界上最先进的分布式版本控制系统。</p>
+<p>​    版本控制是指对软件开发过程中各种程序代码、配置文件及说明文档等文件变更的管理，是软件配置管理的核心思想之    一。</p>
+<p><strong>Git的优点</strong></p>
+<ol>
+<li>适合分布式开发，每一个个体都可以作为服务器。每一次Clone就是从服务器上pull到了所有的内容，包括版本信息。</li>
+<li>公共服务器压力和数据量都不会太大。</li>
+<li>速度快、灵活，分支之间可以任意切换。</li>
+<li>任意两个开发者之间可以很容易的解决冲突，并且单机上就可以进行分支合并。</li>
+<li>离线工作，不影响本地代码编写，等有网络连接以后可以再上传代码，并且在本地可以根据不同的需要，本地新建自己的分支。</li>
+</ol>
+<p>其他版本的控制系统</p>
+<p>​    VSS作为 Microsoft visual studio的一名成员，它主要任务就是负责项目文件的管理。</p>
+<p>​    Subversion是一个开放源代码的版本控制系统，相较于RCS、CVS，它采用了分支管理系统，它的设计目标就是取代    CvS3</p>
+<p>Git的前世今生</p>
+<p>​    一个只用2周时间完成的分布式版本控制系统。</p>
+<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200826141446621.png" alt="image-20200826141446621"></p>
+<h2 id="安装Git客户端"><a href="#安装Git客户端" class="headerlink" title="安装Git客户端"></a>安装Git客户端</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Git客户端是我们操作Git核心，其他工具都需要依赖它执行相应的命令，所以要使用Git我们必须安装Git客户端，我们可以在Git官网下载最新的Git客户端。</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://git-scm.com/download/win">前往软件下载页面</a></p>
+<p><img src="https://i.loli.net/2019/07/11/5d26d16311b9033114.jpg" alt="blob.jpg"></p>
+<p>下面我们来看一下它的安装步骤，首先双击安装包后，我们可以看到启动界面</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26d9e9ba43d62155.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入选择安装路径界面</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26da2b9472281613.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入选择组件界面，按照下图选择安装的组件</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26da773b5b725336.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入设定开始菜单组界面，这个界面我们做任何调整</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26db20dd62d45798.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入选择默认编辑器界面，这里我们使用Notepad++</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26dbdff365d17693.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入环境变量设置界面，这里我们使用默认配置</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26dd5a241b557990.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入传输协议选择界面，我们选择第一个选项</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26ddb05450b17188.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入配置Git处理文件结尾的方式，我们使用默认设置</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26deaada3db89778.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入配置终端使用的模拟器类型，我们使用Mintty</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26df11c55cf46272.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入扩展项配置界面，我们使用默认配置即可</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26df7102afe25090.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，进入安装过程界面，安装完成后，可以看到安装接收界面</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26dfa5c446732016.jpg" alt="blob.jpg"></p>
+<p>点击“Finish”,此时会打开一个Git终端，到此git客户端安装完成，喜欢使用命令行的小伙伴，可以在终端上完成Git相关操作了</p>
+<h2 id="安装TortoiseGit"><a href="#安装TortoiseGit" class="headerlink" title="安装TortoiseGit"></a>安装TortoiseGit</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果完全使用命令行操作Git势必影响我们的操作效率，而且应对复杂的操作，比如解决冲突，非常困难，很幸运的是在互联网上提供了许多GUI工具，当然Git客户端也自带有UI工具，但是不怎么好用。在这里我们选择使用TortoiseGit这一款GUI工具，非常好用，而且使用过TortoiseSVN的小伙伴一定会钟情于它。</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://tortoisegit.org/download/">前往软件下载页面</a></p>
+<p>下载这个工具，我们需要下载两个安装包，一个是工具基础包、一个语言包，当然如果你的英文OK，就可以不用在安装语言包了，下图显示了我们需要下载软件包</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f19590d3e40798.jpg" alt="blob.jpg"></p>
+<p>下面是它的安装过程截图，我们的安装顺序是先安装核心软件包，再安装语言包</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f20171e7667482.jpg" alt="blob.jpg"></p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f2993c64e47575.jpg" alt="blob.jpg"></p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f220dfb2965496.jpg" alt="blob.jpg"></p>
+<p>下面是语言包安装完成的截图</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f5d093cb741077.jpg" alt="blob.jpg"></p>
+<h2 id="Fork"><a href="#Fork" class="headerlink" title="Fork"></a>Fork</h2><p>下面我们来演示一下如何从GitHub中clone一个git仓库（以JavaBase为例）</p>
+<p><strong>1 登录GitHub,登录地址</strong></p>
+<p><strong>2 搜索JavaBase这个项目</strong></p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f88f181c013758.jpg" alt="blob.jpg"></p>
+<p>或者直接定位到 <a href="https://github.com/ljxt-ExtremeAcademy/JavaBase">https://github.com/ljxt-ExtremeAcademy/JavaBase</a></p>
+<p><strong>3 fork JavaBase项目</strong></p>
+<p><img src="https://i.loli.net/2019/07/11/5d26f8aa1718c33027.jpg" alt="blob.jpg"></p>
+<p><strong>4 获取clone地址</strong></p>
+<p><img src="https://i.loli.net/2019/07/11/5d26fb35ef94b53600.jpg" alt="blob.jpg"></p>
+<p><strong>5 pull JavaBase项目到本地</strong></p>
+<p>首先我们在本地磁盘中新建一个文件夹用于存放所有的git仓库文件，然后使用TortoiseGit工具clone远程仓库，操作方式如图所示</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26fa65b736b50477.jpg" alt="blob.jpg"></p>
+<p>在打开的clone窗口中，输入远程仓库的地址</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26faee217a390638.jpg" alt="blob.jpg"></p>
+<p>点击“确认”按钮，开始clone</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26fc03a9e4325102.jpg" alt="blob.jpg"></p>
+<p>等待clone完成后我们就可以进入目录查看相关内容了</p>
+<h2 id="GitHub中创建自己的仓库"><a href="#GitHub中创建自己的仓库" class="headerlink" title="GitHub中创建自己的仓库"></a>GitHub中创建自己的仓库</h2><p>通过前面的步骤我们已经可以实现clone GitHub上的开源项目了，但是我们需要使用GitHub来搭建一个提供给自己团队开发的仓库，此时我们就需要在GitHub创建一个仓库了，下面是创建的步骤。<br> 首先在浏览器的窗口的右上角，我们可以找到创建仓库的入口</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26fde0108d948277.jpg" alt="blob.jpg"></p>
+<p>打开创建仓库页面，然后输入仓库名称，选中ReadMe选项</p>
+<p><img src="https://i.loli.net/2019/07/11/5d26fe3bbf9bd20804.jpg" alt="blob.jpg"></p>
+<p>当然在这里我们使用的公有仓库，它是免费的，如果需要创建私有仓库，需要完成相应的付费操作。</p>
+<h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>编写完代码后，我们需将代码推送至GitHub网站。</p>
+<p>右键项目文件夹，单击“Git提交(C) -&gt; “master”…”</p>
+<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200826211916487.png" alt="image-20200826211916487"></p>
+<p>填写日志信息，单击“提交”。</p>
+<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200826213202545.png" alt="image-20200826213202545"></p>
+<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200826213227752.png" alt="image-20200826213227752"></p>
+<p>再单击“TortoiseGit(T)”，选择“推送(H)”。</p>
+<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200826212050117.png" alt="image-20200826212050117"></p>
+<p>登录后单击“确定”即可提交代码。</p>
+<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200826213407690.png" alt="image-20200826213407690"></p>
+<h2 id="在Eclipse中导入本地仓库"><a href="#在Eclipse中导入本地仓库" class="headerlink" title="在Eclipse中导入本地仓库"></a>在Eclipse中导入本地仓库</h2><p>首先讲解本地导入的步骤<br> <strong>1 首先使用TortoiseGit工具将刚才建立的空仓库clone到本地</strong></p>
+<p><strong>2 打开Eclipse配置Git用户</strong><br> 打开Eclipse首选项菜单，然后找到git的配置节点，点击Add Entry，添加两个Key</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2700664cbf645618.jpg" alt="blob.jpg"></p>
+<p><img src="https://i.loli.net/2019/07/11/5d2700914207614421.jpg" alt="blob.jpg"></p>
+<p>添加完成后</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2700a820e2413615.jpg" alt="blob.jpg"></p>
+<p><strong>3 使用Eclipse向导初始化仓库</strong><br> 选择File-&gt;Improt打开导入向导界面，选择Git</p>
+<p><img src="https://i.loli.net/2019/07/11/5d270171c73a323737.jpg" alt="blob.jpg"></p>
+<p>选择“Next”，进入资源类型选择页面，我们选择本地仓库</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2701c269bb046704.jpg" alt="blob.jpg"></p>
+<p>选择“Next”，选择刚才clone的仓库所在位置</p>
+<p><img src="https://i.loli.net/2019/07/11/5d27021c6973120114.jpg" alt="blob.jpg"></p>
+<p>选择“Next”，进入项目向导选择界面，我们选择最后一个选项</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2702637234799738.jpg" alt="blob.jpg"></p>
+<p>导入完成后我们设置项目类型，将普通项目转换成Java项目</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2702e46987a37233.jpg" alt="blob.jpg"></p>
+<p><img src="https://i.loli.net/2019/07/11/5d2702fc3a24966990.jpg" alt="blob.jpg"></p>
+<p>转换完成后，我们可以看到当前项目的结构和Java项目结构已经一致了</p>
+<p><img src="https://i.loli.net/2019/07/11/5d270339ca99b69904.jpg" alt="blob.jpg"></p>
+<p><strong>4 提交修改到GitHub中心仓库</strong><br> 在项目根目录中鼠标右键中选择-&gt;Team-&gt;Add to Index,这样就可以吧所有文件添加到待提交列表了</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2704290ae0280572.jpg" alt="blob.jpg"></p>
+<p>然后我们提交待提交列表到本地仓库，并push到中心仓库<br> 在项目根目录中鼠标右键选择-&gt;Team-&gt;Commit,打开提交信息界面。</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2704af4773879233.jpg" alt="blob.jpg"></p>
+<p>输入提交日志，然后点击“Commit and Push”按钮，完成提交，当然此时提交会提示我们输入GitHub的账号和密码</p>
+<p><img src="https://i.loli.net/2019/07/11/5d27051f0199935275.jpg" alt="blob.jpg"></p>
+<p>提交完成后我们可以在GitHub查看刚提交的文件了</p>
+<h2 id="其他成员pull刚才提交的项目"><a href="#其他成员pull刚才提交的项目" class="headerlink" title="其他成员pull刚才提交的项目"></a>其他成员pull刚才提交的项目</h2><p><strong>1 在Eclipse中设置用户信息</strong>（当然刚才已经配置了，如果没有配置需要手动配置）<br> <strong>2 搜索组长创建的项目</strong>（项目名称：Kenny-JiaoTou/GitTest）<br> <strong>3 在GitHub上fork该项目</strong><br> <strong>4 使用Eclipse导入这个项目</strong><br> 依次选择菜单：Import -&gt; Git -&gt; Projects from Git -&gt; Clone URI,然后打开路径填写界面</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2707b07d56e80229.jpg" alt="blob.jpg"></p>
+<p>输入clone地址，然后输入github的账号和密码，点击“Next”,进入仓库文件保存路径设置界面</p>
+<p><img src="https://i.loli.net/2019/07/11/5d27081ab115795396.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，此时会自动clone仓库到本地,clone完成后，我们将其导入到Eclipse中</p>
+<p><img src="https://i.loli.net/2019/07/11/5d270874336c931972.jpg" alt="blob.jpg"></p>
+<p>点击“Next”，按照默认向导执行操作，最后我们可以成功的导入项目</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2708dcee8a481564.jpg" alt="blob.jpg"></p>
+<p>导入成功后的项目，我们进行代码修改</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2708fe596c385477.jpg" alt="blob.jpg"></p>
+<p><strong>5 提交修改代码</strong><br> 我们可以使用Eclipse向导将项目提交到中心仓库</p>
+<p><img src="https://i.loli.net/2019/07/11/5d270940ad19c29971.jpg" alt="blob.jpg"></p>
+<p>由于我们使用的组员账号，所以提交到GitHub上，并没有将代码合并到主项目中，因此需要组员发起push更新申请，在GitHub网站上找到“New pull request”选项，如下图所示：</p>
+<p><img src="https://i.loli.net/2019/07/11/5d271556055b298139.jpg" alt="blob.jpg"></p>
+<p>点击“New pull request”按钮后，跳转到创建申请确认页面，此时只需点击“Create pull request”按钮，填写日志，然后提交就可以完成申请创建</p>
+<p><img src="https://i.loli.net/2019/07/11/5d2716471fd9180103.jpg" alt="blob.jpg"></p>
+<p>申请创建完成后，我们可以发个邮件或发个QQ消息通知组长审核</p>
+<h2 id="组长审核pull更新申请"><a href="#组长审核pull更新申请" class="headerlink" title="组长审核pull更新申请"></a>组长审核pull更新申请</h2><p>组员创建了更新申请，组长可以在GitHub中看到申请的数量，如下图所示</p>
+<p><img src="https://i.loli.net/2019/07/11/5d271a15001bd93369.jpg" alt="blob.jpg"></p>
+<p>点击“Pull request”,组长可以处理更新申请，比如下面是老九君提交的申请</p>
+<p><img src="https://i.loli.net/2019/07/11/5d271b5891c0680655.jpg" alt="blob.jpg"></p>
+<p>点击申请列表项，就会打开合并确认页面，如下图所示</p>
+<p><img src="https://i.loli.net/2019/07/11/5d27213deb15b59582.jpg" alt="blob.jpg"></p>
+<p>点击“Merge pull request”按钮,然后书写日志，提交就可以完成合并处理，同时完成申请处理，然后我们在来观察项目，就会发现老九君修改的代码了</p>
+<p><img src="https://i.loli.net/2019/07/11/5d271f7c6e01d22671.jpg" alt="blob.jpg"></p>
+<p>组长需要再次进入到本地仓库，执行拉取最新仓库修改操作，当然也可以在Eclipse执行pull操作，比如</p>
+<p><img src="https://i.loli.net/2019/07/11/5d27203ef1e8a22477.jpg" alt="blob.jpg"></p>
+]]></content>
+      <categories>
+        <category>TeamDevelopment</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>GitHub</tag>
+        <tag>TeamDevelopment</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo配置next主题</title>
     <url>/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><blockquote>
@@ -165,128 +325,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python编码规范</title>
-    <url>/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<p>PE8基本规范：</p>
-<p>建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符</p>
-<h1 id="一、python编码规范："><a href="#一、python编码规范：" class="headerlink" title="一、python编码规范："></a>一、python编码规范：</h1><h2 id="一-、代码编码："><a href="#一-、代码编码：" class="headerlink" title="(一)、代码编码："></a><strong>(一)、代码编码：</strong></h2><p>1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -<em>- coding: utf-8 -</em>-。<br> 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀<br> 3、若出现 Python编 码问题，可按照以下操作尝试解决：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#39;utf-8&#39;)</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="二-、命名规范"><a href="#二-、命名规范" class="headerlink" title="(二)、命名规范:"></a><strong>(二)、命名规范:</strong></h2><h3 id="1、包名、模块名、局部变量名、函数名"><a href="#1、包名、模块名、局部变量名、函数名" class="headerlink" title="1、包名、模块名、局部变量名、函数名"></a>1、包名、模块名、局部变量名、函数名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全小写+下划线式驼峰 示例：this_is_var</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、全局变量"><a href="#2、全局变量" class="headerlink" title="2、全局变量"></a>2、全局变量</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全大写+下划线式驼峰 示例：GLOBAL_VAR</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、类名"><a href="#3、类名" class="headerlink" title="3、类名"></a>3、类名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">首字母大写式驼峰 示例：ClassName()</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、变量名命名"><a href="#4、变量名命名" class="headerlink" title="4、变量名命名"></a>4、变量名命名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">尽量体现变量的数据类型和具体意义</span><br></pre></td></tr></table></figure>
-
-<p>注：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量名、类名取名必须有意义，严禁用单字母</span><br><span class="line">变量名不要用系统关键字，如 dir type str等等</span><br></pre></td></tr></table></figure>
-
-<p>建议：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bool变量一般加上前缀 is_ 如：is_success</span><br></pre></td></tr></table></figure>
-
-<h2 id="三-、import-顺序"><a href="#三-、import-顺序" class="headerlink" title="(三)、import 顺序:"></a><strong>(三)、import 顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、标准库   2、第三方库  3、项目本身</span><br><span class="line">(之间用空行分隔)</span><br></pre></td></tr></table></figure>
-
-<h2 id="四-、models-内部定义顺序"><a href="#四-、models-内部定义顺序" class="headerlink" title="(四)、models 内部定义顺序:"></a><strong>(四)、models 内部定义顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">All database fields</span><br><span class="line">Custom manager attributes</span><br><span class="line">class Meta</span><br><span class="line">def (str)</span><br><span class="line">def save()</span><br><span class="line">def get_absolute_url()</span><br><span class="line">Any custom methods</span><br></pre></td></tr></table></figure>
-
-<h2 id="五-、异常捕获处理原则"><a href="#五-、异常捕获处理原则" class="headerlink" title="(五)、异常捕获处理原则:"></a><strong>(五)、异常捕获处理原则:</strong></h2><p>尽量只包含容易出错的位置，不要把整个函数 try catch<br> 对于不会出现问题的代码，就不要再用 try catch了<br> 只捕获有意义，能显示处理的异常<br> 能通过代码逻辑处理的部分，就不要用 try catch<br> 异常忽略，一般情况下异常需要被捕获并处理，但有些情况下异常可被忽略，只需要用 log 记录即可，可参考一下代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def ignored():</span><br><span class="line">    try:</span><br><span class="line">        yield</span><br><span class="line">    except Exceptions as e:</span><br><span class="line">        logger.warning(e)</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure>
-
-<h2 id="六-、return-early原则"><a href="#六-、return-early原则" class="headerlink" title="(六)、return early原则"></a><strong>(六)、return early原则</strong></h2><p>提前判断并 return，减少代码层级，增强代码可读性(简单逻辑往前放)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if not condition:</span><br><span class="line">    return</span><br><span class="line"># a lot if code</span><br></pre></td></tr></table></figure>
-
-<h2 id="七-、Fat-model，-thin-view"><a href="#七-、Fat-model，-thin-view" class="headerlink" title="(七)、Fat model， thin view"></a><strong>(七)、Fat model， thin view</strong></h2><p>逻辑代码和业务代码解耦分离，功能性函数以及对数据库的操作定义写在 models 里面，业务逻辑写在 view 里面。</p>
-<h2 id="八-、权限校验装饰器异常抛出问题"><a href="#八-、权限校验装饰器异常抛出问题" class="headerlink" title="(八)、权限校验装饰器异常抛出问题"></a><strong>(八)、权限校验装饰器异常抛出问题</strong></h2><p>建议权限不足时直接抛出异常，可以使用 django 自带的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from django.core.exceptions import PermissionDenied</span><br></pre></td></tr></table></figure>
-
-<p>权限不足时抛出异常 PermissionDenied，之后应该返回什么样的页面由 handler 或者中间件去处理</p>
-<h2 id="九-、分-method-获取-request-参数问题"><a href="#九-、分-method-获取-request-参数问题" class="headerlink" title="(九)、分 method 获取 request 参数问题"></a><strong>(九)、分 method 获取 request 参数问题</strong></h2><p>一般可以分method 获取request参数，这样能够使代码更可读，且之后修改 method 时不必每个参数都修改</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">args &#x3D; request.GET if request.method &#x3D;&#x3D; &quot;GET&quot; else request.POST</span><br><span class="line">business_name &#x3D; args.get(&#39;business_name&#39;, &#39;&#39;)</span><br><span class="line">template_name &#x3D; args.get(&#39;template_name&#39;, &#39;&#39;)</span><br></pre></td></tr></table></figure>
-
-<h2 id="十-、使用数字、常量表示状态"><a href="#十-、使用数字、常量表示状态" class="headerlink" title="(十)、使用数字、常量表示状态"></a><strong>(十)、使用数字、常量表示状态</strong></h2><p>两种的话改为 true/false，多种改为 enum 可读性更好</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def enum(**enums):</span><br><span class="line">    return type(&quot;Enum&quot;, (), enums)</span><br><span class="line"></span><br><span class="line">StatusEnum &#x3D; enum(</span><br><span class="line">    SUCCESS&#x3D;True,</span><br><span class="line">    FAIL&#x3D;False,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h2 id="十一-、其他注意问题"><a href="#十一-、其他注意问题" class="headerlink" title="(十一)、其他注意问题"></a><strong>(十一)、其他注意问题</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、【必须】去除代码中的 print，否则导致正式和测试环境 uwsgi 输出大量信息</span><br><span class="line">2、逻辑块空行分隔</span><br><span class="line">3、变量和其使用尽量放到一起</span><br><span class="line">4、【必须】 import过长，要放在多行的时候，使用 from xxx import（a, b, c）,不要用 \ 换行</span><br><span class="line">5、Django Model 定义的 choices 直接在定义在类里面</span><br></pre></td></tr></table></figure>
-
-<h1 id="二、前端编码规范："><a href="#二、前端编码规范：" class="headerlink" title="二、前端编码规范："></a>二、前端编码规范：</h1><h2 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a><strong>命名规则</strong></h2><p>1、类的基础命名方式：“项目英文简写-当前页-页面内容块”如 .ijobs-index-box。<br>2、Id 的基础命名方式：语义化，并使用下滑杠连接，如步骤名称可命名为 #step_name<br>3、Javascript 变量命名方式：按照变量类型的首个字母为前缀，使用驼峰命名法；<br> 例子：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var aName &#x3D; [&#39;zhangsan&#39;,&#39;lizi&#39;,&#39;zhaowu&#39;];  &#x2F;&#x2F;Array 数组</span><br><span class="line">var oBtn &#x3D; window.document.getElementById(&#39;btn&#39;);  &#x2F;&#x2F;Object 对象</span><br><span class="line">function fnName()&#123;&#125;;  &#x2F;&#x2F;Function 函数</span><br><span class="line">var nAge &#x3D; 25;  &#x2F;&#x2F;Integer(int) 整型</span><br><span class="line">var sWebURL&#x3D;&quot;www.wangyingran.com&quot;;  &#x2F;&#x2F;String 字符串</span><br></pre></td></tr></table></figure>
-
-<h1 id="三、日志规范："><a href="#三、日志规范：" class="headerlink" title="三、日志规范："></a><strong>三、日志规范：</strong></h1><h2 id="一-、日志输出级别"><a href="#一-、日志输出级别" class="headerlink" title="(一)、日志输出级别"></a>(一)、日志输出级别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、Error：系统异常，影响用户使用，必须通知到开发者及时修复。</span><br><span class="line">2、Warning：系统异常，不影响用户使用，但有异常需要跟进修复。</span><br><span class="line">3、Info：系统流水日志或日常记录,不做通知配置。</span><br></pre></td></tr></table></figure>
-
-<h2 id="二-、日志输出格式"><a href="#二-、日志输出格式" class="headerlink" title="(二)、日志输出格式"></a><strong>(二)、日志输出格式</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、日志需要包含当前函数名，方便查找和定位。</span><br><span class="line">2、重要操作流水直接记录数据库，可以保存较长时间。</span><br><span class="line">3、错误日志要方便定位问题，建议记录当前参数以及上下文变量。</span><br></pre></td></tr></table></figure>
-
-<h1 id="四、代码提交规范"><a href="#四、代码提交规范" class="headerlink" title="四、代码提交规范"></a>四、代码提交规范</h1><p>每次代码提交必须有备注说明，注明本次提交做了哪些修改<br> commit 分类：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bugfix: -------- 线上功能 bug</span><br><span class="line">sprintfix: ----- 未上线代码修改 （功能模块未上线部分bug）</span><br><span class="line">minor: --------- 不重要的修改（换行，拼写错误等）</span><br><span class="line">feature: ----- 新功能说明</span><br></pre></td></tr></table></figure>
-
-<h1 id="五、接口规范"><a href="#五、接口规范" class="headerlink" title="五、接口规范"></a>五、接口规范</h1><h2 id="Api-的-method"><a href="#Api-的-method" class="headerlink" title="Api 的 method"></a><strong>Api 的 method</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Api 的 method，要根据实际请求的类型，查询一定要用 get，不能随意指定 method。</span><br><span class="line">具体可以参考文档 《RESTful Web Services Cookbook-cn.pdf》 。</span><br></pre></td></tr></table></figure>
-
-<h2 id="接口返回内容"><a href="#接口返回内容" class="headerlink" title="接口返回内容"></a><strong>接口返回内容</strong></h2><p>接口返回内容开发建议直接参考蓝鲸 apigateway 规范，返回的内容中包含 result code data message request_id 这几个字段<br> <img src="https://img-blog.csdnimg.cn/20190814163629264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="接口返回Status-Code"><a href="#接口返回Status-Code" class="headerlink" title="接口返回Status Code"></a><strong>接口返回Status Code</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">**建议充分利用 HTTP Status Code 作为响应结果的基本状态码，基本状态码不能区分的 status，</span><br><span class="line">再用响应 body 中&quot;约定&quot;的 code 进行补充</span><br><span class="line"></span><br><span class="line">http状态码详细说明请参考： https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;HTTP%E7%8A%B6%E6%80%81%E7%A0%81**</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20191028195740787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h2 id="接口数据验证"><a href="#接口数据验证" class="headerlink" title="接口数据验证"></a><strong>接口数据验证</strong></h2><p>数据检验逻辑”应当”和业务逻辑分离，这样做的好处：</p>
-<p>代码逻辑更加清晰<br> 数据校验逻辑（可能）可以复用</p>
-<h2 id="分离方案"><a href="#分离方案" class="headerlink" title="分离方案"></a><strong>分离方案</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1）form-data&#x2F;url-params：Django-Form </span><br><span class="line">2）Json：Json-schema</span><br></pre></td></tr></table></figure>
-
-<h1 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h1><h2 id="Python-代码注释"><a href="#Python-代码注释" class="headerlink" title="Python 代码注释"></a><strong>Python 代码注释</strong></h2><p> 方法必须使用标注注释，如果是公有方法或对外提供的 API 相关方法，则最好给出使用样例。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163858601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> Module注释：在开头要加入对该模块的注释。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163935152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 普通代码注释应该以‘#’和单个空格开始。</p>
-<p>如果有需要调整或者需要优化的地方，可以使用 #TODO 这里是注释内容”进行注释，</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">格式：&#39;#&#39;+单个空格+&#39;TODO&#39;+单个空格+注释内容。</span><br></pre></td></tr></table></figure>
-
-<p>方法的返回，如果数据结构比较复杂，则必须要对返回结果的每个属性做解释。</p>
-<h2 id="前端代码注释"><a href="#前端代码注释" class="headerlink" title="前端代码注释"></a><strong>前端代码注释</strong></h2><h3 id="Html-注释"><a href="#Html-注释" class="headerlink" title="Html 注释"></a><strong>Html 注释</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 容器 --&gt;</span><br><span class="line">&lt;div class&#x3D;“container”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;!-- 用户名 --&gt;</span><br><span class="line">&lt;div id&#x3D;“user_name”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;用户名 --&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;容器 --&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="css-注释"><a href="#css-注释" class="headerlink" title="css 注释"></a><strong>css 注释</strong></h3><p> 内容比较少是可以只在顶部加注释，内容比较多时在尾部加结束标签/* 注释内容 end */</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 新建任务 start *&#x2F;</span><br><span class="line">.new-task&#123;&#125;</span><br><span class="line">&#x2F;* 新建任务名 *&#x2F;</span><br><span class="line">.task-name&#123;color:#333;&#125;</span><br><span class="line">&#x2F;* 新建任务时间 *&#x2F;</span><br><span class="line">.task-created-time&#123;background:url(img&#x2F;clock.png) no-repeat;&#125;</span><br><span class="line">&#x2F;* 新建任务 end *&#x2F;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Js-注释"><a href="#Js-注释" class="headerlink" title="Js 注释"></a><strong>Js 注释</strong></h3><p> Js注释同上，函数如果有参数，建议简单备注一下参数的内容和类型。</p>
-<h1 id="文件或包的引用"><a href="#文件或包的引用" class="headerlink" title="文件或包的引用"></a>文件或包的引用</h1><h2 id="Python-代码"><a href="#Python-代码" class="headerlink" title="Python 代码"></a><strong>Python 代码</strong></h2><p> 模块或包的引入最好使用完整路径，即使是同一个包下的相互引用，也建议使用完整路径。<br> 这样比较方便代码阅读，同时若后续需修改为相对路径也很简单。</p>
-<h2 id="前端页面"><a href="#前端页面" class="headerlink" title="前端页面"></a><strong>前端页面</strong></h2><p> 在页面中引用 css 和 js、或配置 url 路径时，必须使用“绝对路径”，而不要使用‘…/’，‘./’等相对路径的引用方式</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>编码规范</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python更换镜像源</title>
-    <url>/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</url>
-    <content><![CDATA[<h1 id="国内常见镜像源"><a href="#国内常见镜像源" class="headerlink" title="国内常见镜像源"></a>国内常见镜像源</h1><p>豆瓣：<a href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a><br>阿里：<a href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>华中理工大学：<a href="http://pypi.hustunique.com/simple/">http://pypi.hustunique.com/simple/</a><br>山东理工大学：<a href="http://pypi.sdutlinux.org/simple/">http://pypi.sdutlinux.org/simple/</a><br>中国科学技术大学：<a href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a></p>
-<a id="more"></a>
-
-<h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>1.在windows文件管理器中输入“ %APPDATA% ”</p>
-<p><img src="https://img-blog.csdnimg.cn/20190711115440834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>2.则会定位到一个新的目录下(“C:\Users\Administrator\AppData\Roaming\pip\pip.ini”)，Administrator为自己的用户名，在该目录下新建pip文件夹，然后到匹配文件夹中新建一个 pip.ini 文件</p>
-<p><img src="https://img-blog.csdnimg.cn/2019071111371594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>3.在新建的 pip.ini 文件中输入以下内容，然后保存。</p>
-<p>​    <em>注意:” index-url “ 的内容是镜像源的路径，可以更换</em></p>
-<p>​    </p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line"></span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line"></span><br><span class="line">index-url = http://pypi.douban.com/simple </span><br><span class="line"></span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
-
-<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>1.需要修改~/ .pip/pip.conf (没有就创建一个)</p>
-<p>​    </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir -p .pip</span><br><span class="line">nano pip.conf # 或者 vi pip.con</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20190711133859947.png" alt="在这里插入图片描述"></p>
-<p>2.在pip.conf配置文件中，添加配置内容，就修改默认的软件源，配置内容如下：</p>
-<p>​    </p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line">index-url = http://pypi.douban.com/simple</span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20190711134005394.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python包与模块</title>
     <url>/2020/08/21/Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/</url>
     <content><![CDATA[<h1 id="自定义包与模块"><a href="#自定义包与模块" class="headerlink" title="自定义包与模块"></a><strong>自定义包与模块</strong></h1><p>实际开发中，一个大型的项目往往需要使用成百上千的 <a href="http://c.biancheng.net/python/">Python</a> 模块，如果将这些模块都堆放在一起，势必不好管理。而且，使用模块可以有效避免变量名或函数名重名引发的冲突，但是如果模块名重复怎么办呢？因此，Python提出了包（Package）的概念。</p>
@@ -404,6 +442,150 @@
       </tags>
   </entry>
   <entry>
+    <title>Python更换镜像源</title>
+    <url>/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<h1 id="国内常见镜像源"><a href="#国内常见镜像源" class="headerlink" title="国内常见镜像源"></a>国内常见镜像源</h1><p>豆瓣：<a href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a><br>阿里：<a href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>华中理工大学：<a href="http://pypi.hustunique.com/simple/">http://pypi.hustunique.com/simple/</a><br>山东理工大学：<a href="http://pypi.sdutlinux.org/simple/">http://pypi.sdutlinux.org/simple/</a><br>中国科学技术大学：<a href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a></p>
+<a id="more"></a>
+
+<h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>1.在windows文件管理器中输入“ %APPDATA% ”</p>
+<p><img src="https://img-blog.csdnimg.cn/20190711115440834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>2.则会定位到一个新的目录下(“C:\Users\Administrator\AppData\Roaming\pip\pip.ini”)，Administrator为自己的用户名，在该目录下新建pip文件夹，然后到匹配文件夹中新建一个 pip.ini 文件</p>
+<p><img src="https://img-blog.csdnimg.cn/2019071111371594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>3.在新建的 pip.ini 文件中输入以下内容，然后保存。</p>
+<p>​    <em>注意:” index-url “ 的内容是镜像源的路径，可以更换</em></p>
+<p>​    </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line"></span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line"></span><br><span class="line">index-url = http://pypi.douban.com/simple </span><br><span class="line"></span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
+
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><p>1.需要修改~/ .pip/pip.conf (没有就创建一个)</p>
+<p>​    </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir -p .pip</span><br><span class="line">nano pip.conf # 或者 vi pip.con</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20190711133859947.png" alt="在这里插入图片描述"></p>
+<p>2.在pip.conf配置文件中，添加配置内容，就修改默认的软件源，配置内容如下：</p>
+<p>​    </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line">index-url = http://pypi.douban.com/simple</span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20190711134005394.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python编码规范</title>
+    <url>/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<p>PE8基本规范：</p>
+<p>建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符</p>
+<h1 id="一、python编码规范："><a href="#一、python编码规范：" class="headerlink" title="一、python编码规范："></a>一、python编码规范：</h1><h2 id="一-、代码编码："><a href="#一-、代码编码：" class="headerlink" title="(一)、代码编码："></a><strong>(一)、代码编码：</strong></h2><p>1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -<em>- coding: utf-8 -</em>-。<br> 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀<br> 3、若出现 Python编 码问题，可按照以下操作尝试解决：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#39;utf-8&#39;)</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="二-、命名规范"><a href="#二-、命名规范" class="headerlink" title="(二)、命名规范:"></a><strong>(二)、命名规范:</strong></h2><h3 id="1、包名、模块名、局部变量名、函数名"><a href="#1、包名、模块名、局部变量名、函数名" class="headerlink" title="1、包名、模块名、局部变量名、函数名"></a>1、包名、模块名、局部变量名、函数名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全小写+下划线式驼峰 示例：this_is_var</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、全局变量"><a href="#2、全局变量" class="headerlink" title="2、全局变量"></a>2、全局变量</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全大写+下划线式驼峰 示例：GLOBAL_VAR</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、类名"><a href="#3、类名" class="headerlink" title="3、类名"></a>3、类名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">首字母大写式驼峰 示例：ClassName()</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、变量名命名"><a href="#4、变量名命名" class="headerlink" title="4、变量名命名"></a>4、变量名命名</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">尽量体现变量的数据类型和具体意义</span><br></pre></td></tr></table></figure>
+
+<p>注：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量名、类名取名必须有意义，严禁用单字母</span><br><span class="line">变量名不要用系统关键字，如 dir type str等等</span><br></pre></td></tr></table></figure>
+
+<p>建议：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bool变量一般加上前缀 is_ 如：is_success</span><br></pre></td></tr></table></figure>
+
+<h2 id="三-、import-顺序"><a href="#三-、import-顺序" class="headerlink" title="(三)、import 顺序:"></a><strong>(三)、import 顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、标准库   2、第三方库  3、项目本身</span><br><span class="line">(之间用空行分隔)</span><br></pre></td></tr></table></figure>
+
+<h2 id="四-、models-内部定义顺序"><a href="#四-、models-内部定义顺序" class="headerlink" title="(四)、models 内部定义顺序:"></a><strong>(四)、models 内部定义顺序:</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">All database fields</span><br><span class="line">Custom manager attributes</span><br><span class="line">class Meta</span><br><span class="line">def (str)</span><br><span class="line">def save()</span><br><span class="line">def get_absolute_url()</span><br><span class="line">Any custom methods</span><br></pre></td></tr></table></figure>
+
+<h2 id="五-、异常捕获处理原则"><a href="#五-、异常捕获处理原则" class="headerlink" title="(五)、异常捕获处理原则:"></a><strong>(五)、异常捕获处理原则:</strong></h2><p>尽量只包含容易出错的位置，不要把整个函数 try catch<br> 对于不会出现问题的代码，就不要再用 try catch了<br> 只捕获有意义，能显示处理的异常<br> 能通过代码逻辑处理的部分，就不要用 try catch<br> 异常忽略，一般情况下异常需要被捕获并处理，但有些情况下异常可被忽略，只需要用 log 记录即可，可参考一下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def ignored():</span><br><span class="line">    try:</span><br><span class="line">        yield</span><br><span class="line">    except Exceptions as e:</span><br><span class="line">        logger.warning(e)</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure>
+
+<h2 id="六-、return-early原则"><a href="#六-、return-early原则" class="headerlink" title="(六)、return early原则"></a><strong>(六)、return early原则</strong></h2><p>提前判断并 return，减少代码层级，增强代码可读性(简单逻辑往前放)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if not condition:</span><br><span class="line">    return</span><br><span class="line"># a lot if code</span><br></pre></td></tr></table></figure>
+
+<h2 id="七-、Fat-model，-thin-view"><a href="#七-、Fat-model，-thin-view" class="headerlink" title="(七)、Fat model， thin view"></a><strong>(七)、Fat model， thin view</strong></h2><p>逻辑代码和业务代码解耦分离，功能性函数以及对数据库的操作定义写在 models 里面，业务逻辑写在 view 里面。</p>
+<h2 id="八-、权限校验装饰器异常抛出问题"><a href="#八-、权限校验装饰器异常抛出问题" class="headerlink" title="(八)、权限校验装饰器异常抛出问题"></a><strong>(八)、权限校验装饰器异常抛出问题</strong></h2><p>建议权限不足时直接抛出异常，可以使用 django 自带的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from django.core.exceptions import PermissionDenied</span><br></pre></td></tr></table></figure>
+
+<p>权限不足时抛出异常 PermissionDenied，之后应该返回什么样的页面由 handler 或者中间件去处理</p>
+<h2 id="九-、分-method-获取-request-参数问题"><a href="#九-、分-method-获取-request-参数问题" class="headerlink" title="(九)、分 method 获取 request 参数问题"></a><strong>(九)、分 method 获取 request 参数问题</strong></h2><p>一般可以分method 获取request参数，这样能够使代码更可读，且之后修改 method 时不必每个参数都修改</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">args &#x3D; request.GET if request.method &#x3D;&#x3D; &quot;GET&quot; else request.POST</span><br><span class="line">business_name &#x3D; args.get(&#39;business_name&#39;, &#39;&#39;)</span><br><span class="line">template_name &#x3D; args.get(&#39;template_name&#39;, &#39;&#39;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="十-、使用数字、常量表示状态"><a href="#十-、使用数字、常量表示状态" class="headerlink" title="(十)、使用数字、常量表示状态"></a><strong>(十)、使用数字、常量表示状态</strong></h2><p>两种的话改为 true/false，多种改为 enum 可读性更好</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def enum(**enums):</span><br><span class="line">    return type(&quot;Enum&quot;, (), enums)</span><br><span class="line"></span><br><span class="line">StatusEnum &#x3D; enum(</span><br><span class="line">    SUCCESS&#x3D;True,</span><br><span class="line">    FAIL&#x3D;False,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="十一-、其他注意问题"><a href="#十一-、其他注意问题" class="headerlink" title="(十一)、其他注意问题"></a><strong>(十一)、其他注意问题</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、【必须】去除代码中的 print，否则导致正式和测试环境 uwsgi 输出大量信息</span><br><span class="line">2、逻辑块空行分隔</span><br><span class="line">3、变量和其使用尽量放到一起</span><br><span class="line">4、【必须】 import过长，要放在多行的时候，使用 from xxx import（a, b, c）,不要用 \ 换行</span><br><span class="line">5、Django Model 定义的 choices 直接在定义在类里面</span><br></pre></td></tr></table></figure>
+
+<h1 id="二、前端编码规范："><a href="#二、前端编码规范：" class="headerlink" title="二、前端编码规范："></a>二、前端编码规范：</h1><h2 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a><strong>命名规则</strong></h2><p>1、类的基础命名方式：“项目英文简写-当前页-页面内容块”如 .ijobs-index-box。<br>2、Id 的基础命名方式：语义化，并使用下滑杠连接，如步骤名称可命名为 #step_name<br>3、Javascript 变量命名方式：按照变量类型的首个字母为前缀，使用驼峰命名法；<br> 例子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var aName &#x3D; [&#39;zhangsan&#39;,&#39;lizi&#39;,&#39;zhaowu&#39;];  &#x2F;&#x2F;Array 数组</span><br><span class="line">var oBtn &#x3D; window.document.getElementById(&#39;btn&#39;);  &#x2F;&#x2F;Object 对象</span><br><span class="line">function fnName()&#123;&#125;;  &#x2F;&#x2F;Function 函数</span><br><span class="line">var nAge &#x3D; 25;  &#x2F;&#x2F;Integer(int) 整型</span><br><span class="line">var sWebURL&#x3D;&quot;www.wangyingran.com&quot;;  &#x2F;&#x2F;String 字符串</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、日志规范："><a href="#三、日志规范：" class="headerlink" title="三、日志规范："></a><strong>三、日志规范：</strong></h1><h2 id="一-、日志输出级别"><a href="#一-、日志输出级别" class="headerlink" title="(一)、日志输出级别"></a>(一)、日志输出级别</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、Error：系统异常，影响用户使用，必须通知到开发者及时修复。</span><br><span class="line">2、Warning：系统异常，不影响用户使用，但有异常需要跟进修复。</span><br><span class="line">3、Info：系统流水日志或日常记录,不做通知配置。</span><br></pre></td></tr></table></figure>
+
+<h2 id="二-、日志输出格式"><a href="#二-、日志输出格式" class="headerlink" title="(二)、日志输出格式"></a><strong>(二)、日志输出格式</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、日志需要包含当前函数名，方便查找和定位。</span><br><span class="line">2、重要操作流水直接记录数据库，可以保存较长时间。</span><br><span class="line">3、错误日志要方便定位问题，建议记录当前参数以及上下文变量。</span><br></pre></td></tr></table></figure>
+
+<h1 id="四、代码提交规范"><a href="#四、代码提交规范" class="headerlink" title="四、代码提交规范"></a>四、代码提交规范</h1><p>每次代码提交必须有备注说明，注明本次提交做了哪些修改<br> commit 分类：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bugfix: -------- 线上功能 bug</span><br><span class="line">sprintfix: ----- 未上线代码修改 （功能模块未上线部分bug）</span><br><span class="line">minor: --------- 不重要的修改（换行，拼写错误等）</span><br><span class="line">feature: ----- 新功能说明</span><br></pre></td></tr></table></figure>
+
+<h1 id="五、接口规范"><a href="#五、接口规范" class="headerlink" title="五、接口规范"></a>五、接口规范</h1><h2 id="Api-的-method"><a href="#Api-的-method" class="headerlink" title="Api 的 method"></a><strong>Api 的 method</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Api 的 method，要根据实际请求的类型，查询一定要用 get，不能随意指定 method。</span><br><span class="line">具体可以参考文档 《RESTful Web Services Cookbook-cn.pdf》 。</span><br></pre></td></tr></table></figure>
+
+<h2 id="接口返回内容"><a href="#接口返回内容" class="headerlink" title="接口返回内容"></a><strong>接口返回内容</strong></h2><p>接口返回内容开发建议直接参考蓝鲸 apigateway 规范，返回的内容中包含 result code data message request_id 这几个字段<br> <img src="https://img-blog.csdnimg.cn/20190814163629264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="接口返回Status-Code"><a href="#接口返回Status-Code" class="headerlink" title="接口返回Status Code"></a><strong>接口返回Status Code</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">**建议充分利用 HTTP Status Code 作为响应结果的基本状态码，基本状态码不能区分的 status，</span><br><span class="line">再用响应 body 中&quot;约定&quot;的 code 进行补充</span><br><span class="line"></span><br><span class="line">http状态码详细说明请参考： https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;HTTP%E7%8A%B6%E6%80%81%E7%A0%81**</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20191028195740787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="接口数据验证"><a href="#接口数据验证" class="headerlink" title="接口数据验证"></a><strong>接口数据验证</strong></h2><p>数据检验逻辑”应当”和业务逻辑分离，这样做的好处：</p>
+<p>代码逻辑更加清晰<br> 数据校验逻辑（可能）可以复用</p>
+<h2 id="分离方案"><a href="#分离方案" class="headerlink" title="分离方案"></a><strong>分离方案</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1）form-data&#x2F;url-params：Django-Form </span><br><span class="line">2）Json：Json-schema</span><br></pre></td></tr></table></figure>
+
+<h1 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h1><h2 id="Python-代码注释"><a href="#Python-代码注释" class="headerlink" title="Python 代码注释"></a><strong>Python 代码注释</strong></h2><p> 方法必须使用标注注释，如果是公有方法或对外提供的 API 相关方法，则最好给出使用样例。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163858601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> Module注释：在开头要加入对该模块的注释。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163935152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 普通代码注释应该以‘#’和单个空格开始。</p>
+<p>如果有需要调整或者需要优化的地方，可以使用 #TODO 这里是注释内容”进行注释，</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">格式：&#39;#&#39;+单个空格+&#39;TODO&#39;+单个空格+注释内容。</span><br></pre></td></tr></table></figure>
+
+<p>方法的返回，如果数据结构比较复杂，则必须要对返回结果的每个属性做解释。</p>
+<h2 id="前端代码注释"><a href="#前端代码注释" class="headerlink" title="前端代码注释"></a><strong>前端代码注释</strong></h2><h3 id="Html-注释"><a href="#Html-注释" class="headerlink" title="Html 注释"></a><strong>Html 注释</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 容器 --&gt;</span><br><span class="line">&lt;div class&#x3D;“container”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;!-- 用户名 --&gt;</span><br><span class="line">&lt;div id&#x3D;“user_name”&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;用户名 --&gt;</span><br><span class="line">...</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;!-- &#x2F;容器 --&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="css-注释"><a href="#css-注释" class="headerlink" title="css 注释"></a><strong>css 注释</strong></h3><p> 内容比较少是可以只在顶部加注释，内容比较多时在尾部加结束标签/* 注释内容 end */</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 新建任务 start *&#x2F;</span><br><span class="line">.new-task&#123;&#125;</span><br><span class="line">&#x2F;* 新建任务名 *&#x2F;</span><br><span class="line">.task-name&#123;color:#333;&#125;</span><br><span class="line">&#x2F;* 新建任务时间 *&#x2F;</span><br><span class="line">.task-created-time&#123;background:url(img&#x2F;clock.png) no-repeat;&#125;</span><br><span class="line">&#x2F;* 新建任务 end *&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Js-注释"><a href="#Js-注释" class="headerlink" title="Js 注释"></a><strong>Js 注释</strong></h3><p> Js注释同上，函数如果有参数，建议简单备注一下参数的内容和类型。</p>
+<h1 id="文件或包的引用"><a href="#文件或包的引用" class="headerlink" title="文件或包的引用"></a>文件或包的引用</h1><h2 id="Python-代码"><a href="#Python-代码" class="headerlink" title="Python 代码"></a><strong>Python 代码</strong></h2><p> 模块或包的引入最好使用完整路径，即使是同一个包下的相互引用，也建议使用完整路径。<br> 这样比较方便代码阅读，同时若后续需修改为相对路径也很简单。</p>
+<h2 id="前端页面"><a href="#前端页面" class="headerlink" title="前端页面"></a><strong>前端页面</strong></h2><p> 在页面中引用 css 和 js、或配置 url 路径时，必须使用“绝对路径”，而不要使用‘…/’，‘./’等相对路径的引用方式</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>编码规范</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python网络爬虫与信息提取（BIT）-实例代码</title>
+    <url>/2020/08/24/Python%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8F%90%E5%8F%96%EF%BC%88BIT%EF%BC%89-%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</url>
+    <content><![CDATA[<p>本文章记录了 中国大学MOOC - Python网络爬虫与信息提取-北京理工大学 课程的实例代码，可作为参考代码使用。</p>
+<a id="more"></a>
+
+<h1 id="实例1-中国大学排名"><a href="#实例1-中国大学排名" class="headerlink" title="实例1 - 中国大学排名"></a>实例1 - 中国大学排名</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#实例1：中国大学排名爬虫</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">URL: http://www.zuihaodaxue.cn/zuihaodaxuepaiming2016.html</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span>(<span class="params">url</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将页面爬取下来</span></span><br><span class="line"><span class="string">    :param url: 需要获取的URL信息</span></span><br><span class="line"><span class="string">    :return: URL的内容</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(url, timeout = <span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span>  r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fillUnivList</span>(<span class="params">ulist, html</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将一个html页面放到一个List列表中</span></span><br><span class="line"><span class="string">    :param ulist: List列表</span></span><br><span class="line"><span class="string">    :param html:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    soup = BeautifulSoup(html, <span class="string">&quot;html.parser&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> tr <span class="keyword">in</span> soup.find(<span class="string">&quot;tbody&quot;</span>).children:</span><br><span class="line">        <span class="keyword">if</span> isinstance(tr, bs4.element.Tag):</span><br><span class="line">            tds = tr(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">            ulist.append([tds[<span class="number">0</span>].string, tds[<span class="number">1</span>].string, tds[<span class="number">2</span>].string])</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printUnivList</span>(<span class="params">ulist, num</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将列表信息打印出来</span></span><br><span class="line"><span class="string">    :param ulist: 需要打印的列表</span></span><br><span class="line"><span class="string">    :param num: 需要打印多少项</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    tplt = <span class="string">&quot;&#123;0:^10&#125;\t&#123;1:&#123;3&#125;^10&#125;\t&#123;2:^10&#125;&quot;</span></span><br><span class="line">    print(tplt.format(<span class="string">&quot;排名&quot;</span>, <span class="string">&quot;学校名称&quot;</span>, <span class="string">&quot;总分&quot;</span>, chr(<span class="number">12288</span>)))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(num):</span><br><span class="line">        u = ulist[i]</span><br><span class="line">        print(tplt.format(u[<span class="number">0</span>], u[<span class="number">1</span>], u[<span class="number">2</span>], chr(<span class="number">12288</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    uinfo = []</span><br><span class="line">    url = <span class="string">&quot;http://www.zuihaodaxue.cn/zuihaodaxuepaiming2016.html&quot;</span></span><br><span class="line">    html = getHTMLText(url)</span><br><span class="line">    fillUnivList(uinfo, html)</span><br><span class="line">    printUnivList(uinfo, <span class="number">20</span>) <span class="comment">#20 times</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+
+<h1 id="实例2-淘宝商品比价定向爬虫"><a href="#实例2-淘宝商品比价定向爬虫" class="headerlink" title="实例2 - 淘宝商品比价定向爬虫"></a>实例2 - 淘宝商品比价定向爬虫</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#实例2：淘宝商品比价定向爬虫</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">注意：淘宝的robots协议已从根目录限定爬虫进行爬取，切勿不加限制的运行本实例代码。</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span>(<span class="params">url</span>):</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(url, timeout = <span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parsePage</span>(<span class="params">ilt, html</span>):</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        plt = re.findall(<span class="string">r&#x27;\&quot;view_price\&quot;\:\&quot;[\d.]*\&quot;&#x27;</span>, html)</span><br><span class="line">        tlt = re.findall(<span class="string">r&#x27;\&quot;raw_title\&quot;\:\&quot;.*?\&quot;&#x27;</span>, html)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(plt)):</span><br><span class="line">            price = eval(plt[i].spilt(<span class="string">&quot;:&quot;</span>)[<span class="number">1</span>])</span><br><span class="line">            title = eval(tlt[i].spilt(<span class="string">&quot;:&quot;</span>)[<span class="number">1</span>])</span><br><span class="line">            ilt.append([price, title])</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printGoodList</span>(<span class="params">ilt</span>):</span></span><br><span class="line">    tplt = <span class="string">&quot;&#123;:4&#125;\t&#123;:8&#125;\t&#123;:16&#125;&quot;</span></span><br><span class="line">    print(tplt.format(<span class="string">&quot;序号&quot;</span>, <span class="string">&quot;价格&quot;</span>, <span class="string">&quot;商品名称&quot;</span>))</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> g <span class="keyword">in</span> ilt:</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">        print(tplt.format(count, g[<span class="number">0</span>], g[<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    goods = <span class="string">&quot;书包&quot;</span></span><br><span class="line">    depth = <span class="number">2</span></span><br><span class="line">    start_url = <span class="string">&quot;https://s.taobao.com/search?initiative_id=tbindexz_20170306&amp;ie=utf8&amp;spm=a21bo.2017.201856-taobao-item.2&amp;sourceId=tb.index&amp;search_type=item&amp;ssid=s5-e&amp;commend=all&amp;imgfile=&amp;q=&quot;</span> + goods</span><br><span class="line">    infoList = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(depth):</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            url = start_url + <span class="string">&quot;&amp;s=&quot;</span> + str(<span class="number">44</span>*i)</span><br><span class="line">            html = getHTMLText(url)</span><br><span class="line">            parsePage(infoList, html)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">    printGoodList(infoList)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="实例3-股票数据定向爬虫"><a href="#实例3-股票数据定向爬虫" class="headerlink" title="实例3 股票数据定向爬虫"></a>实例3 股票数据定向爬虫</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#实例3：股票数据定向爬虫</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span>  requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> traceback</span><br><span class="line"><span class="keyword">import</span>  re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span>(<span class="params">url, code=<span class="string">&#x27;utf-8&#x27;</span></span>):</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(url, timeout=<span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        <span class="comment">#r.encoding = r.apparent_encoding</span></span><br><span class="line">        r.encoding = code</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getStockList</span>(<span class="params">lst, stockURL</span>):</span></span><br><span class="line">    html = getHTMLText(stockURL, <span class="string">&#x27;GB2312&#x27;</span>)</span><br><span class="line">    soup = BeautifulSoup(html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">    a = soup.find_all(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            href = i.attrs[<span class="string">&#x27;href&#x27;</span>]</span><br><span class="line">            lst.append(re.findall(<span class="string">r&#x27;[s][hz]\d&#123;6&#125;&#x27;</span>, href)[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getStockInfo</span>(<span class="params">lst, stockURL, fpath</span>):</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> stock <span class="keyword">in</span> lst:</span><br><span class="line">        url = stockURL + stock + <span class="string">&#x27;.html&#x27;</span></span><br><span class="line">        html = getHTMLText(url)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">if</span> html == <span class="string">&quot;&quot;</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            infoDict = &#123;&#125;</span><br><span class="line">            soup = BeautifulSoup(html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">            stockInfo = soup.find(<span class="string">&#x27;div&#x27;</span>, attrs=&#123;<span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;stock-bets&#x27;</span>&#125;)</span><br><span class="line"></span><br><span class="line">            name = stockInfo.find_all(attrs=&#123;<span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;bets-name&#x27;</span>&#125;)[<span class="number">0</span>]</span><br><span class="line">            infoDict.update(&#123;<span class="string">&#x27;股票名称&#x27;</span>: name.text.split()[<span class="number">0</span>]&#125;)</span><br><span class="line"></span><br><span class="line">            keyList = stockInfo.find_all(<span class="string">&#x27;dt&#x27;</span>)</span><br><span class="line">            valueList = stockInfo.find_all(<span class="string">&#x27;dd&#x27;</span>)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(len(keyList)):</span><br><span class="line">                key = keyList[i].text</span><br><span class="line">                val = valueList[i].text</span><br><span class="line">                infoDict[key] = val</span><br><span class="line">            <span class="keyword">with</span> open(fpath, <span class="string">&#x27;a&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(str(infoDict) + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                count = count + <span class="number">1</span></span><br><span class="line">                print(<span class="string">&#x27;\r当前速度：&#123;:.2f&#125;%&#x27;</span>.format(count * <span class="number">100</span> / len(lst)), end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            count = count + <span class="number">1</span></span><br><span class="line">            print(<span class="string">&#x27;\r当前速度：&#123;:.2f&#125;%&#x27;</span>.format(count * <span class="number">100</span> / len(lst)), end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    stock_list_url = <span class="string">&#x27;http://quote.eastmoney.com/stocklist.html&#x27;</span></span><br><span class="line">    stock_info_url = <span class="string">&#x27;https://gupiao.baidu.com/stock/&#x27;</span></span><br><span class="line">    output_file = <span class="string">&#x27;E://BaiduStockInfo.txt&#x27;</span></span><br><span class="line">    slist = []</span><br><span class="line">    getStockList(slist, stock_list_url)</span><br><span class="line">    getStockInfo(slist, stock_info_url, output_file)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>中国大学MOOC</tag>
+        <tag>实例代码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo&#39;s Hello World</title>
     <url>/2020/08/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -469,7 +651,7 @@
 <p><img src="https://img-blog.csdn.net/20180922155257380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
 <p>完成之后，我们点击创建仓库，看到下面的界面表示创建仓库成功。</p>
 <p><img src="https://img-blog.csdn.net/20180922155436224?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h2 id="第四步：下载安装git客户端"><a href="#第四步：下载安装git客户端" class="headerlink" title="第四步：下载安装git客户端"></a>第四步：下载安装git客户端</h2><p>地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<h2 id="第四步：下载安装Git客户端"><a href="#第四步：下载安装Git客户端" class="headerlink" title="第四步：下载安装Git客户端"></a>第四步：下载安装Git客户端</h2><p>地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
 <p>下载好后，我们直接安装。</p>
 <h2 id="第五步：克隆仓库"><a href="#第五步：克隆仓库" class="headerlink" title="第五步：克隆仓库"></a>第五步：克隆仓库</h2><p>在我们想要克隆的路径下右击鼠标，选择如下的 <strong>Git GUI Here</strong> 我们先使用图形化界面进行操作，日后熟悉了可以用下面的命令窗口进行操作。</p>
 <p><img src="https://img-blog.csdn.net/20180922160705529?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
@@ -508,13 +690,14 @@
         <category>TeamDevelopment</category>
       </categories>
       <tags>
+        <tag>Git</tag>
         <tag>GitHub</tag>
         <tag>TeamDevelopment</tag>
       </tags>
   </entry>
   <entry>
-    <title>在github上用Hexo搭建个人博客</title>
-    <url>/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <title>在GitHub上用Hexo搭建个人博客</title>
+    <url>/2020/08/21/%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p><strong>内容目录（下面目录中第 3~5 步为最重要的步骤，其他内容可选择性跳过。）</strong></p>
 <ul>
 <li>简介：GitHub Pages 和 Hexo &amp; 原理</li>
@@ -677,28 +860,6 @@
         <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>NexT主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python网络爬虫与信息提取（BIT）-实例代码</title>
-    <url>/2020/08/24/Python%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%8F%90%E5%8F%96%EF%BC%88BIT%EF%BC%89-%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</url>
-    <content><![CDATA[<p>本文章记录了 中国大学MOOC - Python网络爬虫与信息提取-北京理工大学 课程的实例代码，可作为参考代码使用。</p>
-<a id="more"></a>
-
-<h1 id="实例1-中国大学排名"><a href="#实例1-中国大学排名" class="headerlink" title="实例1 - 中国大学排名"></a>实例1 - 中国大学排名</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#实例1：中国大学排名爬虫</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">URL: http://www.zuihaodaxue.cn/zuihaodaxuepaiming2016.html</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span>(<span class="params">url</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将页面爬取下来</span></span><br><span class="line"><span class="string">    :param url: 需要获取的URL信息</span></span><br><span class="line"><span class="string">    :return: URL的内容</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(url, timeout = <span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span>  r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fillUnivList</span>(<span class="params">ulist, html</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将一个html页面放到一个List列表中</span></span><br><span class="line"><span class="string">    :param ulist: List列表</span></span><br><span class="line"><span class="string">    :param html:</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    soup = BeautifulSoup(html, <span class="string">&quot;html.parser&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> tr <span class="keyword">in</span> soup.find(<span class="string">&quot;tbody&quot;</span>).children:</span><br><span class="line">        <span class="keyword">if</span> isinstance(tr, bs4.element.Tag):</span><br><span class="line">            tds = tr(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">            ulist.append([tds[<span class="number">0</span>].string, tds[<span class="number">1</span>].string, tds[<span class="number">2</span>].string])</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printUnivList</span>(<span class="params">ulist, num</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    将列表信息打印出来</span></span><br><span class="line"><span class="string">    :param ulist: 需要打印的列表</span></span><br><span class="line"><span class="string">    :param num: 需要打印多少项</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    tplt = <span class="string">&quot;&#123;0:^10&#125;\t&#123;1:&#123;3&#125;^10&#125;\t&#123;2:^10&#125;&quot;</span></span><br><span class="line">    print(tplt.format(<span class="string">&quot;排名&quot;</span>, <span class="string">&quot;学校名称&quot;</span>, <span class="string">&quot;总分&quot;</span>, chr(<span class="number">12288</span>)))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(num):</span><br><span class="line">        u = ulist[i]</span><br><span class="line">        print(tplt.format(u[<span class="number">0</span>], u[<span class="number">1</span>], u[<span class="number">2</span>], chr(<span class="number">12288</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    uinfo = []</span><br><span class="line">    url = <span class="string">&quot;http://www.zuihaodaxue.cn/zuihaodaxuepaiming2016.html&quot;</span></span><br><span class="line">    html = getHTMLText(url)</span><br><span class="line">    fillUnivList(uinfo, html)</span><br><span class="line">    printUnivList(uinfo, <span class="number">20</span>) <span class="comment">#20 times</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
-
-<h1 id="实例2-淘宝商品比价定向爬虫"><a href="#实例2-淘宝商品比价定向爬虫" class="headerlink" title="实例2 - 淘宝商品比价定向爬虫"></a>实例2 - 淘宝商品比价定向爬虫</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#实例2：淘宝商品比价定向爬虫</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">注意：淘宝的robots协议已从根目录限定爬虫进行爬取，切勿不加限制的运行本实例代码。</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span>(<span class="params">url</span>):</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(url, timeout = <span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parsePage</span>(<span class="params">ilt, html</span>):</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        plt = re.findall(<span class="string">r&#x27;\&quot;view_price\&quot;\:\&quot;[\d.]*\&quot;&#x27;</span>, html)</span><br><span class="line">        tlt = re.findall(<span class="string">r&#x27;\&quot;raw_title\&quot;\:\&quot;.*?\&quot;&#x27;</span>, html)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(plt)):</span><br><span class="line">            price = eval(plt[i].spilt(<span class="string">&quot;:&quot;</span>)[<span class="number">1</span>])</span><br><span class="line">            title = eval(tlt[i].spilt(<span class="string">&quot;:&quot;</span>)[<span class="number">1</span>])</span><br><span class="line">            ilt.append([price, title])</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printGoodList</span>(<span class="params">ilt</span>):</span></span><br><span class="line">    tplt = <span class="string">&quot;&#123;:4&#125;\t&#123;:8&#125;\t&#123;:16&#125;&quot;</span></span><br><span class="line">    print(tplt.format(<span class="string">&quot;序号&quot;</span>, <span class="string">&quot;价格&quot;</span>, <span class="string">&quot;商品名称&quot;</span>))</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> g <span class="keyword">in</span> ilt:</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">        print(tplt.format(count, g[<span class="number">0</span>], g[<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    goods = <span class="string">&quot;书包&quot;</span></span><br><span class="line">    depth = <span class="number">2</span></span><br><span class="line">    start_url = <span class="string">&quot;https://s.taobao.com/search?initiative_id=tbindexz_20170306&amp;ie=utf8&amp;spm=a21bo.2017.201856-taobao-item.2&amp;sourceId=tb.index&amp;search_type=item&amp;ssid=s5-e&amp;commend=all&amp;imgfile=&amp;q=&quot;</span> + goods</span><br><span class="line">    infoList = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(depth):</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            url = start_url + <span class="string">&quot;&amp;s=&quot;</span> + str(<span class="number">44</span>*i)</span><br><span class="line">            html = getHTMLText(url)</span><br><span class="line">            parsePage(infoList, html)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">    printGoodList(infoList)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="实例3-股票数据定向爬虫"><a href="#实例3-股票数据定向爬虫" class="headerlink" title="实例3 股票数据定向爬虫"></a>实例3 股票数据定向爬虫</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#实例3：股票数据定向爬虫</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span>  requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> traceback</span><br><span class="line"><span class="keyword">import</span>  re</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span>(<span class="params">url, code=<span class="string">&#x27;utf-8&#x27;</span></span>):</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(url, timeout=<span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        <span class="comment">#r.encoding = r.apparent_encoding</span></span><br><span class="line">        r.encoding = code</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getStockList</span>(<span class="params">lst, stockURL</span>):</span></span><br><span class="line">    html = getHTMLText(stockURL, <span class="string">&#x27;GB2312&#x27;</span>)</span><br><span class="line">    soup = BeautifulSoup(html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">    a = soup.find_all(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            href = i.attrs[<span class="string">&#x27;href&#x27;</span>]</span><br><span class="line">            lst.append(re.findall(<span class="string">r&#x27;[s][hz]\d&#123;6&#125;&#x27;</span>, href)[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getStockInfo</span>(<span class="params">lst, stockURL, fpath</span>):</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> stock <span class="keyword">in</span> lst:</span><br><span class="line">        url = stockURL + stock + <span class="string">&#x27;.html&#x27;</span></span><br><span class="line">        html = getHTMLText(url)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">if</span> html == <span class="string">&quot;&quot;</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            infoDict = &#123;&#125;</span><br><span class="line">            soup = BeautifulSoup(html, <span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">            stockInfo = soup.find(<span class="string">&#x27;div&#x27;</span>, attrs=&#123;<span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;stock-bets&#x27;</span>&#125;)</span><br><span class="line"></span><br><span class="line">            name = stockInfo.find_all(attrs=&#123;<span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;bets-name&#x27;</span>&#125;)[<span class="number">0</span>]</span><br><span class="line">            infoDict.update(&#123;<span class="string">&#x27;股票名称&#x27;</span>: name.text.split()[<span class="number">0</span>]&#125;)</span><br><span class="line"></span><br><span class="line">            keyList = stockInfo.find_all(<span class="string">&#x27;dt&#x27;</span>)</span><br><span class="line">            valueList = stockInfo.find_all(<span class="string">&#x27;dd&#x27;</span>)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(len(keyList)):</span><br><span class="line">                key = keyList[i].text</span><br><span class="line">                val = valueList[i].text</span><br><span class="line">                infoDict[key] = val</span><br><span class="line">            <span class="keyword">with</span> open(fpath, <span class="string">&#x27;a&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(str(infoDict) + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                count = count + <span class="number">1</span></span><br><span class="line">                print(<span class="string">&#x27;\r当前速度：&#123;:.2f&#125;%&#x27;</span>.format(count * <span class="number">100</span> / len(lst)), end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            count = count + <span class="number">1</span></span><br><span class="line">            print(<span class="string">&#x27;\r当前速度：&#123;:.2f&#125;%&#x27;</span>.format(count * <span class="number">100</span> / len(lst)), end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    stock_list_url = <span class="string">&#x27;http://quote.eastmoney.com/stocklist.html&#x27;</span></span><br><span class="line">    stock_info_url = <span class="string">&#x27;https://gupiao.baidu.com/stock/&#x27;</span></span><br><span class="line">    output_file = <span class="string">&#x27;E://BaiduStockInfo.txt&#x27;</span></span><br><span class="line">    slist = []</span><br><span class="line">    getStockList(slist, stock_list_url)</span><br><span class="line">    getStockInfo(slist, stock_info_url, output_file)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>中国大学MOOC</tag>
-        <tag>实例代码</tag>
       </tags>
   </entry>
   <entry>

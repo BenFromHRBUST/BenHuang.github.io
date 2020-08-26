@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-23T16:46:45.426Z</updated>
+  <updated>2020-08-26T13:46:10.945Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git开发环境构建</title>
+    <link href="http://yoursite.com/2020/08/26/Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/"/>
+    <id>http://yoursite.com/2020/08/26/Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/</id>
+    <published>2020-08-26T13:43:23.000Z</published>
+    <updated>2020-08-26T13:46:10.945Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;主要内容&quot;&gt;&lt;a href=&quot;#主要内容&quot; class=&quot;headerlink&quot; title=&quot;主要内容&quot;&gt;&lt;/a&gt;主要内容&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;安装Git客户端和界面操作工具&lt;/li&gt;
+&lt;li&gt;配置Eclipse Git插件&lt;/li&gt;
+&lt;li&gt;使用Git插件导入GitHub中的Java项目&lt;/li&gt;
+&lt;li&gt;使用Git插件构建Git仓库，并发布到GitHub&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="TeamDevelopment" scheme="http://yoursite.com/categories/TeamDevelopment/"/>
+    
+    
+    <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+    <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
+    
+    <category term="TeamDevelopment" scheme="http://yoursite.com/tags/TeamDevelopment/"/>
+    
+  </entry>
   
   <entry>
     <title>爱上RaspberryPi-实例代码</title>
@@ -69,7 +97,7 @@
     <link href="http://yoursite.com/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</id>
     <published>2020-08-22T07:27:18.000Z</published>
-    <updated>2020-08-22T07:29:35.086Z</updated>
+    <updated>2020-08-26T13:44:56.680Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;第一步：注册GitHub账号&lt;/p&gt;
@@ -85,6 +113,8 @@
     
     <category term="TeamDevelopment" scheme="http://yoursite.com/categories/TeamDevelopment/"/>
     
+    
+    <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
     
     <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
     
@@ -121,11 +151,11 @@
   </entry>
   
   <entry>
-    <title>在github上用Hexo搭建个人博客</title>
-    <link href="http://yoursite.com/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2020/08/21/%E5%9C%A8github%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <title>在GitHub上用Hexo搭建个人博客</title>
+    <link href="http://yoursite.com/2020/08/21/%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/08/21/%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-08-21T09:51:13.000Z</published>
-    <updated>2020-08-22T07:25:58.491Z</updated>
+    <updated>2020-08-26T13:43:52.764Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;内容目录（下面目录中第 3~5 步为最重要的步骤，其他内容可选择性跳过。）&lt;/strong&gt;&lt;/p&gt;
