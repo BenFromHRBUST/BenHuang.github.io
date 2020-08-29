@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-26T13:46:10.945Z</updated>
+  <updated>2020-08-29T07:28:02.714Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Git开发环境构建</title>
-    <link href="http://yoursite.com/2020/08/26/Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/"/>
-    <id>http://yoursite.com/2020/08/26/Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/</id>
+    <link href="http://yoursite.com/2020/08/26/Git%200%20-%20Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/"/>
+    <id>http://yoursite.com/2020/08/26/Git%200%20-%20Git%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/</id>
     <published>2020-08-26T13:43:23.000Z</published>
-    <updated>2020-08-26T13:46:10.945Z</updated>
+    <updated>2020-08-29T07:28:02.714Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;主要内容&quot;&gt;&lt;a href=&quot;#主要内容&quot; class=&quot;headerlink&quot; title=&quot;主要内容&quot;&gt;&lt;/a&gt;主要内容&lt;/h2&gt;&lt;ol&gt;
@@ -49,7 +49,7 @@
     <link href="http://yoursite.com/2020/08/24/%E7%88%B1%E4%B8%8ARaspberryPi-%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/"/>
     <id>http://yoursite.com/2020/08/24/%E7%88%B1%E4%B8%8ARaspberryPi-%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</id>
     <published>2020-08-23T16:36:15.000Z</published>
-    <updated>2020-08-23T16:46:45.426Z</updated>
+    <updated>2020-08-26T16:16:59.439Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文章记录了《爱上RaspberryPi》书的实例代码，可作为参考代码使用。&lt;/p&gt;</summary>
@@ -94,8 +94,8 @@
   
   <entry>
     <title>使用GitHub进行团队开发</title>
-    <link href="http://yoursite.com/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/"/>
-    <id>http://yoursite.com/2020/08/22/%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</id>
+    <link href="http://yoursite.com/2020/08/22/Git%200%20-%20%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/"/>
+    <id>http://yoursite.com/2020/08/22/Git%200%20-%20%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</id>
     <published>2020-08-22T07:27:18.000Z</published>
     <updated>2020-08-26T13:44:56.680Z</updated>
     
@@ -124,8 +124,8 @@
   
   <entry>
     <title>Hexo配置next主题</title>
-    <link href="http://yoursite.com/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
-    <id>http://yoursite.com/2020/08/21/Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</id>
+    <link href="http://yoursite.com/2020/08/21/Hexo%202%20-%20Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/08/21/Hexo%202%20-%20Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</id>
     <published>2020-08-21T09:51:30.000Z</published>
     <updated>2020-08-22T07:34:25.870Z</updated>
     
@@ -152,8 +152,8 @@
   
   <entry>
     <title>在GitHub上用Hexo搭建个人博客</title>
-    <link href="http://yoursite.com/2020/08/21/%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2020/08/21/%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://yoursite.com/2020/08/21/Hexo%201%20-%20%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2020/08/21/Hexo%201%20-%20%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-08-21T09:51:13.000Z</published>
     <updated>2020-08-26T13:43:52.764Z</updated>
     
@@ -184,8 +184,8 @@
   
   <entry>
     <title>Python包与模块</title>
-    <link href="http://yoursite.com/2020/08/21/Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/"/>
-    <id>http://yoursite.com/2020/08/21/Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/</id>
+    <link href="http://yoursite.com/2020/08/21/Python%204%20-%20Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/"/>
+    <id>http://yoursite.com/2020/08/21/Python%204%20-%20Python%E5%8C%85%E4%B8%8E%E6%A8%A1%E5%9D%97/</id>
     <published>2020-08-20T16:54:24.000Z</published>
     <updated>2020-08-20T16:55:51.396Z</updated>
     
@@ -205,8 +205,8 @@
   
   <entry>
     <title>Python-pip</title>
-    <link href="http://yoursite.com/2020/08/21/Python-pip/"/>
-    <id>http://yoursite.com/2020/08/21/Python-pip/</id>
+    <link href="http://yoursite.com/2020/08/21/Python%203%20-%20Python-pip/"/>
+    <id>http://yoursite.com/2020/08/21/Python%203%20-%20Python-pip/</id>
     <published>2020-08-20T16:51:41.000Z</published>
     <updated>2020-08-20T16:53:28.845Z</updated>
     
@@ -227,8 +227,8 @@
   
   <entry>
     <title>Python更换镜像源</title>
-    <link href="http://yoursite.com/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/"/>
-    <id>http://yoursite.com/2020/08/21/Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</id>
+    <link href="http://yoursite.com/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/"/>
+    <id>http://yoursite.com/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</id>
     <published>2020-08-20T16:39:07.000Z</published>
     <updated>2020-08-20T16:47:02.134Z</updated>
     
@@ -246,8 +246,8 @@
   
   <entry>
     <title>Python编码规范</title>
-    <link href="http://yoursite.com/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2020/08/21/Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</id>
+    <link href="http://yoursite.com/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://yoursite.com/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</id>
     <published>2020-08-20T16:02:18.000Z</published>
     <updated>2020-08-20T16:32:28.322Z</updated>
     
@@ -270,8 +270,8 @@
   
   <entry>
     <title>Hexo&#39;s Hello World</title>
-    <link href="http://yoursite.com/2020/08/20/hello-world/"/>
-    <id>http://yoursite.com/2020/08/20/hello-world/</id>
+    <link href="http://yoursite.com/2020/08/20/0%20hello-world/"/>
+    <id>http://yoursite.com/2020/08/20/0%20hello-world/</id>
     <published>2020-08-20T05:53:54.177Z</published>
     <updated>2020-08-20T16:50:01.829Z</updated>
     
