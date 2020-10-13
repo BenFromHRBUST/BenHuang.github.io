@@ -20,28 +20,35 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Ben Huang&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="GitHub上传下拉仓库一、在github上新建一个仓库二、 在本地创建一个仓库 git init  三、 添加SSH Key 在本地仓库的文件下 右键gitbush here 打开gitbush 输入命令 ssh-keygen -t rsa -C ‘&amp;#49;&amp;#51;&amp;#x37;&amp;#49;&amp;#52;&amp;#52;&amp;#52;&amp;#x33;&amp;#52;&amp;#x34;&amp;#x40;&amp;#x71;&amp;#113;&amp;#4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git上传下拉仓库">
+<meta property="og:url" content="http://yoursite.com/2020/09/29/Git%202%20-%20Git%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93/index.html">
 <meta property="og:site_name" content="Ben Huang&#39;s Blog">
+<meta property="og:description" content="GitHub上传下拉仓库一、在github上新建一个仓库二、 在本地创建一个仓库 git init  三、 添加SSH Key 在本地仓库的文件下 右键gitbush here 打开gitbush 输入命令 ssh-keygen -t rsa -C ‘&amp;#49;&amp;#51;&amp;#x37;&amp;#49;&amp;#52;&amp;#52;&amp;#52;&amp;#x33;&amp;#52;&amp;#x34;&amp;#x40;&amp;#x71;&amp;#113;&amp;#4">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-29T03:35:54.000Z">
+<meta property="article:modified_time" content="2020-09-29T03:37:01.854Z">
 <meta property="article:author" content="Ben Huang">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="TeamDevelopment">
+<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/page/2/">
+<link rel="canonical" href="http://yoursite.com/2020/09/29/Git%202%20-%20Git%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Ben Huang's Blog</title>
+  <title>Git上传下拉仓库 | Ben Huang's Blog</title>
   
 
 
@@ -183,13 +190,14 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/29/Git%202%20-%20Git%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header.jpg">
@@ -201,10 +209,9 @@
       <meta itemprop="name" content="Ben Huang's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/" class="post-title-link" itemprop="url">Python更换镜像源</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Git上传下拉仓库
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -214,7 +221,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-21 00:39:07 / 修改时间：00:47:02" itemprop="dateCreated datePublished" datetime="2020-08-21T00:39:07+08:00">2020-08-21</time>
+              <time title="创建时间：2020-09-29 11:35:54 / 修改时间：11:37:01" itemprop="dateCreated datePublished" datetime="2020-09-29T11:35:54+08:00">2020-09-29</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,7 +229,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                  <a href="/categories/TeamDevelopment/" itemprop="url" rel="index"><span itemprop="name">TeamDevelopment</span></a>
                 </span>
             </span>
 
@@ -237,193 +244,83 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="国内常见镜像源"><a href="#国内常见镜像源" class="headerlink" title="国内常见镜像源"></a>国内常见镜像源</h1><p>豆瓣：<a target="_blank" rel="noopener" href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a><br>阿里：<a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a><br>华中理工大学：<a target="_blank" rel="noopener" href="http://pypi.hustunique.com/simple/">http://pypi.hustunique.com/simple/</a><br>山东理工大学：<a target="_blank" rel="noopener" href="http://pypi.sdutlinux.org/simple/">http://pypi.sdutlinux.org/simple/</a><br>中国科学技术大学：<a target="_blank" rel="noopener" href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <h1 id="GitHub上传下拉仓库"><a href="#GitHub上传下拉仓库" class="headerlink" title="GitHub上传下拉仓库"></a>GitHub上传下拉仓库</h1><h2 id="一、在github上新建一个仓库"><a href="#一、在github上新建一个仓库" class="headerlink" title="一、在github上新建一个仓库"></a>一、在github上新建一个仓库</h2><h2 id="二、-在本地创建一个仓库"><a href="#二、-在本地创建一个仓库" class="headerlink" title="二、 在本地创建一个仓库"></a>二、 在本地创建一个仓库</h2><ul>
+<li>git init</li>
+</ul>
+<h2 id="三、-添加SSH-Key"><a href="#三、-添加SSH-Key" class="headerlink" title="三、 添加SSH Key"></a>三、 添加SSH Key</h2><ul>
+<li>在本地仓库的文件下 右键gitbush here</li>
+<li>打开gitbush</li>
+<li>输入命令 ssh-keygen -t rsa -C ‘<a href="mailto:&#49;&#51;&#x37;&#49;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#49;&#51;&#x37;&#49;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a>(即自己的邮箱地址)’</li>
+<li>一直回车</li>
+<li>然后会在该目录下生成两个文件 ### ###.pub</li>
+<li>复制这两个文件黏贴到 C:/用户/当前登录电脑的账户名/.ssh 并修改两个文件的名称分别为id_rsa id_rsa.pub</li>
+<li>执行shh-add id_rsa 将生成的key添加</li>
+<li>打开d_rsa.pub 复制里面的公钥</li>
+<li>到github上 选择setting-&gt;SSH and GPG keys，点击New SHH key，任意输入名字 然后把复制的公钥黏贴到key 完成SSH的创建</li>
+</ul>
+<h2 id="四、下拉github仓库文件进行与本地仓库的关联"><a href="#四、下拉github仓库文件进行与本地仓库的关联" class="headerlink" title="四、下拉github仓库文件进行与本地仓库的关联"></a>四、下拉github仓库文件进行与本地仓库的关联</h2><ul>
+<li>添加远程仓库地址 将本地仓库与github仓库进行关联<br> git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;</a>:<a target="_blank" rel="noopener" href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1">HRBUST-EmbeddedLaboratoryTeam1</a>/<strong><a target="_blank" rel="noopener" href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1/RobotFightingContest">RobotFightingContest</a></strong><br> <strong>可以通过 git remote -v查看已经添加的，可以通过git remote rm origin删除，修改默认的remote.url和remote.origin可以通过git config –global remote.url ‘修改的值’进行修改</strong></li>
+<li>下拉远程仓库 使本地和远程保留一致 这点很重要 如果不保留一致 就无法进行上传<br> git pull origin master</li>
+<li>添加本地需要上传的文件至缓存区<br> git add . 表示添加所有</li>
+<li>提交至本地仓库<br> git commit -m ‘这是第一次提交’</li>
+<li>上传至github远程仓库<br> git push origin master</li>
+</ul>
+<h2 id="五、删除github上的文件"><a href="#五、删除github上的文件" class="headerlink" title="五、删除github上的文件"></a>五、删除github上的文件</h2><ul>
+<li>还是先下拉github上的远程仓库至本地仓库<br> git pull origin master</li>
+<li>将文件从仓库中移除 但是不删除<br> git rm –cached 文件名</li>
+<li>提交至本地仓库<br> git commit -m ‘这是删除了文件的修改’</li>
+<li>上传至github远程仓库<br> git push origin master</li>
+</ul>
+
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+        
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/">
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="Ben Huang">
-      <meta itemprop="description" content="">
-    </span>
+    <div class="social-list">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ben Huang's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/" class="post-title-link" itemprop="url">Python编码规范</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-21 00:02:18 / 修改时间：00:32:28" itemprop="dateCreated datePublished" datetime="2020-08-21T00:02:18+08:00">2020-08-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
-                </span>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
             </span>
 
-          
-
+            <span class="label">RSS</span>
+          </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>PE8基本规范：</p>
-<p>建议修改在使用的 IDE 中修改 PEP8 的每行字数不超79字符规范，可修改为 Django 建议的 119 字符</p>
-<h1 id="一、python编码规范："><a href="#一、python编码规范：" class="headerlink" title="一、python编码规范："></a>一、python编码规范：</h1><h2 id="一-、代码编码："><a href="#一-、代码编码：" class="headerlink" title="(一)、代码编码："></a><strong>(一)、代码编码：</strong></h2><p>1、国际惯例，文件编码和 Python 编码格式全部为 utf-8 ，例如：在 Python 代码的开头，要统一加上 # -<em>- coding: utf-8 -</em>-。<br> 2、Python 代码中，非 ascii 字符的字符串，请需添加u前缀<br> 3、若出现 Python编 码问题，可按照以下操作尝试解决：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#39;utf-8&#39;)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
+  </div>
 
-    
-    
-    
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/TeamDevelopment/" rel="tag"># TeamDevelopment</a>
+              <a href="/tags/Github/" rel="tag"># Github</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/18/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%201%20-%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%E5%9F%B9%E8%AE%AD-%E8%A7%84%E5%88%99%E8%A7%A3%E8%AF%BB/" rel="prev" title="机器人创意大赛培训-规则解读">
+      <i class="fa fa-chevron-left"></i> 机器人创意大赛培训-规则解读
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
   
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/20/0%20hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="Ben Huang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ben Huang's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/20/0%20hello-world/" class="post-title-link" itemprop="url">Hexo's Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-20 13:53:54" itemprop="dateCreated datePublished" datetime="2020-08-20T13:53:54+08:00">2020-08-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-21 00:50:01" itemprop="dateModified" datetime="2020-08-21T00:50:01+08:00">2020-08-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/20/0%20hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
 
 
 
@@ -475,6 +372,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">GitHub上传下拉仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%9C%A8github%E4%B8%8A%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93"><span class="nav-number">1.1.</span> <span class="nav-text">一、在github上新建一个仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81-%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">二、 在本地创建一个仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81-%E6%B7%BB%E5%8A%A0SSH-Key"><span class="nav-number">1.3.</span> <span class="nav-text">三、 添加SSH Key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E4%B8%8B%E6%8B%89github%E4%BB%93%E5%BA%93%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E4%B8%8E%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E5%85%B3%E8%81%94"><span class="nav-number">1.4.</span> <span class="nav-text">四、下拉github仓库文件进行与本地仓库的关联</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%88%A0%E9%99%A4github%E4%B8%8A%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">五、删除github上的文件</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

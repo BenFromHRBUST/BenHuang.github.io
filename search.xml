@@ -187,90 +187,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用GitHub进行团队开发</title>
-    <url>/2020/08/22/Git%200%20-%20%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</url>
-    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a><strong>目录</strong></h2><p>第一步：注册GitHub账号</p>
-<p>第二步：创建一个组织（团队）</p>
-<p>第三步：创建仓库</p>
-<p>第四步：下载安装git客户端</p>
-<p>第五步：克隆仓库</p>
-<p>第六步：创建项目</p>
-<p>第七步：导入项目</p>
-<p>第八步：上传/下拉代码，并解决冲突</p>
-<a id="more"></a>
-
-<h2 id="第一步：注册GitHub的账号"><a href="#第一步：注册GitHub的账号" class="headerlink" title="第一步：注册GitHub的账号"></a>第一步：注册GitHub的账号</h2><p>官网：<a href="https://github.com/">https://github.com/</a></p>
-<p>官网是全英文的，如果大家实在看不懂一些英文的话，可以利用谷歌浏览进行翻译。</p>
-<p><img src="https://img-blog.csdn.net/20180922150849285?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>我是利用邮箱进行注册的，如果大家利用邮箱进行注册的话，需要到邮箱进行验证与激活账号。</p>
-<p>填写相关信息进行注册：</p>
-<p><img src="https://img-blog.csdn.net/20180922151142615?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>版本选择：初学者的话建议先选择免费版，我这里选择的是免费版。</p>
-<p><img src="https://img-blog.csdn.net/20180922151310770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>接着，这里的内容，根据个人来填，可填可不填，我用谷歌浏览器进行了翻译，大家可以看得明白一些。</p>
-<p><img src="https://img-blog.csdn.net/20180922151435870?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>注册完成，我们就可以去登录了，记得去邮箱验证激活账号。</p>
-<p><img src="https://img-blog.csdn.net/20180922151602560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h2 id="第二步：创建一个组织（团队）"><a href="#第二步：创建一个组织（团队）" class="headerlink" title="第二步：创建一个组织（团队）"></a>第二步：创建一个组织（团队）</h2><p>登录成功后，我们先创建一个组织（团队）。如下操作，大家看不懂英文的可以用谷歌浏览器翻译喔。</p>
-<p><img src="https://img-blog.csdn.net/20180922151719495?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>根据自己的情况，填写相关信息，下面的页面已经被我翻译为中文的了。</p>
-<p><img src="https://img-blog.csdn.net/20180922153016469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>邀请队员：邀请我们的队员，和我们一起使用该仓库，填写队员邮箱，点击Invite，向队员发送邮件，待队员同意就可以一起开发了。</p>
-<p><img src="https://img-blog.csdn.net/20180922153143728?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>下面的内容，我们根据自己的意愿来填写，也可以直接跳过。</p>
-<p><img src="https://img-blog.csdn.net/20180922153419675?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>这样，我们的（组织）团队也就创建好了。</p>
-<h2 id="第三步：创建仓库"><a href="#第三步：创建仓库" class="headerlink" title="第三步：创建仓库"></a>第三步：创建仓库</h2><p>团队创建完成后，我们还需要创建一个共有的仓库，用于存放我们团队代码。</p>
-<p><img src="https://img-blog.csdn.net/20180922153513124?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>根据下图，填写相关信息，记得勾选创建一个初始化配置文件（readme.md）。</p>
-<p><img src="https://img-blog.csdn.net/20180922155257380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>完成之后，我们点击创建仓库，看到下面的界面表示创建仓库成功。</p>
-<p><img src="https://img-blog.csdn.net/20180922155436224?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h2 id="第四步：下载安装Git客户端"><a href="#第四步：下载安装Git客户端" class="headerlink" title="第四步：下载安装Git客户端"></a>第四步：下载安装Git客户端</h2><p>地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>下载好后，我们直接安装。</p>
-<h2 id="第五步：克隆仓库"><a href="#第五步：克隆仓库" class="headerlink" title="第五步：克隆仓库"></a>第五步：克隆仓库</h2><p>在我们想要克隆的路径下右击鼠标，选择如下的 <strong>Git GUI Here</strong> 我们先使用图形化界面进行操作，日后熟悉了可以用下面的命令窗口进行操作。</p>
-<p><img src="https://img-blog.csdn.net/20180922160705529?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>接下来，选择第二项，克隆仓库（GitHub上的仓库），将云端的仓库克隆到本地。</p>
-<p><img src="https://img-blog.csdn.net/20180922160858983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>下面，填写云端的仓库地址，和本地的仓库将要存放的路径。</p>
-<p>第一次使用，会要求输入你的GitHub账号和密码。</p>
-<p><img src="https://img-blog.csdn.net/20180922160951128?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>稍等片刻，如果在当前路径看到如下的文件（readme.md），表示克隆成功。</p>
-<p><img src="https://img-blog.csdn.net/20180922161753528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h2 id="第六步：创建项目"><a href="#第六步：创建项目" class="headerlink" title="第六步：创建项目"></a>第六步：创建项目</h2><p>我们在eclipse中创建一个项目，这里我创建的是一个maven项目，项目的存放路径，改为我们刚刚克隆下来的仓库所在路径（readme.md）文件所在的路径，即：用克隆下来的仓库存放我们新建的项目。</p>
-<p><img src="https://img-blog.csdn.net/20180922162641928?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>如果项目创建成功，长下面的样子。</p>
-<p><img src="https://img-blog.csdn.net/20180922162857770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>如果我们的项目创建好并对项目结构进行初始化后，我们就可以上传一波代码了。具体操作请看下面：</p>
-<p><img src="https://img-blog.csdn.net/20180922165155149?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>第一次推送代码是不会被拒绝的，如果之前有人推送过代码，并且本地未更新代码，那么会被拒绝，要求先下拉代码。</p>
-<p>下拉代码，请看下面的操作：</p>
-<p><img src="https://img-blog.csdn.net/20180922165502406?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>也可以打开git staging 来提交代码，可以先提交到本地，再推送到云端，也可以同时推送。如下图：</p>
-<p><img src="https://img-blog.csdn.net/20180922165543983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h2 id="第七步：导入工程"><a href="#第七步：导入工程" class="headerlink" title="第七步：导入工程"></a>第七步：导入工程</h2><p>如果，项目的搭建已经完成，并且上传到了GitHub，那么其他队员就可以直接克隆仓库，然后将克隆下来的仓库里的项目直接导入到eclipse就可以了。克隆仓库和之前的步骤一样，只是在导入项目的时候选择克隆下来的项目即可。</p>
-<p><img src="https://img-blog.csdn.net/20180922171111783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>我们修改代码后，在推送代码的时候可能会被拒绝，因为之前的代码和现在的代码发生了改变，需要程序员手动解决冲突。</p>
-<p><img src="https://img-blog.csdn.net/20180922171119490?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<h2 id="第八步：解决冲突"><a href="#第八步：解决冲突" class="headerlink" title="第八步：解决冲突"></a>第八步：解决冲突</h2><p>如果我们上传代码被拒接，我们需要先拉代码：下面就是被拉下来的代码</p>
-<p><img src="https://img-blog.csdn.net/20180922171330169?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>如果代码有冲突，我们要手动解决冲突，决定代码是保留还是删除。</p>
-<p><strong>&lt;&lt;&lt;&lt;&lt;&lt;HEAD</strong> 与 <strong>======</strong> 之间的代码是自己本地的代码</p>
-<p>======== 与 branch ‘master’ of <a href="https://github.com/">https://github.com</a>…………. 之间的代码是云端的代码</p>
-<p>这里需要手动删除或者保留代码。然后再上传代码即可。</p>
-<p><img src="https://img-blog.csdn.net/20180922180137599?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>到此，咱们便可以使用GitHub愉快的进行团队开发了。</p>
-]]></content>
-      <categories>
-        <category>TeamDevelopment</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>GitHub</tag>
-        <tag>TeamDevelopment</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>在GitHub上用Hexo搭建个人博客</title>
     <url>/2020/08/21/Hexo%201%20-%20%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p><strong>内容目录（下面目录中第 3~5 步为最重要的步骤，其他内容可选择性跳过。）</strong></p>
@@ -895,6 +811,8 @@
     <title>机器人创意大赛培训-规则解读</title>
     <url>/2020/09/18/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%201%20-%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%E5%9F%B9%E8%AE%AD-%E8%A7%84%E5%88%99%E8%A7%A3%E8%AF%BB/</url>
     <content><![CDATA[<h1 id="场地说明"><a href="#场地说明" class="headerlink" title="场地说明"></a>场地说明</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>1）比赛的擂台是放在一个高度0.5米，边长3.8米的台上。<br>2）比赛场地大小为长、宽为2400*2400m，高60mm的正方形矮台，台上表面即为比赛场地。底色从外侧四角到中心分别为纯黑到纯白渐变的灰度。场地两侧的出发区用正蓝色和正黄色颜色涂敷，平地尺寸为500mm*400m，距离擂台边缘200mm。<br>3）场地地面为黑色。擂台四周700m处有高200mm的方形黑色围栏。</p>
+<a id="more"></a>
+
 <p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160000750.png" alt="image-20200918160000750"></p>
 <p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160050842.png" alt="image-20200918160050842"></p>
 <h2 id="自制场地方案"><a href="#自制场地方案" class="headerlink" title="自制场地方案"></a>自制场地方案</h2><p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160128104.png" alt="image-20200918160128104"></p>
@@ -942,6 +860,130 @@
         <tag>机器人创意大赛</tag>
         <tag>博创尚和</tag>
         <tag>机器人</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git上传下拉仓库</title>
+    <url>/2020/09/29/Git%202%20-%20Git%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93/</url>
+    <content><![CDATA[<h1 id="GitHub上传下拉仓库"><a href="#GitHub上传下拉仓库" class="headerlink" title="GitHub上传下拉仓库"></a>GitHub上传下拉仓库</h1><h2 id="一、在github上新建一个仓库"><a href="#一、在github上新建一个仓库" class="headerlink" title="一、在github上新建一个仓库"></a>一、在github上新建一个仓库</h2><h2 id="二、-在本地创建一个仓库"><a href="#二、-在本地创建一个仓库" class="headerlink" title="二、 在本地创建一个仓库"></a>二、 在本地创建一个仓库</h2><ul>
+<li>git init</li>
+</ul>
+<h2 id="三、-添加SSH-Key"><a href="#三、-添加SSH-Key" class="headerlink" title="三、 添加SSH Key"></a>三、 添加SSH Key</h2><ul>
+<li>在本地仓库的文件下 右键gitbush here</li>
+<li>打开gitbush</li>
+<li>输入命令 ssh-keygen -t rsa -C ‘<a href="mailto:&#49;&#51;&#x37;&#49;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#49;&#51;&#x37;&#49;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a>(即自己的邮箱地址)’</li>
+<li>一直回车</li>
+<li>然后会在该目录下生成两个文件 ### ###.pub</li>
+<li>复制这两个文件黏贴到 C:/用户/当前登录电脑的账户名/.ssh 并修改两个文件的名称分别为id_rsa id_rsa.pub</li>
+<li>执行shh-add id_rsa 将生成的key添加</li>
+<li>打开d_rsa.pub 复制里面的公钥</li>
+<li>到github上 选择setting-&gt;SSH and GPG keys，点击New SHH key，任意输入名字 然后把复制的公钥黏贴到key 完成SSH的创建</li>
+</ul>
+<h2 id="四、下拉github仓库文件进行与本地仓库的关联"><a href="#四、下拉github仓库文件进行与本地仓库的关联" class="headerlink" title="四、下拉github仓库文件进行与本地仓库的关联"></a>四、下拉github仓库文件进行与本地仓库的关联</h2><ul>
+<li>添加远程仓库地址 将本地仓库与github仓库进行关联<br> git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;</a>:<a href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1">HRBUST-EmbeddedLaboratoryTeam1</a>/<strong><a href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1/RobotFightingContest">RobotFightingContest</a></strong><br> <strong>可以通过 git remote -v查看已经添加的，可以通过git remote rm origin删除，修改默认的remote.url和remote.origin可以通过git config –global remote.url ‘修改的值’进行修改</strong></li>
+<li>下拉远程仓库 使本地和远程保留一致 这点很重要 如果不保留一致 就无法进行上传<br> git pull origin master</li>
+<li>添加本地需要上传的文件至缓存区<br> git add . 表示添加所有</li>
+<li>提交至本地仓库<br> git commit -m ‘这是第一次提交’</li>
+<li>上传至github远程仓库<br> git push origin master</li>
+</ul>
+<h2 id="五、删除github上的文件"><a href="#五、删除github上的文件" class="headerlink" title="五、删除github上的文件"></a>五、删除github上的文件</h2><ul>
+<li>还是先下拉github上的远程仓库至本地仓库<br> git pull origin master</li>
+<li>将文件从仓库中移除 但是不删除<br> git rm –cached 文件名</li>
+<li>提交至本地仓库<br> git commit -m ‘这是删除了文件的修改’</li>
+<li>上传至github远程仓库<br> git push origin master</li>
+</ul>
+]]></content>
+      <categories>
+        <category>TeamDevelopment</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>TeamDevelopment</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用GitHub进行团队开发</title>
+    <url>/2020/08/22/Git%201%20-%20%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a><strong>目录</strong></h2><p>第一步：注册GitHub账号</p>
+<p>第二步：创建一个组织（团队）</p>
+<p>第三步：创建仓库</p>
+<p>第四步：下载安装git客户端</p>
+<p>第五步：克隆仓库</p>
+<p>第六步：创建项目</p>
+<p>第七步：导入项目</p>
+<p>第八步：上传/下拉代码，并解决冲突</p>
+<a id="more"></a>
+
+<h2 id="第一步：注册GitHub的账号"><a href="#第一步：注册GitHub的账号" class="headerlink" title="第一步：注册GitHub的账号"></a>第一步：注册GitHub的账号</h2><p>官网：<a href="https://github.com/">https://github.com/</a></p>
+<p>官网是全英文的，如果大家实在看不懂一些英文的话，可以利用谷歌浏览进行翻译。</p>
+<p><img src="https://img-blog.csdn.net/20180922150849285?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>我是利用邮箱进行注册的，如果大家利用邮箱进行注册的话，需要到邮箱进行验证与激活账号。</p>
+<p>填写相关信息进行注册：</p>
+<p><img src="https://img-blog.csdn.net/20180922151142615?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>版本选择：初学者的话建议先选择免费版，我这里选择的是免费版。</p>
+<p><img src="https://img-blog.csdn.net/20180922151310770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>接着，这里的内容，根据个人来填，可填可不填，我用谷歌浏览器进行了翻译，大家可以看得明白一些。</p>
+<p><img src="https://img-blog.csdn.net/20180922151435870?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>注册完成，我们就可以去登录了，记得去邮箱验证激活账号。</p>
+<p><img src="https://img-blog.csdn.net/20180922151602560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第二步：创建一个组织（团队）"><a href="#第二步：创建一个组织（团队）" class="headerlink" title="第二步：创建一个组织（团队）"></a>第二步：创建一个组织（团队）</h2><p>登录成功后，我们先创建一个组织（团队）。如下操作，大家看不懂英文的可以用谷歌浏览器翻译喔。</p>
+<p><img src="https://img-blog.csdn.net/20180922151719495?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>根据自己的情况，填写相关信息，下面的页面已经被我翻译为中文的了。</p>
+<p><img src="https://img-blog.csdn.net/20180922153016469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>邀请队员：邀请我们的队员，和我们一起使用该仓库，填写队员邮箱，点击Invite，向队员发送邮件，待队员同意就可以一起开发了。</p>
+<p><img src="https://img-blog.csdn.net/20180922153143728?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>下面的内容，我们根据自己的意愿来填写，也可以直接跳过。</p>
+<p><img src="https://img-blog.csdn.net/20180922153419675?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>这样，我们的（组织）团队也就创建好了。</p>
+<h2 id="第三步：创建仓库"><a href="#第三步：创建仓库" class="headerlink" title="第三步：创建仓库"></a>第三步：创建仓库</h2><p>团队创建完成后，我们还需要创建一个共有的仓库，用于存放我们团队代码。</p>
+<p><img src="https://img-blog.csdn.net/20180922153513124?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>根据下图，填写相关信息，记得勾选创建一个初始化配置文件（readme.md）。</p>
+<p><img src="https://img-blog.csdn.net/20180922155257380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>完成之后，我们点击创建仓库，看到下面的界面表示创建仓库成功。</p>
+<p><img src="https://img-blog.csdn.net/20180922155436224?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第四步：下载安装Git客户端"><a href="#第四步：下载安装Git客户端" class="headerlink" title="第四步：下载安装Git客户端"></a>第四步：下载安装Git客户端</h2><p>地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>下载好后，我们直接安装。</p>
+<h2 id="第五步：克隆仓库"><a href="#第五步：克隆仓库" class="headerlink" title="第五步：克隆仓库"></a>第五步：克隆仓库</h2><p>在我们想要克隆的路径下右击鼠标，选择如下的 <strong>Git GUI Here</strong> 我们先使用图形化界面进行操作，日后熟悉了可以用下面的命令窗口进行操作。</p>
+<p><img src="https://img-blog.csdn.net/20180922160705529?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>接下来，选择第二项，克隆仓库（GitHub上的仓库），将云端的仓库克隆到本地。</p>
+<p><img src="https://img-blog.csdn.net/20180922160858983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>下面，填写云端的仓库地址，和本地的仓库将要存放的路径。</p>
+<p>第一次使用，会要求输入你的GitHub账号和密码。</p>
+<p><img src="https://img-blog.csdn.net/20180922160951128?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>稍等片刻，如果在当前路径看到如下的文件（readme.md），表示克隆成功。</p>
+<p><img src="https://img-blog.csdn.net/20180922161753528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第六步：创建项目"><a href="#第六步：创建项目" class="headerlink" title="第六步：创建项目"></a>第六步：创建项目</h2><p>我们在eclipse中创建一个项目，这里我创建的是一个maven项目，项目的存放路径，改为我们刚刚克隆下来的仓库所在路径（readme.md）文件所在的路径，即：用克隆下来的仓库存放我们新建的项目。</p>
+<p><img src="https://img-blog.csdn.net/20180922162641928?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>如果项目创建成功，长下面的样子。</p>
+<p><img src="https://img-blog.csdn.net/20180922162857770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>如果我们的项目创建好并对项目结构进行初始化后，我们就可以上传一波代码了。具体操作请看下面：</p>
+<p><img src="https://img-blog.csdn.net/20180922165155149?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>第一次推送代码是不会被拒绝的，如果之前有人推送过代码，并且本地未更新代码，那么会被拒绝，要求先下拉代码。</p>
+<p>下拉代码，请看下面的操作：</p>
+<p><img src="https://img-blog.csdn.net/20180922165502406?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>也可以打开git staging 来提交代码，可以先提交到本地，再推送到云端，也可以同时推送。如下图：</p>
+<p><img src="https://img-blog.csdn.net/20180922165543983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第七步：导入工程"><a href="#第七步：导入工程" class="headerlink" title="第七步：导入工程"></a>第七步：导入工程</h2><p>如果，项目的搭建已经完成，并且上传到了GitHub，那么其他队员就可以直接克隆仓库，然后将克隆下来的仓库里的项目直接导入到eclipse就可以了。克隆仓库和之前的步骤一样，只是在导入项目的时候选择克隆下来的项目即可。</p>
+<p><img src="https://img-blog.csdn.net/20180922171111783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>我们修改代码后，在推送代码的时候可能会被拒绝，因为之前的代码和现在的代码发生了改变，需要程序员手动解决冲突。</p>
+<p><img src="https://img-blog.csdn.net/20180922171119490?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<h2 id="第八步：解决冲突"><a href="#第八步：解决冲突" class="headerlink" title="第八步：解决冲突"></a>第八步：解决冲突</h2><p>如果我们上传代码被拒接，我们需要先拉代码：下面就是被拉下来的代码</p>
+<p><img src="https://img-blog.csdn.net/20180922171330169?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>如果代码有冲突，我们要手动解决冲突，决定代码是保留还是删除。</p>
+<p><strong>&lt;&lt;&lt;&lt;&lt;&lt;HEAD</strong> 与 <strong>======</strong> 之间的代码是自己本地的代码</p>
+<p>======== 与 branch ‘master’ of <a href="https://github.com/">https://github.com</a>…………. 之间的代码是云端的代码</p>
+<p>这里需要手动删除或者保留代码。然后再上传代码即可。</p>
+<p><img src="https://img-blog.csdn.net/20180922180137599?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>到此，咱们便可以使用GitHub愉快的进行团队开发了。</p>
+]]></content>
+      <categories>
+        <category>TeamDevelopment</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>GitHub</tag>
+        <tag>TeamDevelopment</tag>
       </tags>
   </entry>
 </search>
