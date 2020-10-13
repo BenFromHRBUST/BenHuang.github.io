@@ -221,7 +221,7 @@
 </ul>
 <p>Hexo 是一个快速、简洁且高效的静态博客框架，它基于 Node.js 运行，可以将我们撰写的 Markdown 文档解析渲染成静态的 HTML 网页。</p>
 <h3 id="Hexo-GitHub-文章发布原理"><a href="#Hexo-GitHub-文章发布原理" class="headerlink" title="# Hexo + GitHub 文章发布原理"></a><strong># Hexo + GitHub 文章发布原理</strong></h3><p>在本地撰写 Markdown 格式文章后，通过 Hexo 解析文档，渲染生成具有主题样式的 HTML 静态网页，再推送到 GitHub 上完成博文的发布。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-a193a47cf70fe6ecf156e5f3d34920ea_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-a193a47cf70fe6ecf156e5f3d34920ea_720w.jpg" alt="img"></p>
 <h3 id="优点和不足"><a href="#优点和不足" class="headerlink" title="# 优点和不足"></a><strong># 优点和不足</strong></h3><p><strong>优点：</strong>完全免费；静态站点，轻量快速；可按需求自由定制改造；托管在 GitHub，安全省心；迁移方便……</p>
 <p><strong>不足：</strong>发文不便，依赖于本地环境；更适合个人博客使用；GitHub 在国内访问速度有点不快。</p>
 <h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1. 准备"></a>1. 准备</h2><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="# 注意事项"></a><strong># 注意事项</strong></h3><ul>
@@ -237,7 +237,7 @@
 </ul>
 <p>下载 Node.js 和 Git 程序并安装，一路点 “下一步” 按默认配置完成安装。</p>
 <p>安装完成后，Win+R 输入 cmd 并打开，依次输入 <code>node -v</code>、<code>npm -v</code> 和 <code>git --version</code> 并回车，如下图出现程序版本号即可。</p>
-<p><img src="https://picb.zhimg.com/80/v2-27b47b5ae479ce7987851292a67774b0_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-27b47b5ae479ce7987851292a67774b0_720w.jpg" alt="img"></p>
 <h2 id="2-连接-Github"><a href="#2-连接-Github" class="headerlink" title="2. 连接 Github"></a>2. 连接 Github</h2><p>使用邮箱注册 <a href="https://link.zhihu.com/?target=https://github.com/">GitHub</a> 账户，选择免费账户（Free），并完成邮件验证。</p>
 <p>右键 -&gt; Git Bash Here，<strong>设置用户名和邮箱</strong>：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;GitHub 用户名&quot;</span><br><span class="line">git config --global user.email &quot;GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure>
@@ -248,10 +248,10 @@
 <p>进入 [C:\Users\用户名.ssh] 目录（要勾选显示“隐藏的项目”），用记事本打开公钥 id_rsa.pub 文件并复制里面的内容。</p>
 <p>登陆 GitHub ，进入 Settings 页面，选择左边栏的 SSH and GPG keys，点击 New SSH key。</p>
 <p>Title 随便取个名字，粘贴复制的 id_rsa.pub 内容到 Key 中，点击 Add SSH key 完成添加。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-9125065afd24332d7cd84feb6a350730_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-9125065afd24332d7cd84feb6a350730_720w.jpg" alt="img"></p>
 <p><strong>验证连接：</strong></p>
 <p>打开 Git Bash，输入 <code>ssh -T git@github.com</code> 出现 “Are you sure……”，输入 yes 回车确认。</p>
-<p><img src="https://picb.zhimg.com/80/v2-b4c7524a2451f4ab42f9c22ea3c7b6be_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-b4c7524a2451f4ab42f9c22ea3c7b6be_720w.jpg" alt="img"></p>
 <p>显示 “Hi xxx! You’ve successfully……” 即连接成功。</p>
 <h2 id="3-创建-Github-Pages-仓库"><a href="#3-创建-Github-Pages-仓库" class="headerlink" title="3. 创建 Github Pages 仓库"></a>3. 创建 Github Pages 仓库</h2><p>GitHub 主页右上角加号 -&gt; New repository：</p>
 <ul>
@@ -260,7 +260,7 @@
 <li>Description 选填</li>
 </ul>
 <p>填好后点击 Create repository 创建。</p>
-<p><img src="https://pic2.zhimg.com/80/v2-67a8165154f4c5f4a6333e76e78ed815_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-67a8165154f4c5f4a6333e76e78ed815_720w.jpg" alt="img"></p>
 <p>创建后默认自动启用 HTTPS，博客地址为：<code>https://用户名.github.io</code></p>
 <h2 id="4-本地安装-Hexo-博客程序"><a href="#4-本地安装-Hexo-博客程序" class="headerlink" title="4. 本地安装 Hexo 博客程序"></a>4. 本地安装 Hexo 博客程序</h2><p>新建一个文件夹用来存放 Hexo 的程序文件，如 Hexo-Blog。打开该文件夹，右键 -&gt; Git Bash Here。</p>
 <h3 id="4-1-安装-Hexo"><a href="#4-1-安装-Hexo" class="headerlink" title="# 4.1 安装 Hexo"></a><strong># 4.1 安装 Hexo</strong></h3><p>使用 npm 一键安装 Hexo 博客程序：</p>
@@ -270,7 +270,7 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
 <p>安装时间有点久（真的很慢！），界面也没任何反应，<strong>耐心等待</strong>，安装完成后如下图。</p>
-<p><img src="https://pic2.zhimg.com/80/v2-01e7fc8bb9280437deb437bf73a190a1_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-01e7fc8bb9280437deb437bf73a190a1_720w.jpg" alt="img"></p>
 <h3 id="4-2-Hexo-初始化和本地预览"><a href="#4-2-Hexo-初始化和本地预览" class="headerlink" title="# 4.2 Hexo 初始化和本地预览"></a><strong># 4.2 Hexo 初始化和本地预览</strong></h3><p><strong>初始化并安装所需组件：</strong></p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo init      # 初始化</span><br><span class="line">npm install    # 安装组件</span><br></pre></td></tr></table></figure>
 
@@ -278,10 +278,10 @@
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo g   # 生成页面</span><br><span class="line">hexo s   # 启动预览</span><br></pre></td></tr></table></figure>
 
 <p><strong>访问</strong> <code>http://localhost:4000</code><strong>，出现 Hexo 默认页面，本地博客安装成功！</strong></p>
-<p><img src="https://picb.zhimg.com/80/v2-1c3baeecf1ef3bec5c8ef3f14639f68b_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-1c3baeecf1ef3bec5c8ef3f14639f68b_720w.jpg" alt="img"></p>
 <p><strong>Tips：</strong>如果出现页面加载不出来，可能是端口被占用了。Ctrl+C 关闭服务器，运行 <code>hexo server -p 5000</code> 更改端口号后重试。</p>
 <p>Hexo 博客文件夹目录结构如下：</p>
-<p><img src="https://pic4.zhimg.com/80/v2-264c75c0e493ae8cc5f283567c64ff2c_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-264c75c0e493ae8cc5f283567c64ff2c_720w.jpg" alt="img"></p>
 <h2 id="5-部署-Hexo-到-GitHub-Pages"><a href="#5-部署-Hexo-到-GitHub-Pages" class="headerlink" title="5. 部署 Hexo 到 GitHub Pages"></a>5. 部署 Hexo 到 GitHub Pages</h2><p>本地博客测试成功后，就是上传到 GitHub 进行部署，使其能够在网络上访问。</p>
 <p>首先<strong>安装 hexo-deployer-git</strong>：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -297,14 +297,14 @@
 <li>域名注册和解析教程：<a href="https://zhuanlan.zhihu.com/p/33921436">Namesilo 域名购买及使用教程</a></li>
 </ul>
 <p>按上面教程注册并解析域名，在 DNS 设置部分，删除自带的记录，然后添加 CNAME 记录将 www 域名解析指向 <code>用户名.github.io</code>。</p>
-<p><img src="https://pic2.zhimg.com/80/v2-d5d37c8ad523d8ab5c7c200fabc9585e_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-d5d37c8ad523d8ab5c7c200fabc9585e_720w.jpg" alt="img"></p>
 <h3 id="6-2-绑定域名到-Hexo-博客"><a href="#6-2-绑定域名到-Hexo-博客" class="headerlink" title="# 6.2 绑定域名到 Hexo 博客"></a><strong># 6.2 绑定域名到 Hexo 博客</strong></h3><p>进入本地博客文件夹的 source 目录，打开记事本，里面输入自己的域名，如 <a href="http://www.example.com,保存名称为/">http://www.example.com，保存名称为</a> “CNAME”，格式为 “所有文件”（无 .txt 后缀）。</p>
 <p>清除缓存等文件并重新发布网站：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo clean   # 清除缓存文件等</span><br><span class="line">hexo g       # 生成页面</span><br><span class="line">hexo s       # 启动预览</span><br></pre></td></tr></table></figure>
 
 <p>现在就可以使用自己的域名访问 Hexo 博客了。</p>
 <h3 id="6-3-开启-HTTPS"><a href="#6-3-开启-HTTPS" class="headerlink" title="# 6.3 开启 HTTPS"></a><strong># 6.3 开启 HTTPS</strong></h3><p>配置自己的域名后，需要我们手动开启 HTTPS。打开博客所在 GitHub 仓库，Settings -&gt; 下拉找到 GitHub Pages -&gt; 勾选 Enforce HTTPS。</p>
-<p><img src="https://pic1.zhimg.com/80/v2-54f8744afc9746884e6b3acecfc5f8cf_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-54f8744afc9746884e6b3acecfc5f8cf_720w.jpg" alt="img"></p>
 <p>HTTPS 证书部署成功需要一定时间，等大概几分钟再访问域名，就可以看到域名前面的小绿锁了，HTTPS 配置完成！</p>
 <h2 id="7-开始使用"><a href="#7-开始使用" class="headerlink" title="7. 开始使用"></a>7. 开始使用</h2><h3 id="7-1-发布文章"><a href="#7-1-发布文章" class="headerlink" title="# 7.1 发布文章"></a><strong># 7.1 发布文章</strong></h3><p>进入博客所在目录，右键打开 Git Bash Here，创建博文：</p>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
@@ -328,7 +328,7 @@
 <h2 id="8-常见问题"><a href="#8-常见问题" class="headerlink" title="8 常见问题"></a>8 常见问题</h2><p><strong>1、Hexo 设置显示文章摘要，首页不显示全文</strong></p>
 <p>Hexo 主页文章列表默认会显示文章全文，浏览时很不方便，可以在文章中插入 `` 进行分段。</p>
 <p>该代码前面的内容会作为摘要显示，而后面的内容会替换为 “Read More” 隐藏起来。</p>
-<p><img src="https://pic4.zhimg.com/80/v2-45701cf120ca77e6733ad30b40666f33_720w.jpg" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\v2-45701cf120ca77e6733ad30b40666f33_720w.jpg" alt="img"></p>
 <p><strong>2、设置网站图标</strong></p>
 <p>进入 themes/主题 文件夹，打开 _config.yml 配置文件，找到 favicon 修改，一般格式为：<code>favicon: 图标地址</code>。（不同主题可能略有差别）</p>
 <p><strong>3、修改并部署后没有效果</strong></p>
@@ -456,14 +456,14 @@
 <figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> is_pv %&#125;</span><br><span class="line">  &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">  &lt;span id=<span class="string">&quot;busuanzi_value_page_pv&quot;</span>&gt;&lt;/span&gt;次阅读</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>插入的位置</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4120931-bdbc90ff2c4285a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/631/format/webp" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\image-20201013233055170.png"></p>
 <p> 然后再打开 <strong>themes/next/layout/post.swig</strong>，这个文件是文章的模板，给render方法传入参数（对应刚才添加的<code>is_pv</code>字段）</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4120931-8418d415c31ff529.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/659/format/webp" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\image-20201013233143051.png"></p>
 <p> 最后再打开 <strong>themes/next/layout/index.swig</strong>，这个文件是首页的模板，给render方法传入参数（对应刚才添加的is_pv字段）</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4120931-5d89c00ea392bf01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/632/format/webp" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\image-20201013233158184.png"></p>
 <p> OK！设置完毕。</p>
 <h2 id="18、去掉文章目录标题的自动编号"><a href="#18、去掉文章目录标题的自动编号" class="headerlink" title="18、去掉文章目录标题的自动编号"></a>18、去掉文章目录标题的自动编号</h2><p>我们自己写文章的时候一般都会自己带上标题编号，但是默认的主题会给我们带上编号，很是别扭，如何去掉呢？<br> 打开<strong>主题配置文件</strong>，找到</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/4120931-dcd17d644851e21f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/663/format/webp" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\image-20201013233242767.png"></p>
 <p>将<code>number</code>改为<code>false</code>即可</p>
 <h2 id="18、更多"><a href="#18、更多" class="headerlink" title="18、更多"></a>18、更多</h2><p>1、还有其他更多的主题配置，请查看<a href="https://links.jianshu.com/go?to=http://theme-next.iissnan.com/theme-settings.html">主题配置</a><br> 2、还有其他更多的插件，请查看<a href="https://links.jianshu.com/go?to=https://hexo.io/plugins/">Hexo插件</a></p>
 ]]></content>
@@ -535,15 +535,15 @@
 
 <h1 id="五、接口规范"><a href="#五、接口规范" class="headerlink" title="五、接口规范"></a>五、接口规范</h1><h2 id="Api-的-method"><a href="#Api-的-method" class="headerlink" title="Api 的 method"></a><strong>Api 的 method</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Api 的 method，要根据实际请求的类型，查询一定要用 get，不能随意指定 method。</span><br><span class="line">具体可以参考文档 《RESTful Web Services Cookbook-cn.pdf》 。</span><br></pre></td></tr></table></figure>
 
-<h2 id="接口返回内容"><a href="#接口返回内容" class="headerlink" title="接口返回内容"></a><strong>接口返回内容</strong></h2><p>接口返回内容开发建议直接参考蓝鲸 apigateway 规范，返回的内容中包含 result code data message request_id 这几个字段<br> <img src="https://img-blog.csdnimg.cn/20190814163629264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="接口返回内容"><a href="#接口返回内容" class="headerlink" title="接口返回内容"></a><strong>接口返回内容</strong></h2><p>接口返回内容开发建议直接参考蓝鲸 apigateway 规范，返回的内容中包含 result code data message request_id 这几个字段<br> <img src="E:\BenHuangBlog\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h2 id="接口返回Status-Code"><a href="#接口返回Status-Code" class="headerlink" title="接口返回Status Code"></a><strong>接口返回Status Code</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">**建议充分利用 HTTP Status Code 作为响应结果的基本状态码，基本状态码不能区分的 status，</span><br><span class="line">再用响应 body 中&quot;约定&quot;的 code 进行补充</span><br><span class="line"></span><br><span class="line">http状态码详细说明请参考： https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;HTTP%E7%8A%B6%E6%80%81%E7%A0%81**</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/20191028195740787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="E:\BenHuangBlog\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_701" alt="在这里插入图片描述"></p>
 <h2 id="接口数据验证"><a href="#接口数据验证" class="headerlink" title="接口数据验证"></a><strong>接口数据验证</strong></h2><p>数据检验逻辑”应当”和业务逻辑分离，这样做的好处：</p>
 <p>代码逻辑更加清晰<br> 数据校验逻辑（可能）可以复用</p>
 <h2 id="分离方案"><a href="#分离方案" class="headerlink" title="分离方案"></a><strong>分离方案</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1）form-data&#x2F;url-params：Django-Form </span><br><span class="line">2）Json：Json-schema</span><br></pre></td></tr></table></figure>
 
-<h1 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h1><h2 id="Python-代码注释"><a href="#Python-代码注释" class="headerlink" title="Python 代码注释"></a><strong>Python 代码注释</strong></h2><p> 方法必须使用标注注释，如果是公有方法或对外提供的 API 相关方法，则最好给出使用样例。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163858601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> Module注释：在开头要加入对该模块的注释。如：<br> <img src="https://img-blog.csdnimg.cn/20190814163935152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 普通代码注释应该以‘#’和单个空格开始。</p>
+<h1 id="代码注释"><a href="#代码注释" class="headerlink" title="代码注释"></a>代码注释</h1><h2 id="Python-代码注释"><a href="#Python-代码注释" class="headerlink" title="Python 代码注释"></a><strong>Python 代码注释</strong></h2><p> 方法必须使用标注注释，如果是公有方法或对外提供的 API 相关方法，则最好给出使用样例。如：<br> <img src="E:\BenHuangBlog\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_702" alt="在这里插入图片描述"><br> Module注释：在开头要加入对该模块的注释。如：<br> <img src="E:\BenHuangBlog\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzNTkxMDU1,size_16,color_FFFFFF,t_703" alt="在这里插入图片描述"><br> 普通代码注释应该以‘#’和单个空格开始。</p>
 <p>如果有需要调整或者需要优化的地方，可以使用 #TODO 这里是注释内容”进行注释，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">格式：&#39;#&#39;+单个空格+&#39;TODO&#39;+单个空格+注释内容。</span><br></pre></td></tr></table></figure>
 
@@ -572,9 +572,9 @@
 <a id="more"></a>
 
 <h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>1.在windows文件管理器中输入“ %APPDATA% ”</p>
-<p><img src="https://img-blog.csdnimg.cn/20190711115440834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="E:\BenHuangBlog\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_704" alt="在这里插入图片描述"></p>
 <p>2.则会定位到一个新的目录下(“C:\Users\Administrator\AppData\Roaming\pip\pip.ini”)，Administrator为自己的用户名，在该目录下新建pip文件夹，然后到匹配文件夹中新建一个 pip.ini 文件</p>
-<p><img src="https://img-blog.csdnimg.cn/2019071111371594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="E:\BenHuangBlog\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dsczY2Ng==,size_16,color_FFFFFF,t_705" alt="在这里插入图片描述"></p>
 <p>3.在新建的 pip.ini 文件中输入以下内容，然后保存。</p>
 <p>​    <em>注意:” index-url “ 的内容是镜像源的路径，可以更换</em></p>
 <p>​    </p>
@@ -584,12 +584,12 @@
 <p>​    </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir -p .pip</span><br><span class="line">nano pip.conf # 或者 vi pip.con</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/20190711133859947.png" alt="在这里插入图片描述"></p>
+<p><img src="E:\BenHuangBlog\image\20190711133859947.png" alt="在这里插入图片描述"></p>
 <p>2.在pip.conf配置文件中，添加配置内容，就修改默认的软件源，配置内容如下：</p>
 <p>​    </p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">global</span>]</span><br><span class="line">timeout = <span class="number">6000</span></span><br><span class="line">index-url = http://pypi.douban.com/simple</span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img-blog.csdnimg.cn/20190711134005394.png" alt="在这里插入图片描述"></p>
+<p><img src="E:\BenHuangBlog\image\20190711134005394.png" alt="在这里插入图片描述"></p>
 ]]></content>
       <categories>
         <category>Python</category>
@@ -813,15 +813,15 @@
     <content><![CDATA[<h1 id="场地说明"><a href="#场地说明" class="headerlink" title="场地说明"></a>场地说明</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>1）比赛的擂台是放在一个高度0.5米，边长3.8米的台上。<br>2）比赛场地大小为长、宽为2400*2400m，高60mm的正方形矮台，台上表面即为比赛场地。底色从外侧四角到中心分别为纯黑到纯白渐变的灰度。场地两侧的出发区用正蓝色和正黄色颜色涂敷，平地尺寸为500mm*400m，距离擂台边缘200mm。<br>3）场地地面为黑色。擂台四周700m处有高200mm的方形黑色围栏。</p>
 <a id="more"></a>
 
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160000750.png" alt="image-20200918160000750"></p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160050842.png" alt="image-20200918160050842"></p>
-<h2 id="自制场地方案"><a href="#自制场地方案" class="headerlink" title="自制场地方案"></a>自制场地方案</h2><p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160128104.png" alt="image-20200918160128104"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918160000750.png" alt="image-20200918160000750"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918160050842.png" alt="image-20200918160050842"></p>
+<h2 id="自制场地方案"><a href="#自制场地方案" class="headerlink" title="自制场地方案"></a>自制场地方案</h2><p><img src="E:\BenHuangBlog\image\image-20200918160128104.png" alt="image-20200918160128104"></p>
 <h1 id="竞赛形式"><a href="#竞赛形式" class="headerlink" title="竞赛形式"></a>竞赛形式</h1><p>​    轮式自主格斗是一种非破坏性的机器人对抗赛，类似人类的武术擂台赛，两台完全自主的机器人在擂台上做对抗，比赛期间尽可能多的将对手推下擂台，当自身在擂台下时，能够自主完成登台。</p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160444699.png" alt="image-20200918160444699"></p>
-<h1 id="基础方案"><a href="#基础方案" class="headerlink" title="基础方案"></a>基础方案</h1><h2 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h2><p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160629035.png" alt="image-20200918160629035"></p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160642921.png" alt="image-20200918160642921"></p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160720568.png" alt="image-20200918160720568"></p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918160826739.png" alt="image-20200918160826739"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918160444699.png" alt="image-20200918160444699"></p>
+<h1 id="基础方案"><a href="#基础方案" class="headerlink" title="基础方案"></a>基础方案</h1><h2 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h2><p><img src="E:\BenHuangBlog\image\image-20200918160629035.png" alt="image-20200918160629035"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918160642921.png" alt="image-20200918160642921"></p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><img src="E:\BenHuangBlog\image\image-20200918160720568.png" alt="image-20200918160720568"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918160826739.png" alt="image-20200918160826739"></p>
 <h1 id="参赛要求"><a href="#参赛要求" class="headerlink" title="参赛要求"></a>参赛要求</h1><h2 id="统一部件"><a href="#统一部件" class="headerlink" title="统一部件"></a>统一部件</h2><ol>
 <li>机器人完全自主控制；</li>
 <li>机器人的重量不超过4KG；</li>
@@ -839,17 +839,17 @@
 <li>机器人不得使用带有“发射”或者爆炸性质的装置以及对人类有危险的装置，例如火焰、干冰、钢珠、刀片等。</li>
 </ol>
 <h1 id="胜负判定"><a href="#胜负判定" class="headerlink" title="胜负判定"></a>胜负判定</h1><p>每局比赛时间两分钟；2分钟后得分多的一方获胜。</p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918162633753.png" alt="image-20200918162633753"></p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918162822407.png" alt="image-20200918162822407"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918162633753.png" alt="image-20200918162633753"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918162822407.png" alt="image-20200918162822407"></p>
 <h1 id="竞赛方式"><a href="#竞赛方式" class="headerlink" title="竞赛方式"></a>竞赛方式</h1><h2 id="比赛分组与对阵方式"><a href="#比赛分组与对阵方式" class="headerlink" title="比赛分组与对阵方式"></a>比赛分组与对阵方式</h2><p>​    比赛分为小组赛和淘汰赛，小组赛共三轮，同一个小组的每支队伍分别对阵，胜一场积3分，负不得分，平局积分，并记录净胜小分。<br>​    在赛前领队会议时通过抽签的方式确定分组与赛程，如缺席抽签，视为弃权。根据参赛队伍数量不同灵活分组，原则上每个小组不超过4支队伍，不少于3支队伍。</p>
 <h2 id="小组排名方法"><a href="#小组排名方法" class="headerlink" title="小组排名方法"></a>小组排名方法</h2><p>每个小组的前两名出线，进入淘汰赛</p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918164034638.png" alt="image-20200918164034638"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918164034638.png" alt="image-20200918164034638"></p>
 <ul>
 <li>积分：胜负平的场数</li>
 <li>净胜分：三场比赛的总得分 - 三场比赛的总失分</li>
 </ul>
 <h2 id="总体排名方法"><a href="#总体排名方法" class="headerlink" title="总体排名方法"></a>总体排名方法</h2><p>​    先把各小组第一名拿出来，按照以下方式排名：</p>
-<p><img src="C:\Users\13714\AppData\Roaming\Typora\typora-user-images\image-20200918175637226.png" alt="image-20200918175637226"></p>
+<p><img src="E:\BenHuangBlog\image\image-20200918175637226.png" alt="image-20200918175637226"></p>
 <p>平均积分 = 积分 / 场次</p>
 <h2 id="出线队伍对阵方法"><a href="#出线队伍对阵方法" class="headerlink" title="出线队伍对阵方法"></a>出线队伍对阵方法</h2><p>​    每个小组前两名出线，先进行第一轮淘汰赛，第一轮淘汰赛后保留2的n次方支队伍，按照排名靠后队伍相互对阵的原则。然后进行第二轮淘汰赛，按照第一名对阵最后一名的原则进行对阵，直到三四名和冠亚军决赛。淘汰赛以二级学院为单位，本项目限定进入淘汰赛的对数数量为2支。</p>
 ]]></content>
@@ -868,10 +868,12 @@
     <content><![CDATA[<h1 id="GitHub上传下拉仓库"><a href="#GitHub上传下拉仓库" class="headerlink" title="GitHub上传下拉仓库"></a>GitHub上传下拉仓库</h1><h2 id="一、在github上新建一个仓库"><a href="#一、在github上新建一个仓库" class="headerlink" title="一、在github上新建一个仓库"></a>一、在github上新建一个仓库</h2><h2 id="二、-在本地创建一个仓库"><a href="#二、-在本地创建一个仓库" class="headerlink" title="二、 在本地创建一个仓库"></a>二、 在本地创建一个仓库</h2><ul>
 <li>git init</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="三、-添加SSH-Key"><a href="#三、-添加SSH-Key" class="headerlink" title="三、 添加SSH Key"></a>三、 添加SSH Key</h2><ul>
 <li>在本地仓库的文件下 右键gitbush here</li>
 <li>打开gitbush</li>
-<li>输入命令 ssh-keygen -t rsa -C ‘<a href="mailto:&#49;&#51;&#x37;&#49;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;">&#49;&#51;&#x37;&#49;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#46;&#99;&#x6f;&#x6d;</a>(即自己的邮箱地址)’</li>
+<li>输入命令 ssh-keygen -t rsa -C ‘<a href="mailto:&#x31;&#x33;&#x37;&#x31;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#109;">&#x31;&#x33;&#x37;&#x31;&#52;&#52;&#52;&#x33;&#52;&#x34;&#x40;&#x71;&#113;&#x2e;&#x63;&#111;&#109;</a>(即自己的邮箱地址)’</li>
 <li>一直回车</li>
 <li>然后会在该目录下生成两个文件 ### ###.pub</li>
 <li>复制这两个文件黏贴到 C:/用户/当前登录电脑的账户名/.ssh 并修改两个文件的名称分别为id_rsa id_rsa.pub</li>
@@ -880,7 +882,7 @@
 <li>到github上 选择setting-&gt;SSH and GPG keys，点击New SHH key，任意输入名字 然后把复制的公钥黏贴到key 完成SSH的创建</li>
 </ul>
 <h2 id="四、下拉github仓库文件进行与本地仓库的关联"><a href="#四、下拉github仓库文件进行与本地仓库的关联" class="headerlink" title="四、下拉github仓库文件进行与本地仓库的关联"></a>四、下拉github仓库文件进行与本地仓库的关联</h2><ul>
-<li>添加远程仓库地址 将本地仓库与github仓库进行关联<br> git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;</a>:<a href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1">HRBUST-EmbeddedLaboratoryTeam1</a>/<strong><a href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1/RobotFightingContest">RobotFightingContest</a></strong><br> <strong>可以通过 git remote -v查看已经添加的，可以通过git remote rm origin删除，修改默认的remote.url和remote.origin可以通过git config –global remote.url ‘修改的值’进行修改</strong></li>
+<li>添加远程仓库地址 将本地仓库与github仓库进行关联<br> git remote add origin <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;</a>:<a href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1">HRBUST-EmbeddedLaboratoryTeam1</a>/<strong><a href="https://github.com/HRBUST-EmbeddedLaboratoryTeam1/RobotFightingContest">RobotFightingContest</a></strong><br> <strong>可以通过 git remote -v查看已经添加的，可以通过git remote rm origin删除，修改默认的remote.url和remote.origin可以通过git config –global remote.url ‘修改的值’进行修改</strong></li>
 <li>下拉远程仓库 使本地和远程保留一致 这点很重要 如果不保留一致 就无法进行上传<br> git pull origin master</li>
 <li>添加本地需要上传的文件至缓存区<br> git add . 表示添加所有</li>
 <li>提交至本地仓库<br> git commit -m ‘这是第一次提交’</li>
@@ -917,64 +919,64 @@
 
 <h2 id="第一步：注册GitHub的账号"><a href="#第一步：注册GitHub的账号" class="headerlink" title="第一步：注册GitHub的账号"></a>第一步：注册GitHub的账号</h2><p>官网：<a href="https://github.com/">https://github.com/</a></p>
 <p>官网是全英文的，如果大家实在看不懂一些英文的话，可以利用谷歌浏览进行翻译。</p>
-<p><img src="https://img-blog.csdn.net/20180922150849285?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\70" alt="img"></p>
 <p>我是利用邮箱进行注册的，如果大家利用邮箱进行注册的话，需要到邮箱进行验证与激活账号。</p>
 <p>填写相关信息进行注册：</p>
-<p><img src="https://img-blog.csdn.net/20180922151142615?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\701" alt="img"></p>
 <p>版本选择：初学者的话建议先选择免费版，我这里选择的是免费版。</p>
-<p><img src="https://img-blog.csdn.net/20180922151310770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\702" alt="img"></p>
 <p>接着，这里的内容，根据个人来填，可填可不填，我用谷歌浏览器进行了翻译，大家可以看得明白一些。</p>
-<p><img src="https://img-blog.csdn.net/20180922151435870?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\703" alt="img"></p>
 <p>注册完成，我们就可以去登录了，记得去邮箱验证激活账号。</p>
-<p><img src="https://img-blog.csdn.net/20180922151602560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\704" alt="img"></p>
 <h2 id="第二步：创建一个组织（团队）"><a href="#第二步：创建一个组织（团队）" class="headerlink" title="第二步：创建一个组织（团队）"></a>第二步：创建一个组织（团队）</h2><p>登录成功后，我们先创建一个组织（团队）。如下操作，大家看不懂英文的可以用谷歌浏览器翻译喔。</p>
-<p><img src="https://img-blog.csdn.net/20180922151719495?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\705" alt="img"></p>
 <p>根据自己的情况，填写相关信息，下面的页面已经被我翻译为中文的了。</p>
-<p><img src="https://img-blog.csdn.net/20180922153016469?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\706" alt="img"></p>
 <p>邀请队员：邀请我们的队员，和我们一起使用该仓库，填写队员邮箱，点击Invite，向队员发送邮件，待队员同意就可以一起开发了。</p>
-<p><img src="https://img-blog.csdn.net/20180922153143728?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\707" alt="img"></p>
 <p>下面的内容，我们根据自己的意愿来填写，也可以直接跳过。</p>
-<p><img src="https://img-blog.csdn.net/20180922153419675?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\708" alt="img"></p>
 <p>这样，我们的（组织）团队也就创建好了。</p>
 <h2 id="第三步：创建仓库"><a href="#第三步：创建仓库" class="headerlink" title="第三步：创建仓库"></a>第三步：创建仓库</h2><p>团队创建完成后，我们还需要创建一个共有的仓库，用于存放我们团队代码。</p>
-<p><img src="https://img-blog.csdn.net/20180922153513124?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\709" alt="img"></p>
 <p>根据下图，填写相关信息，记得勾选创建一个初始化配置文件（readme.md）。</p>
-<p><img src="https://img-blog.csdn.net/20180922155257380?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7010" alt="img"></p>
 <p>完成之后，我们点击创建仓库，看到下面的界面表示创建仓库成功。</p>
-<p><img src="https://img-blog.csdn.net/20180922155436224?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7011" alt="img"></p>
 <h2 id="第四步：下载安装Git客户端"><a href="#第四步：下载安装Git客户端" class="headerlink" title="第四步：下载安装Git客户端"></a>第四步：下载安装Git客户端</h2><p>地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
 <p>下载好后，我们直接安装。</p>
 <h2 id="第五步：克隆仓库"><a href="#第五步：克隆仓库" class="headerlink" title="第五步：克隆仓库"></a>第五步：克隆仓库</h2><p>在我们想要克隆的路径下右击鼠标，选择如下的 <strong>Git GUI Here</strong> 我们先使用图形化界面进行操作，日后熟悉了可以用下面的命令窗口进行操作。</p>
-<p><img src="https://img-blog.csdn.net/20180922160705529?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7012" alt="img"></p>
 <p>接下来，选择第二项，克隆仓库（GitHub上的仓库），将云端的仓库克隆到本地。</p>
-<p><img src="https://img-blog.csdn.net/20180922160858983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7013" alt="img"></p>
 <p>下面，填写云端的仓库地址，和本地的仓库将要存放的路径。</p>
 <p>第一次使用，会要求输入你的GitHub账号和密码。</p>
-<p><img src="https://img-blog.csdn.net/20180922160951128?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7014" alt="img"></p>
 <p>稍等片刻，如果在当前路径看到如下的文件（readme.md），表示克隆成功。</p>
-<p><img src="https://img-blog.csdn.net/20180922161753528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7015" alt="img"></p>
 <h2 id="第六步：创建项目"><a href="#第六步：创建项目" class="headerlink" title="第六步：创建项目"></a>第六步：创建项目</h2><p>我们在eclipse中创建一个项目，这里我创建的是一个maven项目，项目的存放路径，改为我们刚刚克隆下来的仓库所在路径（readme.md）文件所在的路径，即：用克隆下来的仓库存放我们新建的项目。</p>
-<p><img src="https://img-blog.csdn.net/20180922162641928?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7016" alt="img"></p>
 <p>如果项目创建成功，长下面的样子。</p>
-<p><img src="https://img-blog.csdn.net/20180922162857770?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7017" alt="img"></p>
 <p>如果我们的项目创建好并对项目结构进行初始化后，我们就可以上传一波代码了。具体操作请看下面：</p>
-<p><img src="https://img-blog.csdn.net/20180922165155149?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7018" alt="img"></p>
 <p>第一次推送代码是不会被拒绝的，如果之前有人推送过代码，并且本地未更新代码，那么会被拒绝，要求先下拉代码。</p>
 <p>下拉代码，请看下面的操作：</p>
-<p><img src="https://img-blog.csdn.net/20180922165502406?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7019" alt="img"></p>
 <p>也可以打开git staging 来提交代码，可以先提交到本地，再推送到云端，也可以同时推送。如下图：</p>
-<p><img src="https://img-blog.csdn.net/20180922165543983?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7020" alt="img"></p>
 <h2 id="第七步：导入工程"><a href="#第七步：导入工程" class="headerlink" title="第七步：导入工程"></a>第七步：导入工程</h2><p>如果，项目的搭建已经完成，并且上传到了GitHub，那么其他队员就可以直接克隆仓库，然后将克隆下来的仓库里的项目直接导入到eclipse就可以了。克隆仓库和之前的步骤一样，只是在导入项目的时候选择克隆下来的项目即可。</p>
-<p><img src="https://img-blog.csdn.net/20180922171111783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7021" alt="img"></p>
 <p>我们修改代码后，在推送代码的时候可能会被拒绝，因为之前的代码和现在的代码发生了改变，需要程序员手动解决冲突。</p>
-<p><img src="https://img-blog.csdn.net/20180922171119490?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7022" alt="img"></p>
 <h2 id="第八步：解决冲突"><a href="#第八步：解决冲突" class="headerlink" title="第八步：解决冲突"></a>第八步：解决冲突</h2><p>如果我们上传代码被拒接，我们需要先拉代码：下面就是被拉下来的代码</p>
-<p><img src="https://img-blog.csdn.net/20180922171330169?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7023" alt="img"></p>
 <p>如果代码有冲突，我们要手动解决冲突，决定代码是保留还是删除。</p>
 <p><strong>&lt;&lt;&lt;&lt;&lt;&lt;HEAD</strong> 与 <strong>======</strong> 之间的代码是自己本地的代码</p>
 <p>======== 与 branch ‘master’ of <a href="https://github.com/">https://github.com</a>…………. 之间的代码是云端的代码</p>
 <p>这里需要手动删除或者保留代码。然后再上传代码即可。</p>
-<p><img src="https://img-blog.csdn.net/20180922180137599?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phbV9mYW5hdGlj/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="E:\BenHuangBlog\image\7024" alt="img"></p>
 <p>到此，咱们便可以使用GitHub愉快的进行团队开发了。</p>
 ]]></content>
       <categories>

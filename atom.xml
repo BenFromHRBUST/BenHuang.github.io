@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-29T03:37:01.854Z</updated>
+  <updated>2020-10-13T15:58:29.199Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,12 @@
     <link href="http://yoursite.com/2020/09/29/Git%202%20-%20Git%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93/"/>
     <id>http://yoursite.com/2020/09/29/Git%202%20-%20Git%E4%B8%8A%E4%BC%A0%E4%B8%8B%E6%8B%89%E4%BB%93%E5%BA%93/</id>
     <published>2020-09-29T03:35:54.000Z</published>
-    <updated>2020-09-29T03:37:01.854Z</updated>
+    <updated>2020-10-13T15:58:29.199Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub上传下拉仓库&quot;&gt;&lt;a href=&quot;#GitHub上传下拉仓库&quot; class=&quot;headerlink&quot; title=&quot;GitHub上传下拉仓库&quot;&gt;&lt;/a&gt;GitHub上传下拉仓库&lt;/h1&gt;&lt;h2 id=&quot;一、在github上新建一个仓库&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;GitHub上传下拉仓库&quot;&gt;&lt;a href=&quot;#GitHub上传下拉仓库&quot; class=&quot;headerlink&quot; title=&quot;GitHub上传下拉仓库&quot;&gt;&lt;/a&gt;GitHub上传下拉仓库&lt;/h1&gt;&lt;h2 id=&quot;一、在github上新建一个仓库&quot;&gt;&lt;a href=&quot;#一、在github上新建一个仓库&quot; class=&quot;headerlink&quot; title=&quot;一、在github上新建一个仓库&quot;&gt;&lt;/a&gt;一、在github上新建一个仓库&lt;/h2&gt;&lt;h2 id=&quot;二、-在本地创建一个仓库&quot;&gt;&lt;a href=&quot;#二、-在本地创建一个仓库&quot; class=&quot;headerlink&quot; title=&quot;二、 在本地创建一个仓库&quot;&gt;&lt;/a&gt;二、 在本地创建一个仓库&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;git init&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -50,7 +46,7 @@
     <link href="http://yoursite.com/2020/09/18/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%201%20-%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%E5%9F%B9%E8%AE%AD-%E8%A7%84%E5%88%99%E8%A7%A3%E8%AF%BB/"/>
     <id>http://yoursite.com/2020/09/18/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%201%20-%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9B%E6%84%8F%E5%A4%A7%E8%B5%9B%E5%9F%B9%E8%AE%AD-%E8%A7%84%E5%88%99%E8%A7%A3%E8%AF%BB/</id>
     <published>2020-09-18T10:42:52.000Z</published>
-    <updated>2020-09-20T14:19:22.290Z</updated>
+    <updated>2020-10-13T16:04:21.378Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;场地说明&quot;&gt;&lt;a href=&quot;#场地说明&quot; class=&quot;headerlink&quot; title=&quot;场地说明&quot;&gt;&lt;/a&gt;场地说明&lt;/h1&gt;&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;1）比赛的擂台是放在一个高度0.5米，边长3.8米的台上。&lt;br&gt;2）比赛场地大小为长、宽为2400*2400m，高60mm的正方形矮台，台上表面即为比赛场地。底色从外侧四角到中心分别为纯黑到纯白渐变的灰度。场地两侧的出发区用正蓝色和正黄色颜色涂敷，平地尺寸为500mm*400m，距离擂台边缘200mm。&lt;br&gt;3）场地地面为黑色。擂台四周700m处有高200mm的方形黑色围栏。&lt;/p&gt;</summary>
@@ -149,7 +145,7 @@
     <link href="http://yoursite.com/2020/08/22/Git%201%20-%20%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2020/08/22/Git%201%20-%20%E4%BD%BF%E7%94%A8GitHub%E8%BF%9B%E8%A1%8C%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91/</id>
     <published>2020-08-22T07:27:18.000Z</published>
-    <updated>2020-08-26T13:44:56.680Z</updated>
+    <updated>2020-10-13T15:40:46.801Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;第一步：注册GitHub账号&lt;/p&gt;
@@ -179,7 +175,7 @@
     <link href="http://yoursite.com/2020/08/21/Hexo%202%20-%20Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
     <id>http://yoursite.com/2020/08/21/Hexo%202%20-%20Hexo%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</id>
     <published>2020-08-21T09:51:30.000Z</published>
-    <updated>2020-08-22T07:34:25.870Z</updated>
+    <updated>2020-10-13T15:33:18.458Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言：&quot;&gt;&lt;a href=&quot;#前言：&quot; class=&quot;headerlink&quot; title=&quot;前言：&quot;&gt;&lt;/a&gt;前言：&lt;/h2&gt;&lt;blockquote&gt;
@@ -207,7 +203,7 @@
     <link href="http://yoursite.com/2020/08/21/Hexo%201%20-%20%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/08/21/Hexo%201%20-%20%E5%9C%A8GitHub%E4%B8%8A%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-08-21T09:51:13.000Z</published>
-    <updated>2020-08-26T13:43:52.764Z</updated>
+    <updated>2020-10-13T15:35:47.193Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;内容目录（下面目录中第 3~5 步为最重要的步骤，其他内容可选择性跳过。）&lt;/strong&gt;&lt;/p&gt;
@@ -282,7 +278,7 @@
     <link href="http://yoursite.com/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/"/>
     <id>http://yoursite.com/2020/08/21/Python%202%20-%20Python%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</id>
     <published>2020-08-20T16:39:07.000Z</published>
-    <updated>2020-08-20T16:47:02.134Z</updated>
+    <updated>2020-10-13T15:49:21.566Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;国内常见镜像源&quot;&gt;&lt;a href=&quot;#国内常见镜像源&quot; class=&quot;headerlink&quot; title=&quot;国内常见镜像源&quot;&gt;&lt;/a&gt;国内常见镜像源&lt;/h1&gt;&lt;p&gt;豆瓣：&lt;a href=&quot;http://pypi.douban.com/simple/&quot;&gt;http://pypi.douban.com/simple/&lt;/a&gt;&lt;br&gt;阿里：&lt;a href=&quot;http://mirrors.aliyun.com/pypi/simple/&quot;&gt;http://mirrors.aliyun.com/pypi/simple/&lt;/a&gt;&lt;br&gt;华中理工大学：&lt;a href=&quot;http://pypi.hustunique.com/simple/&quot;&gt;http://pypi.hustunique.com/simple/&lt;/a&gt;&lt;br&gt;山东理工大学：&lt;a href=&quot;http://pypi.sdutlinux.org/simple/&quot;&gt;http://pypi.sdutlinux.org/simple/&lt;/a&gt;&lt;br&gt;中国科学技术大学：&lt;a href=&quot;http://pypi.mirrors.ustc.edu.cn/simple/&quot;&gt;http://pypi.mirrors.ustc.edu.cn/simple/&lt;/a&gt;&lt;/p&gt;</summary>
@@ -301,7 +297,7 @@
     <link href="http://yoursite.com/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     <id>http://yoursite.com/2020/08/21/Python%201%20-%20Python%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</id>
     <published>2020-08-20T16:02:18.000Z</published>
-    <updated>2020-08-20T16:32:28.322Z</updated>
+    <updated>2020-10-13T15:47:01.101Z</updated>
     
     
     <summary type="html">&lt;p&gt;PE8基本规范：&lt;/p&gt;
